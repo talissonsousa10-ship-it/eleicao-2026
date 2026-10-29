@@ -1,39 +1,83 @@
+<div align="center">
+
 # Eleição 2026: os dados abertos do TSE, urna por urna
 
-Análise do 2º turno da eleição presidencial de 2026 (Lula 64.256.232 × Flávio Bolsonaro 59.826.041) feita só com arquivos públicos do Tribunal Superior Eleitoral e do IBGE. O objetivo é testar as alegações matemáticas de fraude e explicar onde a eleição foi decidida.
+**Os números da eleição presidencial de 2026 conferidos e explicados só com dados públicos.**
 
-**Site:** [talissonsousa10-ship-it.github.io/eleicao-2026](https://talissonsousa10-ship-it.github.io/eleicao-2026/). São três páginas:
+[![Site](https://img.shields.io/badge/site-ver_a_análise-c8102e?style=for-the-badge)](https://talissonsousa10-ship-it.github.io/eleicao-2026/)
+[![Licença MIT](https://img.shields.io/badge/licença-MIT-1f4fc4?style=for-the-badge)](LICENSE)
 
-1. **A eleição passou no teste:** seis testes estatísticos, a conferência dos 998.411 boletins de urna com a totalização e a checagem de 11 alegações.
-2. **Onde foi decidida:** de onde vieram os votos do 2º turno, a comparação com 2022 e o perfil dos municípios.
-3. **Explore sua cidade:** mapa com zoom e busca por cidade, local de votação e urna.
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-banco_local-FFF000?logo=duckdb&logoColor=black)
+![React](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)
+![Dados](https://img.shields.io/badge/dados-TSE_·_IBGE-0f7d52)
 
-Autor: **Talisson Sousa de Santana**, Analista de Dados Estatísticos.
+[![Prévia do site](docs/previa.png)](https://talissonsousa10-ship-it.github.io/eleicao-2026/)
 
-Toda mudança feita depois da primeira publicação aparece no **registro de mudanças**, no fim de cada página do site (fonte: `site/src/data/mudancas.ts`). Mudanças em números, títulos ou conclusões entram como correção, com o texto anterior.
+</div>
 
-## O que encontramos
+## 📌 O que é
 
-- **Boletins de urna:** os 998.411 boletins dos dois turnos (o papel afixado na porta de cada seção) são idênticos à totalização oficial em todos os campos. Os 56 arquivos `bweb` têm o hash SHA-512 igual ao publicado pelo TSE.
-- **Integridade:** nenhuma urna tem mais votos que eleitores presentes, nem mais presentes que eleitores aptos. A soma das urnas bate com o total oficial em todas as zonas.
-- **Testes forenses:**
-  - o último dígito dos votos é uniforme (p = 0,65 para Lula, 0,71 para Flávio);
-  - o 1º turno prevê o 2º com R² de 0,99, e as 36 zonas fora do padrão se dividem em 14 a favor de Lula e 22 a favor de Flávio;
-  - as urnas antigas não votam diferente das novas na mesma escola (diferença de 0,06 ponto);
-  - as urnas que destoam das vizinhas são 0,13% do total e já votavam assim no 1º turno (397 de 398).
-- **2022:** o mesmo padrão aparece com o sinal trocado. Bolsonaro virou 251 municípios entre os turnos; Lula virou 211 em 2026.
-- **Onde foi decidida** (estimativas por inferência ecológica):
-  - a virada veio de quem não tinha votado em Lula nem em Flávio no 1º turno: somados, os dois ganharam 14,1 milhões de votos, e 74% desse ganho foi de Lula (conta exata);
-  - pelo modelo das urnas, o grupo que mais pesou foi o de quem não votou em ninguém (entre 6,0 e 6,2 milhões para Lula, contra 0,1 a 0,9 milhão para Flávio), e os eleitores dos outros candidatos se dividiram quase ao meio. Pelo método das zonas, os outros candidatos foram mais para Flávio (32% × 57%). A divisão entre os dois grupos é a parte menos certa;
-  - o simulador da página testa sete teses de transferência, cada uma com uma faixa provável (90% de 200 reamostragens de municípios). Só duas viram o resultado: todos os eleitores dos outros candidatos indo para Flávio, ou quem não votou no 1º turno continuando sem votar;
-  - comparado a 2022, Flávio cresceu nas cidades pequenas e recuou nas grandes.
+No 2º turno de 2026, Lula teve **64.256.232** votos e Flávio Bolsonaro, **59.826.041**. Depois do resultado, circularam alegações de que a eleição foi roubada, muitas delas com argumentos matemáticos.
 
-**Limites:**
+Este repositório testa essas alegações com os arquivos que o **Tribunal Superior Eleitoral** e o **IBGE** publicam para qualquer pessoa. Também explica onde e por que a eleição foi decidida. Todo o código está aqui, e qualquer pessoa pode refazer as contas.
+
+| Número | O que representa |
+|---|---|
+| **998.411** | boletins de urna conferidos com a totalização oficial, campo a campo |
+| **443 mil** | urnas com o mesmo eleitorado nos dois turnos, usadas para estimar as transferências de voto |
+| **5.570** | municípios com os votos conferidos e disponíveis no mapa |
+| **6** | testes estatísticos de fraude; os testes por zona também foram rodados em 2022, para comparar |
+
+## 🗺️ O site
+
+O site tem três páginas: **[talissonsousa10-ship-it.github.io/eleicao-2026](https://talissonsousa10-ship-it.github.io/eleicao-2026/)**
+
+| Página | O que mostra |
+|---|---|
+| **A eleição passou no teste** | Seis testes estatísticos, a conferência dos boletins de urna com a totalização e a checagem de 11 alegações |
+| **Onde foi decidida** | De onde vieram os votos do 2º turno, um simulador para testar teses de transferência, a comparação com 2022 e o perfil dos municípios |
+| **Explore sua cidade** | Mapa com zoom e busca por cidade, local de votação e urna |
+
+Toda mudança feita depois da primeira publicação aparece no **registro de mudanças**, no fim de cada página (fonte: `site/src/data/mudancas.ts`). Mudanças em números, títulos ou conclusões entram como correção, com o texto anterior.
+
+## 🔍 O que encontramos
+
+### A contagem bate
+- Os 998.411 boletins dos dois turnos (o papel afixado na porta de cada seção) são idênticos à totalização oficial em todos os campos. Os 56 arquivos `bweb` têm o hash SHA-512 igual ao publicado pelo TSE.
+- Nenhuma urna tem mais votos que eleitores presentes, nem mais presentes que eleitores aptos. A soma das urnas bate com o total oficial em todas as zonas.
+
+### Os testes não encontram sinal de fraude
+- O último dígito dos votos é uniforme (p = 0,65 para Lula, 0,71 para Flávio).
+- O 1º turno prevê o 2º com R² de 0,99. As 36 zonas fora do padrão se dividem em 14 a favor de Lula e 22 a favor de Flávio.
+- As urnas antigas não votam diferente das novas na mesma escola (diferença de 0,06 ponto).
+- As urnas que destoam das vizinhas são 0,13% do total e já votavam assim no 1º turno (397 de 398).
+- Em 2022, o mesmo padrão aparece com o sinal trocado. Bolsonaro virou 251 municípios entre os turnos; Lula virou 211 em 2026.
+
+### Onde a eleição foi decidida
+- **Conta exata:** a virada veio de quem não tinha votado em Lula nem em Flávio no 1º turno. Somados, os dois ganharam 14,1 milhões de votos, e 74% desse ganho foi de Lula.
+- **Estimativa** (inferência ecológica): pelo modelo das urnas, o grupo que mais pesou foi o de quem não votou em ninguém (entre 6,0 e 6,2 milhões para Lula, contra 0,1 a 0,9 milhão para Flávio). Os eleitores dos outros candidatos se dividiram quase ao meio. Pelo método das zonas, os outros candidatos foram mais para Flávio (32% × 57%). A divisão entre os dois grupos é a parte menos certa.
+- **Simulador:** testa sete teses de transferência, cada uma com uma faixa provável (90% de 200 reamostragens de municípios). Só duas viram o resultado: todos os eleitores dos outros candidatos indo para Flávio, ou quem não votou no 1º turno continuando sem votar.
+- **Comparado a 2022:** Flávio cresceu nas cidades pequenas e recuou nas grandes.
+
+### ⚠️ Limites
 - Os dados mostram como cada lugar votou, não como cada pessoa votou.
 - Testes estatísticos não substituem a auditoria das urnas.
 - Os arquivos analisados são do próprio TSE. Falta comparar uma amostra de boletins fotografados por fiscais.
 
-## Como refazer as contas
+## 🗂️ Estrutura
+
+```
+.
+├── *.py               programas da análise (ordem de execução abaixo)
+├── analise/           resultados de cada etapa, prontos para conferir
+├── dados_ibge/        indicadores do Censo 2022 e PIB 2023 por município
+├── dados_mapa/        contornos dos municípios e tabela de códigos TSE × IBGE
+├── site/              código-fonte do site (React + TypeScript + Tailwind)
+└── docs/              site publicado no GitHub Pages, com os dados da busca por estado
+```
+
+## 🔁 Como refazer as contas
 
 Requisitos: Python 3.11+ (`pip install -r requirements.txt`). Para gerar o site de novo, também Node 18+ e pnpm.
 
@@ -73,9 +117,19 @@ Os resultados de cada etapa já estão em `analise/`, para quem quiser conferir 
 
 O código-fonte está em `site/`. Para gerar `docs/index.html` de novo, rode `bash site/construir.sh`.
 
-## Outras fontes
+## 📚 Fontes
 
 - Contornos dos municípios: [tbrugz/geodata-br](https://github.com/tbrugz/geodata-br), simplificados com mapshaper (`dados_mapa/geo_uf.mjs`).
 - Códigos TSE × IBGE: [betafcc/Municipios-Brasileiros-TSE](https://github.com/betafcc/Municipios-Brasileiros-TSE).
 - IBGE: [API de agregados](https://servicodados.ibge.gov.br/api/docs/agregados?versao=3), tabelas 4714, 9537, 10297 e 5938.
 - Pesquisas citadas: Datafolha (6 a 8/10/2026) e Quaest (10 a 13/10/2026), com os links na página.
+
+## 👤 Autor
+
+**Talisson Sousa de Santana**, Analista de Dados Estatísticos.
+
+Encontrou um erro? Abra uma [issue](https://github.com/talissonsousa10-ship-it/eleicao-2026/issues). Se a correção mudar um número, ela entra no registro de mudanças do site.
+
+## 📄 Licença
+
+[MIT](LICENSE) © 2026 Talisson Sousa de Santana. Você pode usar, copiar e modificar o código e o conteúdo, desde que mantenha o aviso de copyright e o texto da licença. Os dados de origem são públicos, do TSE e do IBGE.

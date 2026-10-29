@@ -46,7 +46,7 @@ export default function Metodo() {
         </div>
       </div>
       <footer className="mt-16 pt-6 flex flex-wrap justify-between gap-4 mono text-[0.7rem]" style={{ borderTop: '1px solid var(--rule)', color: 'var(--ink-3)' }}>
-        <span>Talisson Sousa de Santana · Analista de Dados Estatísticos · análise com dados abertos do TSE</span>
+        <span>Talisson Sousa de Santana · Analista de Dados Estatísticos · análise com dados abertos do TSE · <a href="https://github.com/talissonsousa10-ship-it/eleicao-2026/blob/main/LICENSE" target="_blank" rel="noreferrer" className="underline underline-offset-2">licença MIT</a></span>
         <span>Arquivos de resultado gerados pelo TSE em 26 e 28/10/2026</span>
       </footer>
     </section>
