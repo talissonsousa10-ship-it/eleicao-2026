@@ -647,7 +647,7 @@ function Metodo() {
           <li><b>Regressão:</b> mudança de Lula de 2022 para 2026 explicada por tamanho (em escala logarítmica), renda, renda de fora do trabalho, evangélicos, voto de 2022 e região, pesada pelos votos, com erro padrão agrupado por estado.</li>
           <li><b>Pesquisas citadas:</b> <a className="underline" href={X.pesquisas.datafolha_terceiros.link} target="_blank" rel="noreferrer">Datafolha, 6 a 8/10</a> e{' '}
             <a className="underline" href={X.pesquisas.quaest.link} target="_blank" rel="noreferrer">Quaest, 10 a 13/10</a>.</li>
-          <li>Programas: <code>analise_decisao.py</code> e <code>baixar_ibge.py</code>, no <a className="underline" href="https://github.com/talissonsousa10-ship-it/eleicao-2026" target="_blank" rel="noreferrer">repositório do projeto no GitHub</a>. Análise de Talisson Santana, analista de dados estatísticos.</li>
+          <li>Programas: <code>analise_decisao.py</code> e <code>baixar_ibge.py</code>, no <a className="underline" href="https://github.com/talissonsousa10-ship-it/eleicao-2026" target="_blank" rel="noreferrer">repositório do projeto no GitHub</a>. Análise de Talisson Sousa de Santana, Analista de Dados Estatísticos.</li>
         </ul>
       </div>
     </section>

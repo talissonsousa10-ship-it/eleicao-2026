@@ -409,6 +409,39 @@ function Escola({ l }: { l: Local }) {
   )
 }
 
+const SITE = 'https://talissonsousa10-ship-it.github.io/eleicao-2026/'
+
+function Compartilhar({ id, nome }: { id: string; nome: string }) {
+  const [msg, setMsg] = useState<string | null>(null)
+  const url = `${SITE}#/mapa/${id}`
+  const texto = `Como ${nome} votou para presidente em 2026, escola por escola e urna por urna:`
+  const agir = async () => {
+    try {
+      if (navigator.share && window.matchMedia('(pointer: coarse)').matches) { await navigator.share({ title: `Eleição 2026 · ${nome}`, text: texto, url }); return }
+      await navigator.clipboard.writeText(url)
+      setMsg('Link copiado')
+    } catch {
+      setMsg(url)
+    }
+    setTimeout(() => setMsg(null), 4000)
+  }
+  return (
+    <div className="mt-3">
+      <button className="btn !py-1.5 !px-2.5 !text-[0.66rem] inline-flex items-center gap-1.5" onClick={agir} aria-label={`Compartilhar o link de ${nome}`}>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1" /><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1" /></svg>
+        Copiar link desta cidade
+      </button>
+      <AnimatePresence>
+        {msg && (
+          <motion.span initial={{ opacity: 0, x: -4 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} className="ml-2 mono text-[0.64rem] break-all" style={{ color: 'var(--ok)' }} role="status">
+            {msg === url ? <>Copie: <span style={{ color: 'var(--ink)' }}>{url}</span></> : `✓ ${msg}`}
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </div>
+  )
+}
+
 function Cidade({ id, dados, erro }: { id: string; dados?: DadosUF; erro?: string }) {
   const m = BY_ID[id]
   const bloco = dados?.m[id]
@@ -435,6 +468,7 @@ function Cidade({ id, dados, erro }: { id: string; dados?: DadosUF; erro?: strin
           {m && m[9] !== 0 && <span className="chip" style={{ background: m[9] > 0 ? 'var(--lula)' : 'var(--flavio)', color: '#fff' }}>Virou para {m[9] > 0 ? 'Lula' : 'Flávio'} no 2º turno</span>}
           <span className="chip chip-ink">{margem >= 0 ? 'Lula' : 'Flávio'} venceu por {fmt(Math.abs(margem))} {Math.abs(margem) === 1 ? 'voto' : 'votos'}</span>
         </div>
+        {!id.startsWith('Z') && <Compartilhar id={id} nome={nome} />}
       </div>
 
       <div className="grid gap-3">

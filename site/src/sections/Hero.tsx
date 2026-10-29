@@ -55,7 +55,7 @@ export default function Hero() {
   return (
     <header className="wrap pt-10 pb-14 md:pt-16 md:pb-20">
       <div className="flex flex-wrap items-center justify-between gap-3 mb-10 md:mb-14">
-        <span className="eyebrow">Por <b style={{ color: 'var(--ink)' }}>Talisson Santana</b> · analista de dados estatísticos</span>
+        <span className="eyebrow">Por <b style={{ color: 'var(--ink)' }}>Talisson Sousa de Santana</b> · Analista de Dados Estatísticos</span>
         <span className="eyebrow">Dados abertos do TSE · 29/10/2026</span>
       </div>
       <div className="grid gap-12 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">

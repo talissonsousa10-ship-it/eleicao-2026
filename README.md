@@ -8,7 +8,7 @@ Análise do 2º turno da eleição presidencial de 2026 (Lula 64.256.232 × Flá
 2. **Onde foi decidida:** de onde vieram os votos do 2º turno, a comparação com 2022 e o perfil dos municípios.
 3. **Explore sua cidade:** mapa com zoom e busca por cidade, local de votação e urna.
 
-Autor: **Talisson Santana**, analista de dados estatísticos.
+Autor: **Talisson Sousa de Santana**, Analista de Dados Estatísticos.
 
 ## O que encontramos
 
