@@ -458,13 +458,13 @@ function Simulador() {
               RESULTADO REAL: LULA POR {fmt(real.m)}. {tese !== 'urnas' && `DIFERENÇA PARA O REAL: ${r.m - real.m >= 0 ? '+' : '−'}${fmt(Math.abs(r.m - real.m))} NA VANTAGEM DE LULA.`}
             </p>
           </div>
-          <Conta t="QUANTO FLÁVIO PRECISARIA DOS OUTROS CANDIDATOS">
-            Mantendo todo o resto como foi, Flávio precisaria de <b>{virg(100 * xEmpate, 0)} de cada 100</b> eleitores de Cury, Renan, Caiado e Zema
-            só para empatar (Lula ficando com {virg(100 - 100 * xEmpate - (100 * ninguem) / vt, 0)}). Nas urnas, ele teve cerca de {virg((100 * fb) / vt, 0)}; na pesquisa Datafolha, 46.
+          <Conta t="QUANTO OS OUTROS CANDIDATOS TERIAM QUE MUDAR">
+            Mantendo todo o resto como foi, o resultado só viraria se <b>{virg((100 * real.m) / (2 * vt), 0)} de cada 100</b> eleitores de Cury, Renan,
+            Caiado, Zema e dos outros 6 tivessem trocado Lula por Flávio. Pelo modelo das urnas, seria Flávio com {virg(100 * xEmpate, 0)} em vez
+            de {virg((100 * fb) / vt, 0)}. A pesquisa Datafolha dava 46.
           </Conta>
           <p className="text-[0.82rem]" style={{ color: 'var(--ink-3)' }}>
-            O simulador muda uma coisa de cada vez e mantém o resto. Na vida real, as coisas se influenciam: uma campanha que atraísse mais eleitores de
-            Caiado talvez também mudasse quem foi votar. As taxas de partida são estimativas com margem de erro, explicadas na seção 1.
+            Na vida real, os fatores se influenciam: uma campanha que atraísse mais eleitores de Caiado talvez também mudasse quem foi votar.
           </p>
         </div>
       </div>
