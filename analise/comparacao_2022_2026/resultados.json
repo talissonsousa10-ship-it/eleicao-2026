@@ -1,0 +1,258 @@
+{
+  "municipios_pareados": 5570,
+  "municipios_2022": 5570,
+  "municipios_2026": 5571,
+  "nacional": {
+    "2022": {
+      "lula_2t_pct": 50.9,
+      "lula_1t_pct": 48.43,
+      "22_1t_pct": 43.2,
+      "ganho_lula_entre_turnos_votos": 3072523,
+      "ganho_22_entre_turnos_votos": 7111293
+    },
+    "2026": {
+      "lula_2t_pct": 51.78,
+      "lula_1t_pct": 45.16,
+      "22_1t_pct": 47.04,
+      "ganho_lula_entre_turnos_votos": 10333927,
+      "ganho_22_entre_turnos_votos": 3693941
+    }
+  },
+  "persistencia": {
+    "correlacao_lula_2t_2022_x_2026_municipios": 0.9887,
+    "correlacao_ponderada": 0.9887,
+    "swing_medio_ponderado_pp": 0.59,
+    "desvio_padrao_ponderado_pp": 2.8,
+    "swing_mediano_pp": -2.04,
+    "pct_municipios_swing_entre_-5_e_+5pp": 84.8
+  },
+  "outliers_swing": {
+    "criterio": "|z robusto| > 4 na mudança de Lula 2022→2026 (2º turno)",
+    "municipios": 10,
+    "pro_lula": 0,
+    "pro_22": 10,
+    "pct_do_eleitorado_2026": 0.04,
+    "margem_lula_2026_nesses_municipios": -3895,
+    "margem_lula_2026_total_pareado": 4402942
+  },
+  "swing_por_regiao_pp": {
+    "Centro-Oeste": 0.23,
+    "Nordeste": -0.07,
+    "Norte": 0.88,
+    "Sudeste": 1.5,
+    "Sul": -0.62
+  },
+  "maiores_swings": [
+    {
+      "uf": "RS",
+      "municipio": "PASSA SETE",
+      "aptos2_26": 3747,
+      "lula_pct2_22": 50.26,
+      "lula_pct2_26": 34.44,
+      "swing2": -15.83,
+      "z": -5.17
+    },
+    {
+      "uf": "RS",
+      "municipio": "HERVEIRAS",
+      "aptos2_26": 2629,
+      "lula_pct2_22": 62.95,
+      "lula_pct2_26": 47.31,
+      "swing2": -15.64,
+      "z": -5.09
+    },
+    {
+      "uf": "RS",
+      "municipio": "GRAMADO XAVIER",
+      "aptos2_26": 3049,
+      "lula_pct2_22": 54.23,
+      "lula_pct2_26": 38.78,
+      "swing2": -15.45,
+      "z": -5.03
+    },
+    {
+      "uf": "RS",
+      "municipio": "CANUDOS DO VALE",
+      "aptos2_26": 1944,
+      "lula_pct2_22": 57.39,
+      "lula_pct2_26": 41.98,
+      "swing2": -15.42,
+      "z": -5.01
+    },
+    {
+      "uf": "PA",
+      "municipio": "SENADOR JOSÉ PORFÍRIO",
+      "aptos2_26": 14884,
+      "lula_pct2_22": 52.37,
+      "lula_pct2_26": 37.86,
+      "swing2": -14.51,
+      "z": -4.67
+    },
+    {
+      "uf": "AM",
+      "municipio": "JUTAÍ",
+      "aptos2_26": 15907,
+      "lula_pct2_22": 75.57,
+      "lula_pct2_26": 61.07,
+      "swing2": -14.49,
+      "z": -4.67
+    },
+    {
+      "uf": "PR",
+      "municipio": "SÃO JOÃO DO TRIUNFO",
+      "aptos2_26": 11623,
+      "lula_pct2_22": 59.42,
+      "lula_pct2_26": 44.95,
+      "swing2": -14.48,
+      "z": -4.66
+    },
+    {
+      "uf": "RS",
+      "municipio": "BARROS CASSAL",
+      "aptos2_26": 8268,
+      "lula_pct2_22": 53.92,
+      "lula_pct2_26": 39.71,
+      "swing2": -14.21,
+      "z": -4.56
+    },
+    {
+      "uf": "RS",
+      "municipio": "SANTO ANTÔNIO DO PALMA",
+      "aptos2_26": 2077,
+      "lula_pct2_22": 45.57,
+      "lula_pct2_26": 32.45,
+      "swing2": -13.11,
+      "z": -4.15
+    },
+    {
+      "uf": "AL",
+      "municipio": "BELO MONTE",
+      "aptos2_26": 6033,
+      "lula_pct2_22": 74.65,
+      "lula_pct2_26": 61.59,
+      "swing2": -13.07,
+      "z": -4.13
+    },
+    {
+      "uf": "RS",
+      "municipio": "LAGOÃO",
+      "aptos2_26": 4895,
+      "lula_pct2_22": 65.67,
+      "lula_pct2_26": 52.97,
+      "swing2": -12.7,
+      "z": -4.0
+    },
+    {
+      "uf": "RS",
+      "municipio": "MAMPITUBA",
+      "aptos2_26": 3154,
+      "lula_pct2_22": 53.32,
+      "lula_pct2_26": 40.9,
+      "swing2": -12.42,
+      "z": -3.89
+    },
+    {
+      "uf": "RS",
+      "municipio": "VISTA ALEGRE",
+      "aptos2_26": 2612,
+      "lula_pct2_22": 54.95,
+      "lula_pct2_26": 42.67,
+      "swing2": -12.27,
+      "z": -3.84
+    },
+    {
+      "uf": "PR",
+      "municipio": "CAMPINA DO SIMÃO",
+      "aptos2_26": 3735,
+      "lula_pct2_22": 63.62,
+      "lula_pct2_26": 51.38,
+      "swing2": -12.24,
+      "z": -3.82
+    },
+    {
+      "uf": "RS",
+      "municipio": "SÉRIO",
+      "aptos2_26": 2072,
+      "lula_pct2_22": 45.57,
+      "lula_pct2_26": 33.41,
+      "swing2": -12.16,
+      "z": -3.79
+    }
+  ],
+  "viradas": {
+    "2022": {
+      "viradas_lula": 0,
+      "viradas_22": 251,
+      "mediana_distancia_1t_pp": 2.54,
+      "maior_distancia_1t_pp": 7.9
+    },
+    "2026": {
+      "viradas_lula": 211,
+      "viradas_22": 1,
+      "mediana_distancia_1t_pp": 2.55,
+      "maior_distancia_1t_pp": 7.86
+    }
+  },
+  "ganho_entre_turnos_por_regiao_pp": [
+    {
+      "ano": "2022",
+      "regiao": "Centro-Oeste",
+      "lula_pp": 1.97,
+      "22_pp": 6.45
+    },
+    {
+      "ano": "2022",
+      "regiao": "Nordeste",
+      "lula_pp": 2.58,
+      "22_pp": 3.69
+    },
+    {
+      "ano": "2022",
+      "regiao": "Norte",
+      "lula_pp": 1.89,
+      "22_pp": 5.58
+    },
+    {
+      "ano": "2022",
+      "regiao": "Sudeste",
+      "lula_pp": 3.11,
+      "22_pp": 6.71
+    },
+    {
+      "ano": "2022",
+      "regiao": "Sul",
+      "lula_pp": 1.38,
+      "22_pp": 7.28
+    },
+    {
+      "ano": "2026",
+      "regiao": "Centro-Oeste",
+      "lula_pp": 7.37,
+      "22_pp": 3.5
+    },
+    {
+      "ano": "2026",
+      "regiao": "Nordeste",
+      "lula_pp": 5.6,
+      "22_pp": -0.22
+    },
+    {
+      "ano": "2026",
+      "regiao": "Norte",
+      "lula_pp": 5.36,
+      "22_pp": 0.84
+    },
+    {
+      "ano": "2026",
+      "regiao": "Sudeste",
+      "lula_pp": 7.56,
+      "22_pp": 1.4
+    },
+    {
+      "ano": "2026",
+      "regiao": "Sul",
+      "lula_pp": 6.15,
+      "22_pp": 2.5
+    }
+  ]
+}

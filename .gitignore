@@ -1,0 +1,20 @@
+# arquivos brutos do TSE (baixar no portal de dados abertos; ver README)
+*.zip
+*.sha512
+votacao_*.csv
+detalhe_*.csv
+dados_secao/
+dados_2022/
+dados_bweb/
+banco/
+relatorio/
+relatorio_final/
+_to_delete/
+# Python / Node
+__pycache__/
+*.pyc
+site/node_modules/
+site/dist/
+site/bundle.html
+site/relatorio.html
+site/.parcel-cache/

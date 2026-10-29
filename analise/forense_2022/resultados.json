@@ -1,0 +1,281 @@
+{
+  "ano": 2022,
+  "candidato_22": "Bolsonaro",
+  "unidade": "zona eleitoral dentro do município (Brasil, sem exterior, aptos >= 100)",
+  "zonas_analisadas": 6102,
+  "zonas_totais": 6283,
+  "aptos_diferentes_entre_turnos": {
+    "zonas": 4003,
+    "soma_absoluta": 27276,
+    "saldo_nacional": 0
+  },
+  "teste1_impressao_digital": {
+    "lula_t1": {
+      "zonas_canto_comp90_voto80": 2,
+      "eleitorado_no_canto_pct": 0.006,
+      "zonas_voto_acima_95pct": 0,
+      "spearman_comparecimento_voto_nacional": -0.079,
+      "spearman_medio_dentro_das_UF": -0.141
+    },
+    "lula_t2": {
+      "zonas_canto_comp90_voto80": 1,
+      "eleitorado_no_canto_pct": 0.002,
+      "zonas_voto_acima_95pct": 0,
+      "spearman_comparecimento_voto_nacional": -0.187,
+      "spearman_medio_dentro_das_UF": -0.209
+    },
+    "flavio_t1": {
+      "zonas_canto_comp90_voto80": 0,
+      "eleitorado_no_canto_pct": 0.0,
+      "zonas_voto_acima_95pct": 0,
+      "spearman_comparecimento_voto_nacional": 0.063,
+      "spearman_medio_dentro_das_UF": 0.116
+    },
+    "flavio_t2": {
+      "zonas_canto_comp90_voto80": 1,
+      "eleitorado_no_canto_pct": 0.003,
+      "zonas_voto_acima_95pct": 0,
+      "spearman_comparecimento_voto_nacional": 0.187,
+      "spearman_medio_dentro_das_UF": 0.209
+    }
+  },
+  "teste2_novos_eleitores": {
+    "lula": {
+      "fracao_do_comparecimento_extra": 0.431,
+      "erro_padrao": 0.01,
+      "inclinacao_simples_sem_controles": 0.518,
+      "fracao_dos_votos_de_terceiros": 0.392,
+      "fracao_dos_brancos_nulos_1t": 0.159
+    },
+    "flavio": {
+      "fracao_do_comparecimento_extra": 0.574,
+      "erro_padrao": 0.012,
+      "inclinacao_simples_sem_controles": 0.636,
+      "fracao_dos_votos_de_terceiros": 0.509,
+      "fracao_dos_brancos_nulos_1t": -0.026
+    },
+    "por_quintil_de_aumento_do_comparecimento": [
+      {
+        "quintil": "Q1 (menor)",
+        "zonas": 1221.0,
+        "aumento_comparecimento_pp": -2.512,
+        "ganho_lula_pct_aptos": 0.045,
+        "ganho_flavio_pct_aptos": 2.207
+      },
+      {
+        "quintil": "Q2",
+        "zonas": 1220.0,
+        "aumento_comparecimento_pp": -0.164,
+        "ganho_lula_pct_aptos": 1.827,
+        "ganho_flavio_pct_aptos": 4.177
+      },
+      {
+        "quintil": "Q3",
+        "zonas": 1220.0,
+        "aumento_comparecimento_pp": 0.503,
+        "ganho_lula_pct_aptos": 2.632,
+        "ganho_flavio_pct_aptos": 5.03
+      },
+      {
+        "quintil": "Q4",
+        "zonas": 1220.0,
+        "aumento_comparecimento_pp": 1.037,
+        "ganho_lula_pct_aptos": 2.112,
+        "ganho_flavio_pct_aptos": 5.103
+      },
+      {
+        "quintil": "Q5 (maior)",
+        "zonas": 1221.0,
+        "aumento_comparecimento_pp": 1.835,
+        "ganho_lula_pct_aptos": 2.191,
+        "ganho_flavio_pct_aptos": 5.16
+      }
+    ]
+  },
+  "teste3_ultimo_digito": {
+    "lula1": {
+      "n": 6102,
+      "qui2": 6.47,
+      "p": 0.6922,
+      "pct_zero": 10.42,
+      "pct_cinco": 9.93
+    },
+    "lula2": {
+      "n": 6102,
+      "qui2": 4.57,
+      "p": 0.8699,
+      "pct_zero": 9.85,
+      "pct_cinco": 9.7
+    },
+    "flavio1": {
+      "n": 6102,
+      "qui2": 10.32,
+      "p": 0.3254,
+      "pct_zero": 10.47,
+      "pct_cinco": 10.14
+    },
+    "flavio2": {
+      "n": 6102,
+      "qui2": 5.1,
+      "p": 0.8253,
+      "pct_zero": 10.34,
+      "pct_cinco": 9.51
+    },
+    "brancos1": {
+      "n": 3124,
+      "qui2": 3.0,
+      "p": 0.9644,
+      "pct_zero": 9.96,
+      "pct_cinco": 10.5
+    },
+    "brancos2": {
+      "n": 2910,
+      "qui2": 15.51,
+      "p": 0.0778,
+      "pct_zero": 10.45,
+      "pct_cinco": 9.62
+    },
+    "nulos1": {
+      "n": 4526,
+      "qui2": 8.07,
+      "p": 0.5267,
+      "pct_zero": 10.16,
+      "pct_cinco": 9.81
+    },
+    "nulos2": {
+      "n": 4415,
+      "qui2": 7.31,
+      "p": 0.6046,
+      "pct_zero": 10.12,
+      "pct_cinco": 10.31
+    },
+    "todas_as_contagens": {
+      "n": 39383,
+      "qui2": 7.56,
+      "p": 0.5788
+    },
+    "ultimos_dois_digitos": {
+      "n": 24771,
+      "qui2": 115.67,
+      "p": 0.1208
+    },
+    "p_minimo_individual": 0.0778,
+    "limiar_bonferroni_5pct": 0.00625
+  },
+  "teste4_benford_2o_digito": {
+    "media_esperada_2BL": 4.187,
+    "lula1": {
+      "n": 6102,
+      "media_2o_digito": 4.139,
+      "z_media": -1.3,
+      "p_qui2_2o_digito": 0.7177,
+      "p_qui2_1o_digito_(nao_aplicavel)": 1.57e-06
+    },
+    "lula2": {
+      "n": 6102,
+      "media_2o_digito": 4.177,
+      "z_media": -0.29,
+      "p_qui2_2o_digito": 0.9302,
+      "p_qui2_1o_digito_(nao_aplicavel)": 2.29e-05
+    },
+    "flavio1": {
+      "n": 6102,
+      "media_2o_digito": 4.091,
+      "z_media": -2.61,
+      "p_qui2_2o_digito": 0.4444,
+      "p_qui2_1o_digito_(nao_aplicavel)": 9.65e-05
+    },
+    "flavio2": {
+      "n": 6102,
+      "media_2o_digito": 4.237,
+      "z_media": 1.34,
+      "p_qui2_2o_digito": 0.4278,
+      "p_qui2_1o_digito_(nao_aplicavel)": 1.9e-06
+    }
+  },
+  "teste5_consistencia": {
+    "lula": {
+      "r2_ponderado": 0.9948
+    },
+    "flavio": {
+      "r2_ponderado": 0.9954
+    },
+    "nao_votou_ou_branco_nulo": {
+      "r2_ponderado": 0.8895
+    },
+    "outliers": {
+      "criterio": "|z robusto| > 4 no resíduo da margem",
+      "desvio_tipico_da_margem_pp_(MAD)": 1.253,
+      "zonas": 37,
+      "a_favor_de_lula": 10,
+      "a_favor_do_22": 27,
+      "eleitores_aptos_nessas_zonas_pct": 0.13,
+      "binomial_p_(simetria)": 0.0076,
+      "efeito_liquido_na_margem_votos": -2947,
+      "margem_nacional_real": 2132004,
+      "margem_sem_o_excesso_dos_outliers_pro_lula": 2127130,
+      "margem_excluindo_todas_zonas_outlier": 2130173
+    },
+    "tamanho_da_fraude_necessaria": {
+      "votos_a_trocar_de_lado": 1066002,
+      "pct_dos_validos_2t": 0.9,
+      "zonas_medianas_inteiras_equivalentes": 138.0,
+      "zonas_com_maior_ganho_de_margem_necessarias_para_somar_isso": 4799
+    },
+    "transferencias_estimadas": {
+      "lula1": {
+        "lula": 0.977,
+        "flavio": -0.02,
+        "nao_votou_ou_branco_nulo": 0.043
+      },
+      "flavio1": {
+        "lula": -0.045,
+        "flavio": 1.062,
+        "nao_votou_ou_branco_nulo": -0.017
+      },
+      "tebet1": {
+        "lula": 0.176,
+        "flavio": 0.246,
+        "nao_votou_ou_branco_nulo": 0.578
+      },
+      "ciro1": {
+        "lula": 0.72,
+        "flavio": 0.347,
+        "nao_votou_ou_branco_nulo": -0.067
+      },
+      "soraya1": {
+        "lula": -0.611,
+        "flavio": 0.89,
+        "nao_votou_ou_branco_nulo": 0.72
+      },
+      "davila1": {
+        "lula": 1.098,
+        "flavio": 1.592,
+        "nao_votou_ou_branco_nulo": -1.69
+      },
+      "pequenos1": {
+        "lula": 1.752,
+        "flavio": -2.073,
+        "nao_votou_ou_branco_nulo": 1.321
+      },
+      "bn1": {
+        "lula": 0.296,
+        "flavio": 0.36,
+        "nao_votou_ou_branco_nulo": 0.344
+      },
+      "abst1": {
+        "lula": 0.031,
+        "flavio": -0.008,
+        "nao_votou_ou_branco_nulo": 0.977
+      }
+    }
+  },
+  "teste6_viradas": {
+    "municipios_virada_lula": 0,
+    "municipios_virada_do_22": 251,
+    "margem_1t_mediana_todos_municipios_pp": 11.55,
+    "margem_1t_mediana_nas_viradas_do_22_pp": 2.54,
+    "pct_viradas_do_22_com_desvantagem_ate_5pp": 86.9,
+    "maior_desvantagem_revertida_pelo_22_pp": 7.9
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "1_turno": {
+    "arquivos": 28,
+    "ufs": [
+      "AC",
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RR",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO",
+      "ZZ"
+    ],
+    "boletins": 499206,
+    "todos_batem_100pct": true,
+    "assinaturas_conferidas": 28,
+    "urnas_com_qualquer_diferenca": 0,
+    "totais_boletins": {
+      "urnas": 499206,
+      "lula": 53879538,
+      "n22": 56104503,
+      "outros": 9321993,
+      "brancos": 2300798,
+      "nulos": 3669003,
+      "aptos": 158745007,
+      "comparecimento": 125275835
+    },
+    "totais_totalizacao": {
+      "urnas": 499206,
+      "lula": 53879538,
+      "n22": 56104503,
+      "outros": 9321993,
+      "brancos": 2300798,
+      "nulos": 3669003,
+      "aptos": 158745007,
+      "comparecimento": 125275835
+    },
+    "lula_boletins": 53879538,
+    "n22_boletins": 56104503,
+    "codigos_de_carga_repetidos": 1,
+    "numeros_de_urna_repetidos": 1,
+    "urnas_repetidas_detalhe": [
+      {
+        "nr_urna": "1808076",
+        "secoes": 28,
+        "sem_horario": 28,
+        "ufs": "['zz']",
+        "eleitores": 789.0
+      }
+    ],
+    "horario_local": {
+      "urnas_abertas_antes_das_8h": 32007,
+      "urnas_encerradas_antes_das_17h": 29524,
+      "urnas_encerradas_depois_das_19h": 7942
+    },
+    "horario_brasilia": {
+      "urnas_sem_horario": 30,
+      "urnas_abertas_antes_das_8h": 0,
+      "urnas_encerradas_antes_das_17h": 0,
+      "urnas_encerradas_depois_das_19h": 8129,
+      "urnas_por_fuso": {
+        "-1": 10,
+        "0": 467159,
+        "1": 29211,
+        "2": 2826
+      }
+    },
+    "fechamento_tardio_vs_vizinhas": [
+      {
+        "faixa": "ate_17h15",
+        "urnas": 354167,
+        "lula_pct": 44.79,
+        "lula_vs_vizinhas_pp": -0.044,
+        "comparecimento_medio": 244.0
+      },
+      {
+        "faixa": "17h15_18h",
+        "urnas": 83111,
+        "lula_pct": 54.88,
+        "lula_vs_vizinhas_pp": 0.055,
+        "comparecimento_medio": 279.0
+      },
+      {
+        "faixa": "18h_19h",
+        "urnas": 32739,
+        "lula_pct": 61.53,
+        "lula_vs_vizinhas_pp": 0.44,
+        "comparecimento_medio": 292.0
+      },
+      {
+        "faixa": "depois_19h",
+        "urnas": 7016,
+        "lula_pct": 68.83,
+        "lula_vs_vizinhas_pp": 0.665,
+        "comparecimento_medio": 296.0
+      }
+    ],
+    "eleitores_liberados_sem_biometria": 8342249,
+    "pct_sem_biometria": 6.66,
+    "votos_manuais": {
+      "urnas_testadas": 451728,
+      "locais": 59943,
+      "lula_pp_por_pp_sem_biometria": 0.084,
+      "correlacao_dentro_do_local": 0.066,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 90346,
+          "sem_biometria_vs_vizinhas_pp": -3.759,
+          "lula_vs_vizinhas_pp": -0.367
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 90345,
+          "sem_biometria_vs_vizinhas_pp": -1.475,
+          "lula_vs_vizinhas_pp": -0.163
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 90346,
+          "sem_biometria_vs_vizinhas_pp": -0.204,
+          "lula_vs_vizinhas_pp": -0.021
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 90345,
+          "sem_biometria_vs_vizinhas_pp": 1.177,
+          "lula_vs_vizinhas_pp": 0.123
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 90346,
+          "sem_biometria_vs_vizinhas_pp": 4.261,
+          "lula_vs_vizinhas_pp": 0.427
+        }
+      ]
+    }
+  },
+  "2_turno": {
+    "arquivos": 28,
+    "ufs": [
+      "AC",
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RR",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO",
+      "ZZ"
+    ],
+    "boletins": 499205,
+    "todos_batem_100pct": true,
+    "assinaturas_conferidas": 28,
+    "urnas_com_qualquer_diferenca": 0,
+    "totais_boletins": {
+      "urnas": 499205,
+      "lula": 64256232,
+      "n22": 59826041,
+      "outros": 0,
+      "brancos": 1430496,
+      "nulos": 2723305,
+      "aptos": 158744977,
+      "comparecimento": 128236074
+    },
+    "totais_totalizacao": {
+      "urnas": 499205,
+      "lula": 64256232,
+      "n22": 59826041,
+      "outros": 0,
+      "brancos": 1430496,
+      "nulos": 2723305,
+      "aptos": 158744977,
+      "comparecimento": 128236074
+    },
+    "lula_boletins": 64256232,
+    "n22_boletins": 59826041,
+    "codigos_de_carga_repetidos": 2,
+    "numeros_de_urna_repetidos": 2,
+    "urnas_repetidas_detalhe": [
+      {
+        "nr_urna": "1762246",
+        "secoes": 9,
+        "sem_horario": 9,
+        "ufs": "['zz']",
+        "eleitores": 320.0
+      },
+      {
+        "nr_urna": "1808076",
+        "secoes": 18,
+        "sem_horario": 18,
+        "ufs": "['zz']",
+        "eleitores": 511.0
+      }
+    ],
+    "horario_local": {
+      "urnas_abertas_antes_das_8h": 32033,
+      "urnas_encerradas_antes_das_17h": 32025,
+      "urnas_encerradas_depois_das_19h": 6326
+    },
+    "horario_brasilia": {
+      "urnas_sem_horario": 27,
+      "urnas_abertas_antes_das_8h": 0,
+      "urnas_encerradas_antes_das_17h": 0,
+      "urnas_encerradas_depois_das_19h": 4359,
+      "urnas_por_fuso": {
+        "-1": 10,
+        "0": 467158,
+        "1": 29211,
+        "2": 2826
+      }
+    },
+    "fechamento_tardio_vs_vizinhas": [
+      {
+        "faixa": "ate_17h15",
+        "urnas": 467994,
+        "lula_pct": 51.3,
+        "lula_vs_vizinhas_pp": 0.014,
+        "comparecimento_medio": 260.0
+      },
+      {
+        "faixa": "17h15_18h",
+        "urnas": 1970,
+        "lula_pct": 57.57,
+        "lula_vs_vizinhas_pp": -0.024,
+        "comparecimento_medio": 272.0
+      },
+      {
+        "faixa": "18h_19h",
+        "urnas": 734,
+        "lula_pct": 54.58,
+        "lula_vs_vizinhas_pp": 0.008,
+        "comparecimento_medio": 285.0
+      },
+      {
+        "faixa": "depois_19h",
+        "urnas": 6337,
+        "lula_pct": 55.15,
+        "lula_vs_vizinhas_pp": 0.007,
+        "comparecimento_medio": 293.0
+      }
+    ],
+    "eleitores_liberados_sem_biometria": 8632488,
+    "pct_sem_biometria": 6.73,
+    "votos_manuais": {
+      "urnas_testadas": 451756,
+      "locais": 59947,
+      "lula_pp_por_pp_sem_biometria": 0.07,
+      "correlacao_dentro_do_local": 0.055,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 90352,
+          "sem_biometria_vs_vizinhas_pp": -3.803,
+          "lula_vs_vizinhas_pp": -0.275
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 90351,
+          "sem_biometria_vs_vizinhas_pp": -1.488,
+          "lula_vs_vizinhas_pp": -0.147
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 90351,
+          "sem_biometria_vs_vizinhas_pp": -0.206,
+          "lula_vs_vizinhas_pp": -0.049
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 90351,
+          "sem_biometria_vs_vizinhas_pp": 1.193,
+          "lula_vs_vizinhas_pp": 0.118
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 90351,
+          "sem_biometria_vs_vizinhas_pp": 4.304,
+          "lula_vs_vizinhas_pp": 0.354
+        }
+      ]
+    }
+  },
+  "prorrogacao_2_turno": {
+    "criterio": "urnas do 2º turno encerradas às 18h58 ou depois (hora local)",
+    "urnas": 6663,
+    "eleitores_que_votaram": 1955274,
+    "lula": 1037478,
+    "flavio": 847305,
+    "lula_pct": 55.04,
+    "saldo_lula": 190173,
+    "margem_lula_sem_essas_urnas": 4240018,
+    "mudanca_1t_2t_vs_resto_da_cidade_pp": -0.044,
+    "cidades_com_mais_urnas": [
+      {
+        "uf": "RJ",
+        "cod_mun": 60011,
+        "urnas": 2114
+      },
+      {
+        "uf": "SP",
+        "cod_mun": 71072,
+        "urnas": 1544
+      },
+      {
+        "uf": "BA",
+        "cod_mun": 38490,
+        "urnas": 739
+      },
+      {
+        "uf": "RJ",
+        "cod_mun": 58777,
+        "urnas": 296
+      },
+      {
+        "uf": "PB",
+        "cod_mun": 20516,
+        "urnas": 292
+      },
+      {
+        "uf": "RJ",
+        "cod_mun": 58378,
+        "urnas": 240
+      },
+      {
+        "uf": "PE",
+        "cod_mun": 25313,
+        "urnas": 226
+      },
+      {
+        "uf": "RJ",
+        "cod_mun": 58971,
+        "urnas": 111
+      },
+      {
+        "uf": "RJ",
+        "cod_mun": 58653,
+        "urnas": 68
+      },
+      {
+        "uf": "BA",
+        "cod_mun": 35157,
+        "urnas": 61
+      }
+    ]
+  }
+}

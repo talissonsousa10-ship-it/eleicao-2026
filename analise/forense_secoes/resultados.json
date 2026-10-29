@@ -1,0 +1,245 @@
+{
+  "teste_A": {
+    "integridade_2026": {
+      "urnas_turno": 995794,
+      "urnas_com_votos_diferente_do_comparecimento": 0,
+      "urnas_com_comparecimento_maior_que_aptos": 0,
+      "origem_do_voto": {
+        "Urna Eletrônica": 995727,
+        "BU gerado por RED em urna de seção *** RED - Recuperador de dados": 63,
+        "Sistema de apuração": 2,
+        "BU gerado por RED em urna de contingência": 2
+      }
+    },
+    "2022_t1": {
+      "urnas_com_100+_validos": 465355,
+      "urnas_lula_acima_95pct": 1007,
+      "urnas_22_acima_95pct": 3,
+      "urnas_com_zero_votos_lula": 0,
+      "urnas_com_zero_votos_22": 67
+    },
+    "2022_t2": {
+      "urnas_com_100+_validos": 465190,
+      "urnas_lula_acima_95pct": 2042,
+      "urnas_22_acima_95pct": 10,
+      "urnas_com_zero_votos_lula": 0,
+      "urnas_com_zero_votos_22": 63
+    },
+    "2026_t1": {
+      "urnas_com_100+_validos": 492364,
+      "urnas_lula_acima_95pct": 707,
+      "urnas_22_acima_95pct": 12,
+      "urnas_com_zero_votos_lula": 2,
+      "urnas_com_zero_votos_22": 41,
+      "urnas_comparecimento_acima_95pct": 352,
+      "urnas_comp95_e_lula95": 16,
+      "urnas_comp95_e_22_95": 0
+    },
+    "2026_t2": {
+      "urnas_com_100+_validos": 492559,
+      "urnas_lula_acima_95pct": 1490,
+      "urnas_22_acima_95pct": 28,
+      "urnas_com_zero_votos_lula": 1,
+      "urnas_com_zero_votos_22": 64,
+      "urnas_comparecimento_acima_95pct": 459,
+      "urnas_comp95_e_lula95": 52,
+      "urnas_comp95_e_22_95": 0
+    },
+    "urnas_comp95_lula95_no_2t": {
+      "urnas": 52,
+      "votos_lula": 9746,
+      "ufs": {
+        "MA": 9,
+        "PA": 8,
+        "BA": 7,
+        "AM": 6,
+        "CE": 5,
+        "TO": 5,
+        "MT": 3,
+        "PI": 3,
+        "PE": 2,
+        "AL": 1,
+        "MG": 1,
+        "RJ": 1,
+        "RR": 1
+      },
+      "lula_mediano_no_1t_pct": 96.9,
+      "comparecimento_mediano_no_1t_pct": 94.4
+    }
+  },
+  "teste_B_secoes_irmas": {
+    "2022 · 2º turno": {
+      "urnas_testadas": 422263,
+      "locais": 56143,
+      "dispersao_robusta_z_(1=sorteio_puro)": 1.56,
+      "urnas_destoantes_|z|>5": 592,
+      "pct_destoantes": 0.14,
+      "destoantes_pro_lula": 446,
+      "destoantes_pro_bolsonaro": 146,
+      "excesso_votos_pro_lula": 21103,
+      "excesso_votos_pro_bolsonaro": 5849,
+      "efeito_liquido_na_margem_(2x)": 30506
+    },
+    "2026 · 1º turno": {
+      "urnas_testadas": 450529,
+      "locais": 59865,
+      "dispersao_robusta_z_(1=sorteio_puro)": 1.57,
+      "urnas_destoantes_|z|>5": 523,
+      "pct_destoantes": 0.116,
+      "destoantes_pro_lula": 321,
+      "destoantes_pro_flávio": 202,
+      "excesso_votos_pro_lula": 14031,
+      "excesso_votos_pro_flávio": 7496,
+      "efeito_liquido_na_margem_(2x)": 13070
+    },
+    "2026 · 2º turno": {
+      "urnas_testadas": 450558,
+      "locais": 59870,
+      "dispersao_robusta_z_(1=sorteio_puro)": 1.58,
+      "urnas_destoantes_|z|>5": 575,
+      "pct_destoantes": 0.128,
+      "destoantes_pro_lula": 398,
+      "destoantes_pro_flávio": 177,
+      "excesso_votos_pro_lula": 17935,
+      "excesso_votos_pro_flávio": 6775,
+      "efeito_liquido_na_margem_(2x)": 22318
+    },
+    "destoantes_pro_lula_2t_que_ja_destoavam_no_1t": {
+      "urnas": 212,
+      "de": 398
+    },
+    "persistencia_2026": {
+      "pro_lula": {
+        "urnas": 398,
+        "ja_pendiam_no_1t_z_maior_que_2": 397,
+        "ja_destoavam_no_1t_z_maior_que_5": 212,
+        "z_mediano_no_1t": 5.07,
+        "novas_no_2t": 1,
+        "excesso_votos_das_novas": 39,
+        "por_regiao": {
+          "Sudeste": 178,
+          "Sul": 125,
+          "Nordeste": 59,
+          "Centro-Oeste": 24,
+          "Norte": 12
+        }
+      },
+      "pro_adversario": {
+        "urnas": 177,
+        "ja_pendiam_no_1t_z_maior_que_2": 175,
+        "ja_destoavam_no_1t_z_maior_que_5": 97,
+        "z_mediano_no_1t": 5.15,
+        "novas_no_2t": 2,
+        "excesso_votos_das_novas": -19,
+        "por_regiao": {
+          "Nordeste": 95,
+          "Sudeste": 43,
+          "Sul": 28,
+          "Norte": 6,
+          "Centro-Oeste": 5
+        }
+      },
+      "destoantes_em_sorteio_puro_5_simulacoes": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    }
+  },
+  "teste_C_modelo_urna": {
+    "t1": [
+      {
+        "CD_MODELO_URNA": 2013,
+        "urnas": 10094.0,
+        "lula_bruto_pct": 46.831,
+        "dif_vs_vizinhas_mesmo_local_pp": 0.054
+      },
+      {
+        "CD_MODELO_URNA": 2015,
+        "urnas": 79455.0,
+        "lula_bruto_pct": 44.287,
+        "dif_vs_vizinhas_mesmo_local_pp": -0.007
+      },
+      {
+        "CD_MODELO_URNA": 2020,
+        "urnas": 181831.0,
+        "lula_bruto_pct": 43.722,
+        "dif_vs_vizinhas_mesmo_local_pp": -0.0
+      },
+      {
+        "CD_MODELO_URNA": 2022,
+        "urnas": 179149.0,
+        "lula_bruto_pct": 44.103,
+        "dif_vs_vizinhas_mesmo_local_pp": -0.003
+      }
+    ],
+    "t2": [
+      {
+        "CD_MODELO_URNA": 2013,
+        "urnas": 10603.0,
+        "lula_bruto_pct": 53.66,
+        "dif_vs_vizinhas_mesmo_local_pp": 0.06
+      },
+      {
+        "CD_MODELO_URNA": 2015,
+        "urnas": 78934.0,
+        "lula_bruto_pct": 51.147,
+        "dif_vs_vizinhas_mesmo_local_pp": -0.008
+      },
+      {
+        "CD_MODELO_URNA": 2020,
+        "urnas": 181872.0,
+        "lula_bruto_pct": 50.433,
+        "dif_vs_vizinhas_mesmo_local_pp": -0.001
+      },
+      {
+        "CD_MODELO_URNA": 2022,
+        "urnas": 179149.0,
+        "lula_bruto_pct": 50.956,
+        "dif_vs_vizinhas_mesmo_local_pp": -0.003
+      }
+    ]
+  },
+  "teste_D_curva_apuracao": {
+    "t1": {
+      "urnas": 497897,
+      "lider_final": "Flávio",
+      "lider_final_assumiu_a_frente_com_pct_apurado": 0.0,
+      "oscilacao_lula_dentro_de_cada_regiao_apos_10pct_pp": {
+        "Centro-Oeste": 3.87,
+        "Nordeste": 2.15,
+        "Norte": 3.07,
+        "Sudeste": 2.27,
+        "Sul": 0.62
+      },
+      "momento_medio_de_chegada_por_regiao_pct_apurado": {
+        "Centro-Oeste": 32.6,
+        "Nordeste": 58.8,
+        "Norte": 41.0,
+        "Sudeste": 54.9,
+        "Sul": 33.9
+      }
+    },
+    "t2": {
+      "urnas": 497897,
+      "lider_final": "Lula",
+      "lider_final_assumiu_a_frente_com_pct_apurado": 48.3,
+      "oscilacao_lula_dentro_de_cada_regiao_apos_10pct_pp": {
+        "Centro-Oeste": 4.02,
+        "Nordeste": 1.7,
+        "Norte": 2.43,
+        "Sudeste": 1.73,
+        "Sul": 1.81
+      },
+      "momento_medio_de_chegada_por_regiao_pct_apurado": {
+        "Centro-Oeste": 33.1,
+        "Nordeste": 50.1,
+        "Norte": 27.2,
+        "Sudeste": 63.2,
+        "Sul": 34.0
+      }
+    }
+  }
+}

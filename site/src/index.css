@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Conceito: o boletim de urna — papel frio, tinta escura, números em mono de recibo,
+   títulos condensados como cartaz eleitoral; vermelho = Lula (13), azul = Flávio (22),
+   verde "CONFIRMA" = teste que passou, laranja "CORRIGE" = ressalva. */
+:root {
+  --paper: #f1f2ef;
+  --paper-2: #e6e8e3;
+  --card: #fbfbf9;
+  --ink: #14171b;
+  --ink-2: #4a5059;
+  --ink-3: #7b828c;
+  --rule: #cfd3cc;
+  --lula: #c8202f;
+  --lula-soft: #f0b7bb;
+  --flavio: #1f4fc4;
+  --flavio-soft: #b3c4ee;
+  --neutral-map: #e3e2dc;
+  --ok: #0f7d52;
+  --ok-soft: #d3ecdf;
+  --warn: #c75d13;
+  --warn-soft: #f6dfcb;
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "Martian Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #101317; --paper-2: #181c22; --card: #161a1f; --ink: #e9ebee; --ink-2: #b3b9c2; --ink-3: #848b96;
+    --rule: #2c323a; --lula: #f0566a; --lula-soft: #5a2027; --flavio: #6f95f6; --flavio-soft: #1f2f5a;
+    --neutral-map: #2a2f36; --ok: #3cc58c; --ok-soft: #12382a; --warn: #f0954f; --warn-soft: #3d2614;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #101317; --paper-2: #181c22; --card: #161a1f; --ink: #e9ebee; --ink-2: #b3b9c2; --ink-3: #848b96;
+  --rule: #2c323a; --lula: #f0566a; --lula-soft: #5a2027; --flavio: #6f95f6; --flavio-soft: #1f2f5a;
+  --neutral-map: #2a2f36; --ok: #3cc58c; --ok-soft: #12382a; --warn: #f0954f; --warn-soft: #3d2614;
+  color-scheme: dark;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; line-height: 1.02; }
+.display { font-family: var(--font-display); font-stretch: 72%; font-weight: 850; letter-spacing: -0.01em; }
+.display-wide { font-family: var(--font-display); font-stretch: 118%; font-weight: 700; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+.lede { font-size: 1.22rem; line-height: 1.55; color: var(--ink-2); max-width: 62ch; }
+.prose-p { max-width: 64ch; color: var(--ink-2); }
+.prose-p strong { color: var(--ink); font-weight: 650; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+.wrap {
+  max-width: 1180px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.rule-dash { border-top: 1.5px dashed var(--rule); }
+.chip { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.28rem 0.55rem; border-radius: 3px; font-weight: 600; white-space: nowrap; }
+.chip-ok { background: var(--ok-soft); color: var(--ok); }
+.chip-warn { background: var(--warn-soft); color: var(--warn); }
+.chip-ink { background: var(--paper-2); color: var(--ink-2); }
+
+.btn { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;
+  border: 1.5px solid var(--ink); color: var(--ink); background: transparent; padding: 0.55rem 0.9rem; border-radius: 3px; cursor: pointer;
+  transition: background .15s, color .15s; }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.btn-confirma { background: var(--ok); border-color: var(--ok); color: #fff; }
+.btn-confirma:hover { filter: brightness(1.08); background: var(--ok); color: #fff; }
+:focus-visible { outline: 2.5px solid var(--flavio); outline-offset: 2px; }
+
+/* recibo (boletim de urna) */
+.receipt { position: relative; background: var(--card); font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.75; color: var(--ink);
+  box-shadow: 0 1px 0 var(--rule), 0 22px 40px -26px rgba(0,0,0,.45); }
+.receipt::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 8px;
+  background: radial-gradient(circle at 7px 0, var(--card) 6px, transparent 6.5px) 0 0/14px 8px repeat-x; }
+.receipt-row { display: flex; justify-content: space-between; gap: 1rem; }
+.print-in > * { animation: print .5s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes print { from { opacity: .25; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* animações disparadas ao entrar na tela (estado de repouso é o final) */
+.grow-x.play { animation: growx 1s cubic-bezier(.2,.7,.2,1) both; transform-origin: left center; }
+.grow-y.play { animation: growy .9s cubic-bezier(.2,.7,.2,1) both; transform-origin: center bottom; }
+@keyframes growx { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growy { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+.map-path { stroke: var(--paper); stroke-width: 0.15; vector-effect: non-scaling-stroke; }
+.uf-path { fill: none; stroke: var(--ink); stroke-width: 0.6; opacity: .55; vector-effect: non-scaling-stroke; pointer-events: none; transition: stroke-width .2s, opacity .2s; }
+.uf-path.on { stroke-width: 2.2; opacity: 1; }
+
+input[type="range"] { accent-color: var(--ink); }
+
+/* explorador */
+.hover-path { fill: none; stroke: var(--ink); stroke-width: 1.2; vector-effect: non-scaling-stroke; pointer-events: none; opacity: .7; }
+.sel-path { fill: none; stroke: var(--ink); stroke-width: 2.6; vector-effect: non-scaling-stroke; pointer-events: none; }
+.map-ctl { width: 34px; height: 34px; display: grid; place-items: center; font-family: var(--font-mono); font-size: 1.05rem; font-weight: 700;
+  background: var(--paper); color: var(--ink); border: 1.5px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.map-ctl:hover { background: var(--ink); color: var(--paper); }
+.campo { width: 100%; height: 2.5rem; padding: 0 .75rem; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px;
+  font-family: var(--font-body); font-size: .95rem; }
+.campo:focus { outline: none; border-color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+.nac .map-path { transition: opacity .45s; }

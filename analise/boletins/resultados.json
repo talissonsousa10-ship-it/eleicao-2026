@@ -1,0 +1,4578 @@
+[
+  {
+    "uf": "AC",
+    "turno": 1,
+    "boletins": 2270,
+    "totais_boletins": {
+      "urnas": 2270,
+      "lula": 134770,
+      "n22": 302807,
+      "outros": 31512,
+      "brancos": 5579,
+      "nulos": 13662,
+      "aptos": 613742,
+      "comparecimento": 488330
+    },
+    "totais_totalizacao": {
+      "urnas": 2270,
+      "lula": 134770,
+      "n22": 302807,
+      "outros": 31512,
+      "brancos": 5579,
+      "nulos": 13662,
+      "aptos": 613742,
+      "comparecimento": 488330
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 06:00:01",
+    "urnas_abertas_antes_das_8h": 2270,
+    "urnas_encerradas_antes_das_17h": 2260,
+    "urnas_encerradas_depois_das_17h10": 8,
+    "encerramento_mais_tarde": "2026-10-04 17:49:34",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 24369,
+    "pct_sem_biometria": 4.99,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1829,
+      "locais": 384,
+      "lula_pp_por_pp_sem_biometria": -0.083,
+      "flavio_pp_por_pp_sem_biometria": 0.083,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": -0.059,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": -3.536,
+          "lula_vs_vizinhas_pp": 0.428
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": -1.446,
+          "lula_vs_vizinhas_pp": -0.181
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 365,
+          "sem_biometria_vs_vizinhas_pp": -0.187,
+          "lula_vs_vizinhas_pp": 0.158
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": 1.148,
+          "lula_vs_vizinhas_pp": -0.098
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": 4.02,
+          "lula_vs_vizinhas_pp": -0.308
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_AC_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AL",
+    "turno": 1,
+    "boletins": 7101,
+    "totais_boletins": {
+      "urnas": 7101,
+      "lula": 995459,
+      "n22": 735718,
+      "outros": 87752,
+      "brancos": 33712,
+      "nulos": 85787,
+      "aptos": 2442126,
+      "comparecimento": 1938428
+    },
+    "totais_totalizacao": {
+      "urnas": 7101,
+      "lula": 995459,
+      "n22": 735718,
+      "outros": 87752,
+      "brancos": 33712,
+      "nulos": 85787,
+      "aptos": 2442126,
+      "comparecimento": 1938428
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 4786,
+    "encerramento_mais_tarde": "2026-10-04 22:20:06",
+    "urnas_encerradas_depois_das_19h": 628,
+    "eleitores_liberados_sem_biometria": 126526,
+    "pct_sem_biometria": 6.53,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 6924,
+      "locais": 978,
+      "lula_pp_por_pp_sem_biometria": 0.069,
+      "flavio_pp_por_pp_sem_biometria": -0.053,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.061,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1385,
+          "sem_biometria_vs_vizinhas_pp": -4.102,
+          "lula_vs_vizinhas_pp": -0.369
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1385,
+          "sem_biometria_vs_vizinhas_pp": -1.544,
+          "lula_vs_vizinhas_pp": -0.162
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -0.24,
+          "lula_vs_vizinhas_pp": 0.118
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1385,
+          "sem_biometria_vs_vizinhas_pp": 1.172,
+          "lula_vs_vizinhas_pp": -0.004
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1385,
+          "sem_biometria_vs_vizinhas_pp": 4.715,
+          "lula_vs_vizinhas_pp": 0.418
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_AL_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AM",
+    "turno": 1,
+    "boletins": 8157,
+    "totais_boletins": {
+      "urnas": 8157,
+      "lula": 1046996,
+      "n22": 976764,
+      "outros": 147085,
+      "brancos": 24402,
+      "nulos": 39302,
+      "aptos": 2798611,
+      "comparecimento": 2234549
+    },
+    "totais_totalizacao": {
+      "urnas": 8157,
+      "lula": 1046996,
+      "n22": 976764,
+      "outros": 147085,
+      "brancos": 24402,
+      "nulos": 39302,
+      "aptos": 2798611,
+      "comparecimento": 2234549
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 06:00:01",
+    "urnas_abertas_antes_das_8h": 8153,
+    "urnas_encerradas_antes_das_17h": 6327,
+    "urnas_encerradas_depois_das_17h10": 1419,
+    "encerramento_mais_tarde": "2026-10-04 21:22:08",
+    "urnas_encerradas_depois_das_19h": 73,
+    "eleitores_liberados_sem_biometria": 120448,
+    "pct_sem_biometria": 5.39,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7311,
+      "locais": 975,
+      "lula_pp_por_pp_sem_biometria": 0.079,
+      "flavio_pp_por_pp_sem_biometria": -0.07,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.05,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1463,
+          "sem_biometria_vs_vizinhas_pp": -3.118,
+          "lula_vs_vizinhas_pp": -0.172
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1462,
+          "sem_biometria_vs_vizinhas_pp": -1.27,
+          "lula_vs_vizinhas_pp": -0.148
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1462,
+          "sem_biometria_vs_vizinhas_pp": -0.158,
+          "lula_vs_vizinhas_pp": -0.02
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1462,
+          "sem_biometria_vs_vizinhas_pp": 1.019,
+          "lula_vs_vizinhas_pp": 0.102
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1462,
+          "sem_biometria_vs_vizinhas_pp": 3.53,
+          "lula_vs_vizinhas_pp": 0.237
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_AM_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AP",
+    "turno": 1,
+    "boletins": 1914,
+    "totais_boletins": {
+      "urnas": 1914,
+      "lula": 212503,
+      "n22": 212278,
+      "outros": 40094,
+      "brancos": 4415,
+      "nulos": 7272,
+      "aptos": 576988,
+      "comparecimento": 476562
+    },
+    "totais_totalizacao": {
+      "urnas": 1914,
+      "lula": 212503,
+      "n22": 212278,
+      "outros": 40094,
+      "brancos": 4415,
+      "nulos": 7272,
+      "aptos": 576988,
+      "comparecimento": 476562
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:01",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1014,
+    "encerramento_mais_tarde": "2026-10-04 20:06:54",
+    "urnas_encerradas_depois_das_19h": 37,
+    "eleitores_liberados_sem_biometria": 20965,
+    "pct_sem_biometria": 4.4,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1717,
+      "locais": 228,
+      "lula_pp_por_pp_sem_biometria": 0.197,
+      "flavio_pp_por_pp_sem_biometria": -0.126,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.102,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 344,
+          "sem_biometria_vs_vizinhas_pp": -2.773,
+          "lula_vs_vizinhas_pp": -0.665
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 343,
+          "sem_biometria_vs_vizinhas_pp": -1.148,
+          "lula_vs_vizinhas_pp": -0.066
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 343,
+          "sem_biometria_vs_vizinhas_pp": -0.146,
+          "lula_vs_vizinhas_pp": -0.043
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 343,
+          "sem_biometria_vs_vizinhas_pp": 0.917,
+          "lula_vs_vizinhas_pp": 0.333
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 344,
+          "sem_biometria_vs_vizinhas_pp": 3.148,
+          "lula_vs_vizinhas_pp": 0.442
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_AP_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "BA",
+    "turno": 1,
+    "boletins": 35476,
+    "totais_boletins": {
+      "urnas": 35476,
+      "lula": 5664771,
+      "n22": 2442585,
+      "outros": 453186,
+      "brancos": 154936,
+      "nulos": 338123,
+      "aptos": 11312752,
+      "comparecimento": 9053601
+    },
+    "totais_totalizacao": {
+      "urnas": 35476,
+      "lula": 5664771,
+      "n22": 2442585,
+      "outros": 453186,
+      "brancos": 154936,
+      "nulos": 338123,
+      "aptos": 11312752,
+      "comparecimento": 9053601
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 21695,
+    "encerramento_mais_tarde": "2026-10-04 23:00:39",
+    "urnas_encerradas_depois_das_19h": 2298,
+    "eleitores_liberados_sem_biometria": 659927,
+    "pct_sem_biometria": 7.29,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 29013,
+      "locais": 4581,
+      "lula_pp_por_pp_sem_biometria": 0.032,
+      "flavio_pp_por_pp_sem_biometria": -0.014,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.035,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": -4.427,
+          "lula_vs_vizinhas_pp": -0.213
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 5802,
+          "sem_biometria_vs_vizinhas_pp": -1.612,
+          "lula_vs_vizinhas_pp": -0.093
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": -0.234,
+          "lula_vs_vizinhas_pp": 0.064
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 5802,
+          "sem_biometria_vs_vizinhas_pp": 1.282,
+          "lula_vs_vizinhas_pp": 0.096
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": 4.992,
+          "lula_vs_vizinhas_pp": 0.147
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_BA_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "CE",
+    "turno": 1,
+    "boletins": 23765,
+    "totais_boletins": {
+      "urnas": 23765,
+      "lula": 3555263,
+      "n22": 1756850,
+      "outros": 305878,
+      "brancos": 103295,
+      "nulos": 189185,
+      "aptos": 6996545,
+      "comparecimento": 5910471
+    },
+    "totais_totalizacao": {
+      "urnas": 23765,
+      "lula": 3555263,
+      "n22": 1756850,
+      "outros": 305878,
+      "brancos": 103295,
+      "nulos": 189185,
+      "aptos": 6996545,
+      "comparecimento": 5910471
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 12840,
+    "encerramento_mais_tarde": "2026-10-04 22:06:34",
+    "urnas_encerradas_depois_das_19h": 815,
+    "eleitores_liberados_sem_biometria": 406838,
+    "pct_sem_biometria": 6.88,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 18879,
+      "locais": 3195,
+      "lula_pp_por_pp_sem_biometria": 0.143,
+      "flavio_pp_por_pp_sem_biometria": -0.109,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.115,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": -4.048,
+          "lula_vs_vizinhas_pp": -0.817
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": -1.469,
+          "lula_vs_vizinhas_pp": -0.252
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3775,
+          "sem_biometria_vs_vizinhas_pp": -0.182,
+          "lula_vs_vizinhas_pp": 0.079
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": 1.205,
+          "lula_vs_vizinhas_pp": 0.235
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": 4.494,
+          "lula_vs_vizinhas_pp": 0.755
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_CE_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "DF",
+    "turno": 1,
+    "boletins": 6969,
+    "totais_boletins": {
+      "urnas": 6969,
+      "lula": 675627,
+      "n22": 909616,
+      "outros": 187622,
+      "brancos": 25362,
+      "nulos": 33169,
+      "aptos": 2258320,
+      "comparecimento": 1831396
+    },
+    "totais_totalizacao": {
+      "urnas": 6969,
+      "lula": 675627,
+      "n22": 909616,
+      "outros": 187622,
+      "brancos": 25362,
+      "nulos": 33169,
+      "aptos": 2258320,
+      "comparecimento": 1831396
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1916,
+    "encerramento_mais_tarde": "2026-10-04 18:58:52",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 88549,
+    "pct_sem_biometria": 4.84,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 6918,
+      "locais": 589,
+      "lula_pp_por_pp_sem_biometria": -0.054,
+      "flavio_pp_por_pp_sem_biometria": 0.14,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": -0.03,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -2.67,
+          "lula_vs_vizinhas_pp": 0.13
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1383,
+          "sem_biometria_vs_vizinhas_pp": -1.155,
+          "lula_vs_vizinhas_pp": 0.171
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -0.156,
+          "lula_vs_vizinhas_pp": -0.079
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1383,
+          "sem_biometria_vs_vizinhas_pp": 0.921,
+          "lula_vs_vizinhas_pp": -0.086
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": 3.06,
+          "lula_vs_vizinhas_pp": -0.136
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_DF_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "ES",
+    "turno": 1,
+    "boletins": 9844,
+    "totais_boletins": {
+      "urnas": 9844,
+      "lula": 850028,
+      "n22": 1233194,
+      "outros": 167977,
+      "brancos": 43211,
+      "nulos": 57872,
+      "aptos": 2991650,
+      "comparecimento": 2352282
+    },
+    "totais_totalizacao": {
+      "urnas": 9844,
+      "lula": 850028,
+      "n22": 1233194,
+      "outros": 167977,
+      "brancos": 43211,
+      "nulos": 57872,
+      "aptos": 2991650,
+      "comparecimento": 2352282
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1824,
+    "encerramento_mais_tarde": "2026-10-04 19:49:31",
+    "urnas_encerradas_depois_das_19h": 10,
+    "eleitores_liberados_sem_biometria": 151355,
+    "pct_sem_biometria": 6.43,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 9092,
+      "locais": 1245,
+      "lula_pp_por_pp_sem_biometria": 0.106,
+      "flavio_pp_por_pp_sem_biometria": -0.113,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.087,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1819,
+          "sem_biometria_vs_vizinhas_pp": -3.999,
+          "lula_vs_vizinhas_pp": -0.488
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1818,
+          "sem_biometria_vs_vizinhas_pp": -1.699,
+          "lula_vs_vizinhas_pp": -0.162
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1818,
+          "sem_biometria_vs_vizinhas_pp": -0.347,
+          "lula_vs_vizinhas_pp": -0.082
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1818,
+          "sem_biometria_vs_vizinhas_pp": 1.2,
+          "lula_vs_vizinhas_pp": -0.044
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1819,
+          "sem_biometria_vs_vizinhas_pp": 4.845,
+          "lula_vs_vizinhas_pp": 0.776
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_ES_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "GO",
+    "turno": 1,
+    "boletins": 15686,
+    "totais_boletins": {
+      "urnas": 15686,
+      "lula": 1188880,
+      "n22": 2051888,
+      "outros": 587162,
+      "brancos": 45643,
+      "nulos": 98014,
+      "aptos": 5080590,
+      "comparecimento": 3971587
+    },
+    "totais_totalizacao": {
+      "urnas": 15686,
+      "lula": 1188880,
+      "n22": 2051888,
+      "outros": 587162,
+      "brancos": 45643,
+      "nulos": 98014,
+      "aptos": 5080590,
+      "comparecimento": 3971587
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 3827,
+    "encerramento_mais_tarde": "2026-10-04 20:44:10",
+    "urnas_encerradas_depois_das_19h": 43,
+    "eleitores_liberados_sem_biometria": 270131,
+    "pct_sem_biometria": 6.8,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 15062,
+      "locais": 2062,
+      "lula_pp_por_pp_sem_biometria": 0.093,
+      "flavio_pp_por_pp_sem_biometria": -0.1,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.083,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3013,
+          "sem_biometria_vs_vizinhas_pp": -3.957,
+          "lula_vs_vizinhas_pp": -0.363
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3012,
+          "sem_biometria_vs_vizinhas_pp": -1.472,
+          "lula_vs_vizinhas_pp": -0.213
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3012,
+          "sem_biometria_vs_vizinhas_pp": -0.17,
+          "lula_vs_vizinhas_pp": -0.12
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3012,
+          "sem_biometria_vs_vizinhas_pp": 1.232,
+          "lula_vs_vizinhas_pp": 0.189
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3013,
+          "sem_biometria_vs_vizinhas_pp": 4.368,
+          "lula_vs_vizinhas_pp": 0.507
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_GO_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MA",
+    "turno": 1,
+    "boletins": 18093,
+    "totais_boletins": {
+      "urnas": 18093,
+      "lula": 2566301,
+      "n22": 1239040,
+      "outros": 205443,
+      "brancos": 46315,
+      "nulos": 103244,
+      "aptos": 5183115,
+      "comparecimento": 4160343
+    },
+    "totais_totalizacao": {
+      "urnas": 18093,
+      "lula": 2566301,
+      "n22": 1239040,
+      "outros": 205443,
+      "brancos": 46315,
+      "nulos": 103244,
+      "aptos": 5183115,
+      "comparecimento": 4160343
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 9282,
+    "encerramento_mais_tarde": "2026-10-04 22:52:56",
+    "urnas_encerradas_depois_das_19h": 732,
+    "eleitores_liberados_sem_biometria": 249154,
+    "pct_sem_biometria": 5.99,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 13730,
+      "locais": 2567,
+      "lula_pp_por_pp_sem_biometria": 0.101,
+      "flavio_pp_por_pp_sem_biometria": -0.083,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.076,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": -3.874,
+          "lula_vs_vizinhas_pp": -0.378
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": -1.571,
+          "lula_vs_vizinhas_pp": -0.285
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": -0.223,
+          "lula_vs_vizinhas_pp": -0.167
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": 1.245,
+          "lula_vs_vizinhas_pp": 0.273
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": 4.424,
+          "lula_vs_vizinhas_pp": 0.557
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_MA_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MG",
+    "turno": 1,
+    "boletins": 52062,
+    "totais_boletins": {
+      "urnas": 52062,
+      "lula": 5188936,
+      "n22": 5777548,
+      "outros": 1010312,
+      "brancos": 268302,
+      "nulos": 392176,
+      "aptos": 16372372,
+      "comparecimento": 12637274
+    },
+    "totais_totalizacao": {
+      "urnas": 52062,
+      "lula": 5188936,
+      "n22": 5777548,
+      "outros": 1010312,
+      "brancos": 268302,
+      "nulos": 392176,
+      "aptos": 16372372,
+      "comparecimento": 12637274
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 11934,
+    "encerramento_mais_tarde": "2026-10-04 23:55:06",
+    "urnas_encerradas_depois_das_19h": 279,
+    "eleitores_liberados_sem_biometria": 844893,
+    "pct_sem_biometria": 6.69,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 46910,
+      "locais": 6226,
+      "lula_pp_por_pp_sem_biometria": 0.176,
+      "flavio_pp_por_pp_sem_biometria": -0.135,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.13,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 9382,
+          "sem_biometria_vs_vizinhas_pp": -3.885,
+          "lula_vs_vizinhas_pp": -0.694
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 9382,
+          "sem_biometria_vs_vizinhas_pp": -1.569,
+          "lula_vs_vizinhas_pp": -0.256
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 9382,
+          "sem_biometria_vs_vizinhas_pp": -0.242,
+          "lula_vs_vizinhas_pp": -0.097
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 9382,
+          "sem_biometria_vs_vizinhas_pp": 1.236,
+          "lula_vs_vizinhas_pp": 0.202
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 9382,
+          "sem_biometria_vs_vizinhas_pp": 4.461,
+          "lula_vs_vizinhas_pp": 0.846
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_MG_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MS",
+    "turno": 1,
+    "boletins": 7106,
+    "totais_boletins": {
+      "urnas": 7106,
+      "lula": 516855,
+      "n22": 873351,
+      "outros": 100148,
+      "brancos": 21270,
+      "nulos": 29596,
+      "aptos": 2024430,
+      "comparecimento": 1541220
+    },
+    "totais_totalizacao": {
+      "urnas": 7106,
+      "lula": 516855,
+      "n22": 873351,
+      "outros": 100148,
+      "brancos": 21270,
+      "nulos": 29596,
+      "aptos": 2024430,
+      "comparecimento": 1541220
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 07:00:00",
+    "urnas_abertas_antes_das_8h": 7102,
+    "urnas_encerradas_antes_das_17h": 7007,
+    "urnas_encerradas_depois_das_17h10": 60,
+    "encerramento_mais_tarde": "2026-10-04 18:33:02",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 120516,
+    "pct_sem_biometria": 7.82,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 6764,
+      "locais": 807,
+      "lula_pp_por_pp_sem_biometria": 0.085,
+      "flavio_pp_por_pp_sem_biometria": -0.051,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.074,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": -4.365,
+          "lula_vs_vizinhas_pp": -0.423
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": -1.771,
+          "lula_vs_vizinhas_pp": -0.265
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1352,
+          "sem_biometria_vs_vizinhas_pp": -0.269,
+          "lula_vs_vizinhas_pp": -0.029
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": 1.387,
+          "lula_vs_vizinhas_pp": 0.061
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": 5.018,
+          "lula_vs_vizinhas_pp": 0.655
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_MS_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MT",
+    "turno": 1,
+    "boletins": 8287,
+    "totais_boletins": {
+      "urnas": 8287,
+      "lula": 581681,
+      "n22": 1298581,
+      "outros": 113121,
+      "brancos": 20756,
+      "nulos": 37994,
+      "aptos": 2637801,
+      "comparecimento": 2052133
+    },
+    "totais_totalizacao": {
+      "urnas": 8287,
+      "lula": 581681,
+      "n22": 1298581,
+      "outros": 113121,
+      "brancos": 20756,
+      "nulos": 37994,
+      "aptos": 2637801,
+      "comparecimento": 2052133
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 07:00:00",
+    "urnas_abertas_antes_das_8h": 8266,
+    "urnas_encerradas_antes_das_17h": 7744,
+    "urnas_encerradas_depois_das_17h10": 360,
+    "encerramento_mais_tarde": "2026-10-04 19:55:52",
+    "urnas_encerradas_depois_das_19h": 4,
+    "eleitores_liberados_sem_biometria": 137970,
+    "pct_sem_biometria": 6.72,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7602,
+      "locais": 1024,
+      "lula_pp_por_pp_sem_biometria": 0.038,
+      "flavio_pp_por_pp_sem_biometria": -0.025,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.029,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": -3.596,
+          "lula_vs_vizinhas_pp": -0.171
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -1.436,
+          "lula_vs_vizinhas_pp": -0.098
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -0.156,
+          "lula_vs_vizinhas_pp": 0.039
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": 1.224,
+          "lula_vs_vizinhas_pp": 0.066
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": 3.964,
+          "lula_vs_vizinhas_pp": 0.165
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_MT_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PA",
+    "turno": 1,
+    "boletins": 20827,
+    "totais_boletins": {
+      "urnas": 20827,
+      "lula": 2427237,
+      "n22": 2163957,
+      "outros": 272161,
+      "brancos": 54203,
+      "nulos": 148946,
+      "aptos": 6262397,
+      "comparecimento": 5066504
+    },
+    "totais_totalizacao": {
+      "urnas": 20827,
+      "lula": 2427237,
+      "n22": 2163957,
+      "outros": 272161,
+      "brancos": 54203,
+      "nulos": 148946,
+      "aptos": 6262397,
+      "comparecimento": 5066504
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 11304,
+    "encerramento_mais_tarde": "2026-10-04 22:27:12",
+    "urnas_encerradas_depois_das_19h": 781,
+    "eleitores_liberados_sem_biometria": 273828,
+    "pct_sem_biometria": 5.4,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 16449,
+      "locais": 2499,
+      "lula_pp_por_pp_sem_biometria": 0.062,
+      "flavio_pp_por_pp_sem_biometria": -0.052,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.045,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": -3.434,
+          "lula_vs_vizinhas_pp": -0.208
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": -1.387,
+          "lula_vs_vizinhas_pp": -0.064
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3289,
+          "sem_biometria_vs_vizinhas_pp": -0.212,
+          "lula_vs_vizinhas_pp": -0.09
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": 1.079,
+          "lula_vs_vizinhas_pp": 0.07
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": 3.954,
+          "lula_vs_vizinhas_pp": 0.292
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_PA_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PB",
+    "turno": 1,
+    "boletins": 10712,
+    "totais_boletins": {
+      "urnas": 10712,
+      "lula": 1541127,
+      "n22": 831377,
+      "outros": 141333,
+      "brancos": 52297,
+      "nulos": 117854,
+      "aptos": 3248531,
+      "comparecimento": 2683988
+    },
+    "totais_totalizacao": {
+      "urnas": 10712,
+      "lula": 1541127,
+      "n22": 831377,
+      "outros": 141333,
+      "brancos": 52297,
+      "nulos": 117854,
+      "aptos": 3248531,
+      "comparecimento": 2683988
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 4646,
+    "encerramento_mais_tarde": "2026-10-04 21:12:55",
+    "urnas_encerradas_depois_das_19h": 118,
+    "eleitores_liberados_sem_biometria": 187044,
+    "pct_sem_biometria": 6.97,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 10224,
+      "locais": 1547,
+      "lula_pp_por_pp_sem_biometria": 0.161,
+      "flavio_pp_por_pp_sem_biometria": -0.095,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.12,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": -3.919,
+          "lula_vs_vizinhas_pp": -0.712
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": -1.561,
+          "lula_vs_vizinhas_pp": -0.186
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 2044,
+          "sem_biometria_vs_vizinhas_pp": -0.181,
+          "lula_vs_vizinhas_pp": -0.048
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": 1.295,
+          "lula_vs_vizinhas_pp": 0.348
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": 4.366,
+          "lula_vs_vizinhas_pp": 0.598
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_PB_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PE",
+    "turno": 1,
+    "boletins": 21418,
+    "totais_boletins": {
+      "urnas": 21418,
+      "lula": 3553971,
+      "n22": 1738043,
+      "outros": 309141,
+      "brancos": 109491,
+      "nulos": 200416,
+      "aptos": 7223450,
+      "comparecimento": 5911062
+    },
+    "totais_totalizacao": {
+      "urnas": 21418,
+      "lula": 3553971,
+      "n22": 1738043,
+      "outros": 309141,
+      "brancos": 109491,
+      "nulos": 200416,
+      "aptos": 7223450,
+      "comparecimento": 5911062
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 14996,
+    "encerramento_mais_tarde": "2026-10-04 22:04:24",
+    "urnas_encerradas_depois_das_19h": 1222,
+    "eleitores_liberados_sem_biometria": 369732,
+    "pct_sem_biometria": 6.25,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 20276,
+      "locais": 2670,
+      "lula_pp_por_pp_sem_biometria": 0.073,
+      "flavio_pp_por_pp_sem_biometria": -0.059,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.064,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 4056,
+          "sem_biometria_vs_vizinhas_pp": -3.654,
+          "lula_vs_vizinhas_pp": -0.333
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 4055,
+          "sem_biometria_vs_vizinhas_pp": -1.432,
+          "lula_vs_vizinhas_pp": -0.134
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 4055,
+          "sem_biometria_vs_vizinhas_pp": -0.202,
+          "lula_vs_vizinhas_pp": -0.025
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 4055,
+          "sem_biometria_vs_vizinhas_pp": 1.154,
+          "lula_vs_vizinhas_pp": 0.15
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 4055,
+          "sem_biometria_vs_vizinhas_pp": 4.134,
+          "lula_vs_vizinhas_pp": 0.342
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_PE_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PI",
+    "turno": 1,
+    "boletins": 10225,
+    "totais_boletins": {
+      "urnas": 10225,
+      "lula": 1523710,
+      "n22": 517028,
+      "outros": 105708,
+      "brancos": 28329,
+      "nulos": 66108,
+      "aptos": 2704758,
+      "comparecimento": 2240883
+    },
+    "totais_totalizacao": {
+      "urnas": 10225,
+      "lula": 1523710,
+      "n22": 517028,
+      "outros": 105708,
+      "brancos": 28329,
+      "nulos": 66108,
+      "aptos": 2704758,
+      "comparecimento": 2240883
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 3395,
+    "encerramento_mais_tarde": "2026-10-04 21:27:41",
+    "urnas_encerradas_depois_das_19h": 187,
+    "eleitores_liberados_sem_biometria": 193884,
+    "pct_sem_biometria": 8.65,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7602,
+      "locais": 1490,
+      "lula_pp_por_pp_sem_biometria": 0.145,
+      "flavio_pp_por_pp_sem_biometria": -0.103,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.119,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": -5.062,
+          "lula_vs_vizinhas_pp": -0.894
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -1.938,
+          "lula_vs_vizinhas_pp": -0.221
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -0.243,
+          "lula_vs_vizinhas_pp": -0.01
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": 1.641,
+          "lula_vs_vizinhas_pp": 0.392
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": 5.6,
+          "lula_vs_vizinhas_pp": 0.733
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_PI_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PR",
+    "turno": 1,
+    "boletins": 27142,
+    "totais_boletins": {
+      "urnas": 27142,
+      "lula": 2054597,
+      "n22": 3945345,
+      "outros": 585569,
+      "brancos": 122499,
+      "nulos": 133447,
+      "aptos": 8613657,
+      "comparecimento": 6841457
+    },
+    "totais_totalizacao": {
+      "urnas": 27142,
+      "lula": 2054597,
+      "n22": 3945345,
+      "outros": 585569,
+      "brancos": 122499,
+      "nulos": 133447,
+      "aptos": 8613657,
+      "comparecimento": 6841457
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 2690,
+    "encerramento_mais_tarde": "2026-10-04 20:32:08",
+    "urnas_encerradas_depois_das_19h": 14,
+    "eleitores_liberados_sem_biometria": 511701,
+    "pct_sem_biometria": 7.48,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 25098,
+      "locais": 3295,
+      "lula_pp_por_pp_sem_biometria": 0.028,
+      "flavio_pp_por_pp_sem_biometria": -0.012,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.026,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": -3.941,
+          "lula_vs_vizinhas_pp": -0.221
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 5019,
+          "sem_biometria_vs_vizinhas_pp": -1.521,
+          "lula_vs_vizinhas_pp": -0.118
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": -0.184,
+          "lula_vs_vizinhas_pp": -0.018
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 5019,
+          "sem_biometria_vs_vizinhas_pp": 1.244,
+          "lula_vs_vizinhas_pp": 0.23
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": 4.402,
+          "lula_vs_vizinhas_pp": 0.126
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_PR_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RJ",
+    "turno": 1,
+    "boletins": 37675,
+    "totais_boletins": {
+      "urnas": 37675,
+      "lula": 3693021,
+      "n22": 4966844,
+      "outros": 710222,
+      "brancos": 201979,
+      "nulos": 287736,
+      "aptos": 12857648,
+      "comparecimento": 9859802
+    },
+    "totais_totalizacao": {
+      "urnas": 37675,
+      "lula": 3693021,
+      "n22": 4966844,
+      "outros": 710222,
+      "brancos": 201979,
+      "nulos": 287736,
+      "aptos": 12857648,
+      "comparecimento": 9859802
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 15507,
+    "encerramento_mais_tarde": "2026-10-04 20:54:09",
+    "urnas_encerradas_depois_das_19h": 294,
+    "eleitores_liberados_sem_biometria": 695182,
+    "pct_sem_biometria": 7.05,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 36696,
+      "locais": 4398,
+      "lula_pp_por_pp_sem_biometria": 0.149,
+      "flavio_pp_por_pp_sem_biometria": -0.12,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.11,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 7340,
+          "sem_biometria_vs_vizinhas_pp": -3.807,
+          "lula_vs_vizinhas_pp": -0.544
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": -1.621,
+          "lula_vs_vizinhas_pp": -0.28
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": -0.24,
+          "lula_vs_vizinhas_pp": -0.109
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": 1.274,
+          "lula_vs_vizinhas_pp": 0.222
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": 4.394,
+          "lula_vs_vizinhas_pp": 0.712
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_RJ_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RN",
+    "turno": 1,
+    "boletins": 8115,
+    "totais_boletins": {
+      "urnas": 8115,
+      "lula": 1237963,
+      "n22": 720493,
+      "outros": 113505,
+      "brancos": 33172,
+      "nulos": 65880,
+      "aptos": 2659825,
+      "comparecimento": 2171013
+    },
+    "totais_totalizacao": {
+      "urnas": 8115,
+      "lula": 1237963,
+      "n22": 720493,
+      "outros": 113505,
+      "brancos": 33172,
+      "nulos": 65880,
+      "aptos": 2659825,
+      "comparecimento": 2171013
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 4732,
+    "encerramento_mais_tarde": "2026-10-04 21:47:31",
+    "urnas_encerradas_depois_das_19h": 308,
+    "eleitores_liberados_sem_biometria": 171699,
+    "pct_sem_biometria": 7.91,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7483,
+      "locais": 1167,
+      "lula_pp_por_pp_sem_biometria": 0.128,
+      "flavio_pp_por_pp_sem_biometria": -0.065,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.097,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1497,
+          "sem_biometria_vs_vizinhas_pp": -3.954,
+          "lula_vs_vizinhas_pp": -0.462
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1496,
+          "sem_biometria_vs_vizinhas_pp": -1.578,
+          "lula_vs_vizinhas_pp": -0.302
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1497,
+          "sem_biometria_vs_vizinhas_pp": -0.156,
+          "lula_vs_vizinhas_pp": -0.032
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1496,
+          "sem_biometria_vs_vizinhas_pp": 1.37,
+          "lula_vs_vizinhas_pp": 0.263
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1497,
+          "sem_biometria_vs_vizinhas_pp": 4.318,
+          "lula_vs_vizinhas_pp": 0.532
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_RN_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RO",
+    "turno": 1,
+    "boletins": 4698,
+    "totais_boletins": {
+      "urnas": 4698,
+      "lula": 250667,
+      "n22": 652988,
+      "outros": 64470,
+      "brancos": 9846,
+      "nulos": 13109,
+      "aptos": 1265893,
+      "comparecimento": 991080
+    },
+    "totais_totalizacao": {
+      "urnas": 4698,
+      "lula": 250667,
+      "n22": 652988,
+      "outros": 64470,
+      "brancos": 9846,
+      "nulos": 13109,
+      "aptos": 1265893,
+      "comparecimento": 991080
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 07:00:00",
+    "urnas_abertas_antes_das_8h": 4697,
+    "urnas_encerradas_antes_das_17h": 4686,
+    "urnas_encerradas_depois_das_17h10": 8,
+    "encerramento_mais_tarde": "2026-10-04 17:41:41",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 61886,
+    "pct_sem_biometria": 6.24,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 4425,
+      "locais": 482,
+      "lula_pp_por_pp_sem_biometria": 0.053,
+      "flavio_pp_por_pp_sem_biometria": -0.039,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.039,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": -3.614,
+          "lula_vs_vizinhas_pp": -0.124
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": -1.517,
+          "lula_vs_vizinhas_pp": -0.117
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": -0.192,
+          "lula_vs_vizinhas_pp": -0.011
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": 1.265,
+          "lula_vs_vizinhas_pp": -0.033
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": 4.057,
+          "lula_vs_vizinhas_pp": 0.285
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_RO_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RR",
+    "turno": 1,
+    "boletins": 1519,
+    "totais_boletins": {
+      "urnas": 1519,
+      "lula": 74420,
+      "n22": 231322,
+      "outros": 19817,
+      "brancos": 2618,
+      "nulos": 4595,
+      "aptos": 401521,
+      "comparecimento": 332772
+    },
+    "totais_totalizacao": {
+      "urnas": 1519,
+      "lula": 74420,
+      "n22": 231322,
+      "outros": 19817,
+      "brancos": 2618,
+      "nulos": 4595,
+      "aptos": 401521,
+      "comparecimento": 332772
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 07:00:01",
+    "urnas_abertas_antes_das_8h": 1519,
+    "urnas_encerradas_antes_das_17h": 1500,
+    "urnas_encerradas_depois_das_17h10": 12,
+    "encerramento_mais_tarde": "2026-10-04 19:09:09",
+    "urnas_encerradas_depois_das_19h": 1,
+    "eleitores_liberados_sem_biometria": 12788,
+    "pct_sem_biometria": 3.84,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1314,
+      "locais": 217,
+      "lula_pp_por_pp_sem_biometria": 0.039,
+      "flavio_pp_por_pp_sem_biometria": 0.006,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.022,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 263,
+          "sem_biometria_vs_vizinhas_pp": -2.667,
+          "lula_vs_vizinhas_pp": -0.214
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 263,
+          "sem_biometria_vs_vizinhas_pp": -1.162,
+          "lula_vs_vizinhas_pp": 0.123
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 262,
+          "sem_biometria_vs_vizinhas_pp": -0.181,
+          "lula_vs_vizinhas_pp": -0.048
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 263,
+          "sem_biometria_vs_vizinhas_pp": 0.928,
+          "lula_vs_vizinhas_pp": -0.09
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 263,
+          "sem_biometria_vs_vizinhas_pp": 3.081,
+          "lula_vs_vizinhas_pp": 0.23
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_RR_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RS",
+    "turno": 1,
+    "boletins": 27547,
+    "totais_boletins": {
+      "urnas": 27547,
+      "lula": 2294759,
+      "n22": 3573783,
+      "outros": 554757,
+      "brancos": 148339,
+      "nulos": 131265,
+      "aptos": 8522545,
+      "comparecimento": 6702903
+    },
+    "totais_totalizacao": {
+      "urnas": 27547,
+      "lula": 2294759,
+      "n22": 3573783,
+      "outros": 554757,
+      "brancos": 148339,
+      "nulos": 131265,
+      "aptos": 8522545,
+      "comparecimento": 6702903
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1831,
+    "encerramento_mais_tarde": "2026-10-04 20:15:59",
+    "urnas_encerradas_depois_das_19h": 5,
+    "eleitores_liberados_sem_biometria": 551430,
+    "pct_sem_biometria": 8.23,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 22178,
+      "locais": 3548,
+      "lula_pp_por_pp_sem_biometria": 0.015,
+      "flavio_pp_por_pp_sem_biometria": 0.036,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.013,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 4436,
+          "sem_biometria_vs_vizinhas_pp": -4.119,
+          "lula_vs_vizinhas_pp": -0.086
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 4435,
+          "sem_biometria_vs_vizinhas_pp": -1.592,
+          "lula_vs_vizinhas_pp": -0.023
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 4436,
+          "sem_biometria_vs_vizinhas_pp": -0.163,
+          "lula_vs_vizinhas_pp": -0.02
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 4435,
+          "sem_biometria_vs_vizinhas_pp": 1.337,
+          "lula_vs_vizinhas_pp": 0.012
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 4436,
+          "sem_biometria_vs_vizinhas_pp": 4.538,
+          "lula_vs_vizinhas_pp": 0.117
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_RS_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "SC",
+    "turno": 1,
+    "boletins": 17326,
+    "totais_boletins": {
+      "urnas": 17326,
+      "lula": 1127168,
+      "n22": 3000020,
+      "outros": 373893,
+      "brancos": 69007,
+      "nulos": 78071,
+      "aptos": 5734651,
+      "comparecimento": 4648159
+    },
+    "totais_totalizacao": {
+      "urnas": 17326,
+      "lula": 1127168,
+      "n22": 3000020,
+      "outros": 373893,
+      "brancos": 69007,
+      "nulos": 78071,
+      "aptos": 5734651,
+      "comparecimento": 4648159
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 2072,
+    "encerramento_mais_tarde": "2026-10-04 20:09:46",
+    "urnas_encerradas_depois_das_19h": 7,
+    "eleitores_liberados_sem_biometria": 351215,
+    "pct_sem_biometria": 7.56,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 15258,
+      "locais": 1896,
+      "lula_pp_por_pp_sem_biometria": 0.005,
+      "flavio_pp_por_pp_sem_biometria": 0.037,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.004,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3052,
+          "sem_biometria_vs_vizinhas_pp": -3.854,
+          "lula_vs_vizinhas_pp": 0.065
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3051,
+          "sem_biometria_vs_vizinhas_pp": -1.524,
+          "lula_vs_vizinhas_pp": -0.047
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3052,
+          "sem_biometria_vs_vizinhas_pp": -0.198,
+          "lula_vs_vizinhas_pp": -0.036
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3051,
+          "sem_biometria_vs_vizinhas_pp": 1.235,
+          "lula_vs_vizinhas_pp": -0.053
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3052,
+          "sem_biometria_vs_vizinhas_pp": 4.341,
+          "lula_vs_vizinhas_pp": 0.071
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_SC_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "SE",
+    "turno": 1,
+    "boletins": 5923,
+    "totais_boletins": {
+      "urnas": 5923,
+      "lula": 856019,
+      "n22": 417839,
+      "outros": 90395,
+      "brancos": 24859,
+      "nulos": 49970,
+      "aptos": 1740135,
+      "comparecimento": 1439082
+    },
+    "totais_totalizacao": {
+      "urnas": 5923,
+      "lula": 856019,
+      "n22": 417839,
+      "outros": 90395,
+      "brancos": 24859,
+      "nulos": 49970,
+      "aptos": 1740135,
+      "comparecimento": 1439082
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1901,
+    "encerramento_mais_tarde": "2026-10-04 21:07:22",
+    "urnas_encerradas_depois_das_19h": 68,
+    "eleitores_liberados_sem_biometria": 97299,
+    "pct_sem_biometria": 6.76,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 5414,
+      "locais": 885,
+      "lula_pp_por_pp_sem_biometria": 0.062,
+      "flavio_pp_por_pp_sem_biometria": -0.039,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.048,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": -4.121,
+          "lula_vs_vizinhas_pp": -0.464
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": -1.66,
+          "lula_vs_vizinhas_pp": 0.056
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1082,
+          "sem_biometria_vs_vizinhas_pp": -0.132,
+          "lula_vs_vizinhas_pp": -0.028
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": 1.417,
+          "lula_vs_vizinhas_pp": 0.145
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": 4.496,
+          "lula_vs_vizinhas_pp": 0.291
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_SE_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "SP",
+    "turno": 1,
+    "boletins": 103656,
+    "totais_boletins": {
+      "urnas": 103656,
+      "lula": 9505413,
+      "n22": 12922023,
+      "outros": 2456867,
+      "brancos": 632801,
+      "nulos": 914888,
+      "aptos": 34122892,
+      "comparecimento": 26431992
+    },
+    "totais_totalizacao": {
+      "urnas": 103656,
+      "lula": 9505413,
+      "n22": 12922023,
+      "outros": 2456867,
+      "brancos": 632801,
+      "nulos": 914888,
+      "aptos": 34122892,
+      "comparecimento": 26431992
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 13945,
+    "encerramento_mais_tarde": "2026-10-04 21:32:43",
+    "urnas_encerradas_depois_das_19h": 10,
+    "eleitores_liberados_sem_biometria": 1591942,
+    "pct_sem_biometria": 6.02,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 102347,
+      "locais": 10255,
+      "lula_pp_por_pp_sem_biometria": 0.07,
+      "flavio_pp_por_pp_sem_biometria": -0.014,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.049,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 20470,
+          "sem_biometria_vs_vizinhas_pp": -3.236,
+          "lula_vs_vizinhas_pp": -0.272
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 20469,
+          "sem_biometria_vs_vizinhas_pp": -1.322,
+          "lula_vs_vizinhas_pp": -0.139
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 20469,
+          "sem_biometria_vs_vizinhas_pp": -0.204,
+          "lula_vs_vizinhas_pp": 0.017
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 20469,
+          "sem_biometria_vs_vizinhas_pp": 1.033,
+          "lula_vs_vizinhas_pp": 0.059
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 20470,
+          "sem_biometria_vs_vizinhas_pp": 3.729,
+          "lula_vs_vizinhas_pp": 0.335
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_SP_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "TO",
+    "turno": 1,
+    "boletins": 4384,
+    "totais_boletins": {
+      "urnas": 4384,
+      "lula": 404009,
+      "n22": 469321,
+      "outros": 57145,
+      "brancos": 8344,
+      "nulos": 26377,
+      "aptos": 1182023,
+      "comparecimento": 965196
+    },
+    "totais_totalizacao": {
+      "urnas": 4384,
+      "lula": 404009,
+      "n22": 469321,
+      "outros": 57145,
+      "brancos": 8344,
+      "nulos": 26377,
+      "aptos": 1182023,
+      "comparecimento": 965196
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:01",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1048,
+    "encerramento_mais_tarde": "2026-10-04 19:41:22",
+    "urnas_encerradas_depois_das_19h": 8,
+    "eleitores_liberados_sem_biometria": 50978,
+    "pct_sem_biometria": 5.28,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 4014,
+      "locais": 655,
+      "lula_pp_por_pp_sem_biometria": 0.104,
+      "flavio_pp_por_pp_sem_biometria": -0.1,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.06,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": -3.596,
+          "lula_vs_vizinhas_pp": -0.553
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": -1.465,
+          "lula_vs_vizinhas_pp": -0.128
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 802,
+          "sem_biometria_vs_vizinhas_pp": -0.174,
+          "lula_vs_vizinhas_pp": 0.036
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": 1.146,
+          "lula_vs_vizinhas_pp": 0.178
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": 4.088,
+          "lula_vs_vizinhas_pp": 0.466
+        }
+      ]
+    },
+    "arquivo": "bweb_1t_TO_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "ZZ",
+    "turno": 1,
+    "boletins": 1309,
+    "totais_boletins": {
+      "urnas": 1309,
+      "lula": 157387,
+      "n22": 143900,
+      "outros": 29718,
+      "brancos": 5816,
+      "nulos": 4945,
+      "aptos": 916039,
+      "comparecimento": 341766
+    },
+    "totais_totalizacao": {
+      "urnas": 1309,
+      "lula": 157387,
+      "n22": 143900,
+      "outros": 29718,
+      "brancos": 5816,
+      "nulos": 4945,
+      "aptos": 916039,
+      "comparecimento": 341766
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 1,
+    "codigos_de_carga_repetidos": 1,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-04 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 578,
+    "encerramento_mais_tarde": "2026-10-04 18:41:16",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 0,
+    "pct_sem_biometria": 0.0,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1199,
+      "obs": "poucas urnas para o teste"
+    },
+    "arquivo": "bweb_1t_ZZ_051020261403.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AC",
+    "turno": 2,
+    "boletins": 2270,
+    "totais_boletins": {
+      "urnas": 2270,
+      "lula": 144513,
+      "n22": 287715,
+      "outros": 0,
+      "brancos": 5016,
+      "nulos": 16410,
+      "aptos": 613715,
+      "comparecimento": 453654
+    },
+    "totais_totalizacao": {
+      "urnas": 2270,
+      "lula": 144513,
+      "n22": 287715,
+      "outros": 0,
+      "brancos": 5016,
+      "nulos": 16410,
+      "aptos": 613715,
+      "comparecimento": 453654
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 06:00:00",
+    "urnas_abertas_antes_das_8h": 2270,
+    "urnas_encerradas_antes_das_17h": 2269,
+    "urnas_encerradas_depois_das_17h10": 0,
+    "encerramento_mais_tarde": "2026-10-25 17:00:38",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 22654,
+    "pct_sem_biometria": 4.99,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1829,
+      "locais": 384,
+      "lula_pp_por_pp_sem_biometria": 0.019,
+      "flavio_pp_por_pp_sem_biometria": -0.019,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.012,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": -3.671,
+          "lula_vs_vizinhas_pp": 0.159
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": -1.557,
+          "lula_vs_vizinhas_pp": -0.199
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 365,
+          "sem_biometria_vs_vizinhas_pp": -0.152,
+          "lula_vs_vizinhas_pp": -0.091
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": 1.274,
+          "lula_vs_vizinhas_pp": 0.076
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 366,
+          "sem_biometria_vs_vizinhas_pp": 4.106,
+          "lula_vs_vizinhas_pp": 0.054
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_AC_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AL",
+    "turno": 2,
+    "boletins": 7101,
+    "totais_boletins": {
+      "urnas": 7101,
+      "lula": 1152621,
+      "n22": 744140,
+      "outros": 0,
+      "brancos": 16983,
+      "nulos": 37888,
+      "aptos": 2442081,
+      "comparecimento": 1951632
+    },
+    "totais_totalizacao": {
+      "urnas": 7101,
+      "lula": 1152621,
+      "n22": 744140,
+      "outros": 0,
+      "brancos": 16983,
+      "nulos": 37888,
+      "aptos": 2442081,
+      "comparecimento": 1951632
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 91,
+    "encerramento_mais_tarde": "2026-10-25 19:00:45",
+    "urnas_encerradas_depois_das_19h": 2,
+    "eleitores_liberados_sem_biometria": 135874,
+    "pct_sem_biometria": 6.96,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 6921,
+      "locais": 977,
+      "lula_pp_por_pp_sem_biometria": 0.055,
+      "flavio_pp_por_pp_sem_biometria": -0.055,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.052,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1385,
+          "sem_biometria_vs_vizinhas_pp": -4.273,
+          "lula_vs_vizinhas_pp": -0.134
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -1.597,
+          "lula_vs_vizinhas_pp": -0.216
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -0.223,
+          "lula_vs_vizinhas_pp": -0.067
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": 1.26,
+          "lula_vs_vizinhas_pp": 0.142
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": 4.837,
+          "lula_vs_vizinhas_pp": 0.276
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_AL_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AM",
+    "turno": 2,
+    "boletins": 8157,
+    "totais_boletins": {
+      "urnas": 8157,
+      "lula": 1145783,
+      "n22": 975245,
+      "outros": 0,
+      "brancos": 18324,
+      "nulos": 52707,
+      "aptos": 2798661,
+      "comparecimento": 2192059
+    },
+    "totais_totalizacao": {
+      "urnas": 8157,
+      "lula": 1145783,
+      "n22": 975245,
+      "outros": 0,
+      "brancos": 18324,
+      "nulos": 52707,
+      "aptos": 2798661,
+      "comparecimento": 2192059
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 06:00:01",
+    "urnas_abertas_antes_das_8h": 8156,
+    "urnas_encerradas_antes_das_17h": 8156,
+    "urnas_encerradas_depois_das_17h10": 0,
+    "encerramento_mais_tarde": "2026-10-25 17:07:12",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 118955,
+    "pct_sem_biometria": 5.43,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7314,
+      "locais": 976,
+      "lula_pp_por_pp_sem_biometria": 0.044,
+      "flavio_pp_por_pp_sem_biometria": -0.044,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.028,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1463,
+          "sem_biometria_vs_vizinhas_pp": -3.164,
+          "lula_vs_vizinhas_pp": -0.22
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1463,
+          "sem_biometria_vs_vizinhas_pp": -1.293,
+          "lula_vs_vizinhas_pp": 0.074
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1462,
+          "sem_biometria_vs_vizinhas_pp": -0.171,
+          "lula_vs_vizinhas_pp": -0.029
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1463,
+          "sem_biometria_vs_vizinhas_pp": 1.059,
+          "lula_vs_vizinhas_pp": -0.077
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1463,
+          "sem_biometria_vs_vizinhas_pp": 3.568,
+          "lula_vs_vizinhas_pp": 0.252
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_AM_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "AP",
+    "turno": 2,
+    "boletins": 1914,
+    "totais_boletins": {
+      "urnas": 1914,
+      "lula": 222968,
+      "n22": 198674,
+      "outros": 0,
+      "brancos": 3320,
+      "nulos": 5013,
+      "aptos": 576910,
+      "comparecimento": 429975
+    },
+    "totais_totalizacao": {
+      "urnas": 1914,
+      "lula": 222968,
+      "n22": 198674,
+      "outros": 0,
+      "brancos": 3320,
+      "nulos": 5013,
+      "aptos": 576910,
+      "comparecimento": 429975
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 14,
+    "encerramento_mais_tarde": "2026-10-25 17:34:02",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 19685,
+    "pct_sem_biometria": 4.58,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1717,
+      "locais": 228,
+      "lula_pp_por_pp_sem_biometria": 0.127,
+      "flavio_pp_por_pp_sem_biometria": -0.127,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.073,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 344,
+          "sem_biometria_vs_vizinhas_pp": -3.089,
+          "lula_vs_vizinhas_pp": -0.076
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 343,
+          "sem_biometria_vs_vizinhas_pp": -1.297,
+          "lula_vs_vizinhas_pp": -0.378
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 343,
+          "sem_biometria_vs_vizinhas_pp": -0.191,
+          "lula_vs_vizinhas_pp": -0.273
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 343,
+          "sem_biometria_vs_vizinhas_pp": 1.035,
+          "lula_vs_vizinhas_pp": 0.266
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 344,
+          "sem_biometria_vs_vizinhas_pp": 3.541,
+          "lula_vs_vizinhas_pp": 0.46
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_AP_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "BA",
+    "turno": 2,
+    "boletins": 35476,
+    "totais_boletins": {
+      "urnas": 35476,
+      "lula": 6485258,
+      "n22": 2608761,
+      "outros": 0,
+      "brancos": 92721,
+      "nulos": 235307,
+      "aptos": 11312891,
+      "comparecimento": 9422047
+    },
+    "totais_totalizacao": {
+      "urnas": 35476,
+      "lula": 6485258,
+      "n22": 2608761,
+      "outros": 0,
+      "brancos": 92721,
+      "nulos": 235307,
+      "aptos": 11312891,
+      "comparecimento": 9422047
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 2108,
+    "encerramento_mais_tarde": "2026-10-25 19:51:49",
+    "urnas_encerradas_depois_das_19h": 933,
+    "eleitores_liberados_sem_biometria": 702255,
+    "pct_sem_biometria": 7.45,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 29016,
+      "locais": 4581,
+      "lula_pp_por_pp_sem_biometria": 0.022,
+      "flavio_pp_por_pp_sem_biometria": -0.022,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.026,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 5804,
+          "sem_biometria_vs_vizinhas_pp": -4.459,
+          "lula_vs_vizinhas_pp": -0.123
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": -1.621,
+          "lula_vs_vizinhas_pp": -0.048
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": -0.229,
+          "lula_vs_vizinhas_pp": -0.025
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": 1.281,
+          "lula_vs_vizinhas_pp": 0.009
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 5803,
+          "sem_biometria_vs_vizinhas_pp": 5.029,
+          "lula_vs_vizinhas_pp": 0.188
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_BA_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "CE",
+    "turno": 2,
+    "boletins": 23765,
+    "totais_boletins": {
+      "urnas": 23765,
+      "lula": 4036124,
+      "n22": 1819478,
+      "outros": 0,
+      "brancos": 56386,
+      "nulos": 112855,
+      "aptos": 6996521,
+      "comparecimento": 6024843
+    },
+    "totais_totalizacao": {
+      "urnas": 23765,
+      "lula": 4036124,
+      "n22": 1819478,
+      "outros": 0,
+      "brancos": 56386,
+      "nulos": 112855,
+      "aptos": 6996521,
+      "comparecimento": 6024843
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 161,
+    "encerramento_mais_tarde": "2026-10-25 18:26:31",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 429294,
+    "pct_sem_biometria": 7.13,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 18879,
+      "locais": 3195,
+      "lula_pp_por_pp_sem_biometria": 0.145,
+      "flavio_pp_por_pp_sem_biometria": -0.145,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.125,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": -4.171,
+          "lula_vs_vizinhas_pp": -0.733
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": -1.501,
+          "lula_vs_vizinhas_pp": -0.246
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3775,
+          "sem_biometria_vs_vizinhas_pp": -0.188,
+          "lula_vs_vizinhas_pp": -0.021
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": 1.279,
+          "lula_vs_vizinhas_pp": 0.373
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3776,
+          "sem_biometria_vs_vizinhas_pp": 4.582,
+          "lula_vs_vizinhas_pp": 0.627
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_CE_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "DF",
+    "turno": 2,
+    "boletins": 6969,
+    "totais_boletins": {
+      "urnas": 6969,
+      "lula": 825224,
+      "n22": 979542,
+      "outros": 0,
+      "brancos": 22386,
+      "nulos": 41128,
+      "aptos": 2258995,
+      "comparecimento": 1868280
+    },
+    "totais_totalizacao": {
+      "urnas": 6969,
+      "lula": 825224,
+      "n22": 979542,
+      "outros": 0,
+      "brancos": 22386,
+      "nulos": 41128,
+      "aptos": 2258995,
+      "comparecimento": 1868280
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:01",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 289,
+    "encerramento_mais_tarde": "2026-10-25 19:12:28",
+    "urnas_encerradas_depois_das_19h": 17,
+    "eleitores_liberados_sem_biometria": 84114,
+    "pct_sem_biometria": 4.5,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 6918,
+      "locais": 589,
+      "lula_pp_por_pp_sem_biometria": -0.118,
+      "flavio_pp_por_pp_sem_biometria": 0.118,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": -0.062,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -2.594,
+          "lula_vs_vizinhas_pp": 0.45
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1383,
+          "sem_biometria_vs_vizinhas_pp": -1.104,
+          "lula_vs_vizinhas_pp": 0.171
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": -0.169,
+          "lula_vs_vizinhas_pp": -0.152
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1383,
+          "sem_biometria_vs_vizinhas_pp": 0.867,
+          "lula_vs_vizinhas_pp": -0.198
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1384,
+          "sem_biometria_vs_vizinhas_pp": 3.001,
+          "lula_vs_vizinhas_pp": -0.272
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_DF_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "ES",
+    "turno": 2,
+    "boletins": 9844,
+    "totais_boletins": {
+      "urnas": 9844,
+      "lula": 1001965,
+      "n22": 1294504,
+      "outros": 0,
+      "brancos": 33080,
+      "nulos": 79665,
+      "aptos": 2991515,
+      "comparecimento": 2409214
+    },
+    "totais_totalizacao": {
+      "urnas": 9844,
+      "lula": 1001965,
+      "n22": 1294504,
+      "outros": 0,
+      "brancos": 33080,
+      "nulos": 79665,
+      "aptos": 2991515,
+      "comparecimento": 2409214
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 36,
+    "encerramento_mais_tarde": "2026-10-25 19:43:21",
+    "urnas_encerradas_depois_das_19h": 2,
+    "eleitores_liberados_sem_biometria": 151401,
+    "pct_sem_biometria": 6.28,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 9092,
+      "locais": 1245,
+      "lula_pp_por_pp_sem_biometria": 0.179,
+      "flavio_pp_por_pp_sem_biometria": -0.179,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.129,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1819,
+          "sem_biometria_vs_vizinhas_pp": -3.862,
+          "lula_vs_vizinhas_pp": -0.577
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1818,
+          "sem_biometria_vs_vizinhas_pp": -1.689,
+          "lula_vs_vizinhas_pp": -0.247
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1818,
+          "sem_biometria_vs_vizinhas_pp": -0.347,
+          "lula_vs_vizinhas_pp": -0.171
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1818,
+          "sem_biometria_vs_vizinhas_pp": 1.224,
+          "lula_vs_vizinhas_pp": 0.031
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1819,
+          "sem_biometria_vs_vizinhas_pp": 4.674,
+          "lula_vs_vizinhas_pp": 0.964
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_ES_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "GO",
+    "turno": 2,
+    "boletins": 15686,
+    "totais_boletins": {
+      "urnas": 15686,
+      "lula": 1585555,
+      "n22": 2345334,
+      "outros": 0,
+      "brancos": 43214,
+      "nulos": 73177,
+      "aptos": 5080385,
+      "comparecimento": 4047280
+    },
+    "totais_totalizacao": {
+      "urnas": 15686,
+      "lula": 1585555,
+      "n22": 2345334,
+      "outros": 0,
+      "brancos": 43214,
+      "nulos": 73177,
+      "aptos": 5080385,
+      "comparecimento": 4047280
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 63,
+    "encerramento_mais_tarde": "2026-10-25 19:00:52",
+    "urnas_encerradas_depois_das_19h": 1,
+    "eleitores_liberados_sem_biometria": 268656,
+    "pct_sem_biometria": 6.64,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 15062,
+      "locais": 2062,
+      "lula_pp_por_pp_sem_biometria": 0.103,
+      "flavio_pp_por_pp_sem_biometria": -0.103,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.081,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3013,
+          "sem_biometria_vs_vizinhas_pp": -3.851,
+          "lula_vs_vizinhas_pp": -0.383
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3012,
+          "sem_biometria_vs_vizinhas_pp": -1.463,
+          "lula_vs_vizinhas_pp": -0.239
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3012,
+          "sem_biometria_vs_vizinhas_pp": -0.178,
+          "lula_vs_vizinhas_pp": -0.034
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3012,
+          "sem_biometria_vs_vizinhas_pp": 1.214,
+          "lula_vs_vizinhas_pp": 0.105
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3013,
+          "sem_biometria_vs_vizinhas_pp": 4.279,
+          "lula_vs_vizinhas_pp": 0.55
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_GO_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MA",
+    "turno": 2,
+    "boletins": 18093,
+    "totais_boletins": {
+      "urnas": 18093,
+      "lula": 2808231,
+      "n22": 1229971,
+      "outros": 0,
+      "brancos": 30855,
+      "nulos": 58714,
+      "aptos": 5183049,
+      "comparecimento": 4127771
+    },
+    "totais_totalizacao": {
+      "urnas": 18093,
+      "lula": 2808231,
+      "n22": 1229971,
+      "outros": 0,
+      "brancos": 30855,
+      "nulos": 58714,
+      "aptos": 5183049,
+      "comparecimento": 4127771
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 374,
+    "encerramento_mais_tarde": "2026-10-25 19:04:25",
+    "urnas_encerradas_depois_das_19h": 3,
+    "eleitores_liberados_sem_biometria": 259852,
+    "pct_sem_biometria": 6.3,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 13730,
+      "locais": 2567,
+      "lula_pp_por_pp_sem_biometria": 0.098,
+      "flavio_pp_por_pp_sem_biometria": -0.098,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.079,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": -3.999,
+          "lula_vs_vizinhas_pp": -0.514
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": -1.619,
+          "lula_vs_vizinhas_pp": -0.096
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": -0.217,
+          "lula_vs_vizinhas_pp": -0.027
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": 1.322,
+          "lula_vs_vizinhas_pp": 0.149
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 2746,
+          "sem_biometria_vs_vizinhas_pp": 4.513,
+          "lula_vs_vizinhas_pp": 0.488
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_MA_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MG",
+    "turno": 2,
+    "boletins": 52062,
+    "totais_boletins": {
+      "urnas": 52062,
+      "lula": 6351099,
+      "n22": 6241786,
+      "outros": 0,
+      "brancos": 164141,
+      "nulos": 287177,
+      "aptos": 16372144,
+      "comparecimento": 13044203
+    },
+    "totais_totalizacao": {
+      "urnas": 52062,
+      "lula": 6351099,
+      "n22": 6241786,
+      "outros": 0,
+      "brancos": 164141,
+      "nulos": 287177,
+      "aptos": 16372144,
+      "comparecimento": 13044203
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 240,
+    "encerramento_mais_tarde": "2026-10-25 23:04:42",
+    "urnas_encerradas_depois_das_19h": 1,
+    "eleitores_liberados_sem_biometria": 887910,
+    "pct_sem_biometria": 6.81,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 46922,
+      "locais": 6228,
+      "lula_pp_por_pp_sem_biometria": 0.154,
+      "flavio_pp_por_pp_sem_biometria": -0.154,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.114,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 9385,
+          "sem_biometria_vs_vizinhas_pp": -3.922,
+          "lula_vs_vizinhas_pp": -0.566
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 9384,
+          "sem_biometria_vs_vizinhas_pp": -1.583,
+          "lula_vs_vizinhas_pp": -0.31
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 9384,
+          "sem_biometria_vs_vizinhas_pp": -0.249,
+          "lula_vs_vizinhas_pp": -0.078
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 9384,
+          "sem_biometria_vs_vizinhas_pp": 1.258,
+          "lula_vs_vizinhas_pp": 0.239
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 9385,
+          "sem_biometria_vs_vizinhas_pp": 4.496,
+          "lula_vs_vizinhas_pp": 0.715
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_MG_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MS",
+    "turno": 2,
+    "boletins": 7106,
+    "totais_boletins": {
+      "urnas": 7106,
+      "lula": 628973,
+      "n22": 927892,
+      "outros": 0,
+      "brancos": 14958,
+      "nulos": 22637,
+      "aptos": 2024437,
+      "comparecimento": 1594460
+    },
+    "totais_totalizacao": {
+      "urnas": 7106,
+      "lula": 628973,
+      "n22": 927892,
+      "outros": 0,
+      "brancos": 14958,
+      "nulos": 22637,
+      "aptos": 2024437,
+      "comparecimento": 1594460
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 07:00:00",
+    "urnas_abertas_antes_das_8h": 7105,
+    "urnas_encerradas_antes_das_17h": 7106,
+    "urnas_encerradas_depois_das_17h10": 0,
+    "encerramento_mais_tarde": "2026-10-25 16:32:34",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 115545,
+    "pct_sem_biometria": 7.25,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 6764,
+      "locais": 807,
+      "lula_pp_por_pp_sem_biometria": 0.064,
+      "flavio_pp_por_pp_sem_biometria": -0.064,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.054,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": -4.202,
+          "lula_vs_vizinhas_pp": -0.353
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": -1.638,
+          "lula_vs_vizinhas_pp": -0.283
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1352,
+          "sem_biometria_vs_vizinhas_pp": -0.241,
+          "lula_vs_vizinhas_pp": -0.111
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": 1.273,
+          "lula_vs_vizinhas_pp": 0.458
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1353,
+          "sem_biometria_vs_vizinhas_pp": 4.808,
+          "lula_vs_vizinhas_pp": 0.29
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_MS_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "MT",
+    "turno": 2,
+    "boletins": 8287,
+    "totais_boletins": {
+      "urnas": 8287,
+      "lula": 694167,
+      "n22": 1351099,
+      "outros": 0,
+      "brancos": 15431,
+      "nulos": 24637,
+      "aptos": 2637879,
+      "comparecimento": 2085334
+    },
+    "totais_totalizacao": {
+      "urnas": 8287,
+      "lula": 694167,
+      "n22": 1351099,
+      "outros": 0,
+      "brancos": 15431,
+      "nulos": 24637,
+      "aptos": 2637879,
+      "comparecimento": 2085334
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 07:00:00",
+    "urnas_abertas_antes_das_8h": 8287,
+    "urnas_encerradas_antes_das_17h": 8278,
+    "urnas_encerradas_depois_das_17h10": 9,
+    "encerramento_mais_tarde": "2026-10-25 18:01:40",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 137579,
+    "pct_sem_biometria": 6.6,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7603,
+      "locais": 1024,
+      "lula_pp_por_pp_sem_biometria": 0.057,
+      "flavio_pp_por_pp_sem_biometria": -0.057,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.041,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": -3.578,
+          "lula_vs_vizinhas_pp": -0.225
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -1.434,
+          "lula_vs_vizinhas_pp": -0.09
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": -0.172,
+          "lula_vs_vizinhas_pp": 0.027
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": 1.207,
+          "lula_vs_vizinhas_pp": 0.028
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": 3.978,
+          "lula_vs_vizinhas_pp": 0.259
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_MT_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PA",
+    "turno": 2,
+    "boletins": 20827,
+    "totais_boletins": {
+      "urnas": 20827,
+      "lula": 2690449,
+      "n22": 2199940,
+      "outros": 0,
+      "brancos": 36501,
+      "nulos": 62683,
+      "aptos": 6262063,
+      "comparecimento": 4989573
+    },
+    "totais_totalizacao": {
+      "urnas": 20827,
+      "lula": 2690449,
+      "n22": 2199940,
+      "outros": 0,
+      "brancos": 36501,
+      "nulos": 62683,
+      "aptos": 6262063,
+      "comparecimento": 4989573
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 292,
+    "encerramento_mais_tarde": "2026-10-25 19:03:12",
+    "urnas_encerradas_depois_das_19h": 8,
+    "eleitores_liberados_sem_biometria": 277373,
+    "pct_sem_biometria": 5.56,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 16450,
+      "locais": 2499,
+      "lula_pp_por_pp_sem_biometria": 0.054,
+      "flavio_pp_por_pp_sem_biometria": -0.054,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.04,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": -3.519,
+          "lula_vs_vizinhas_pp": -0.159
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": -1.436,
+          "lula_vs_vizinhas_pp": -0.108
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": -0.215,
+          "lula_vs_vizinhas_pp": -0.075
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": 1.122,
+          "lula_vs_vizinhas_pp": 0.125
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3290,
+          "sem_biometria_vs_vizinhas_pp": 4.048,
+          "lula_vs_vizinhas_pp": 0.217
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_PA_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PB",
+    "turno": 2,
+    "boletins": 10712,
+    "totais_boletins": {
+      "urnas": 10712,
+      "lula": 1794059,
+      "n22": 865210,
+      "outros": 0,
+      "brancos": 25943,
+      "nulos": 58348,
+      "aptos": 3248434,
+      "comparecimento": 2743560
+    },
+    "totais_totalizacao": {
+      "urnas": 10712,
+      "lula": 1794059,
+      "n22": 865210,
+      "outros": 0,
+      "brancos": 25943,
+      "nulos": 58348,
+      "aptos": 3248434,
+      "comparecimento": 2743560
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 405,
+    "encerramento_mais_tarde": "2026-10-25 19:10:16",
+    "urnas_encerradas_depois_das_19h": 272,
+    "eleitores_liberados_sem_biometria": 199353,
+    "pct_sem_biometria": 7.27,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 10224,
+      "locais": 1547,
+      "lula_pp_por_pp_sem_biometria": 0.126,
+      "flavio_pp_por_pp_sem_biometria": -0.126,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.107,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": -4.088,
+          "lula_vs_vizinhas_pp": -0.542
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": -1.649,
+          "lula_vs_vizinhas_pp": -0.253
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 2044,
+          "sem_biometria_vs_vizinhas_pp": -0.219,
+          "lula_vs_vizinhas_pp": -0.013
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": 1.359,
+          "lula_vs_vizinhas_pp": 0.248
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 2045,
+          "sem_biometria_vs_vizinhas_pp": 4.597,
+          "lula_vs_vizinhas_pp": 0.56
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_PB_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PE",
+    "turno": 2,
+    "boletins": 21418,
+    "totais_boletins": {
+      "urnas": 21418,
+      "lula": 4117513,
+      "n22": 1832554,
+      "outros": 0,
+      "brancos": 56758,
+      "nulos": 119642,
+      "aptos": 7223227,
+      "comparecimento": 6126467
+    },
+    "totais_totalizacao": {
+      "urnas": 21418,
+      "lula": 4117513,
+      "n22": 1832554,
+      "outros": 0,
+      "brancos": 56758,
+      "nulos": 119642,
+      "aptos": 7223227,
+      "comparecimento": 6126467
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 1035,
+    "encerramento_mais_tarde": "2026-10-25 20:20:56",
+    "urnas_encerradas_depois_das_19h": 657,
+    "eleitores_liberados_sem_biometria": 399764,
+    "pct_sem_biometria": 6.53,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 20281,
+      "locais": 2671,
+      "lula_pp_por_pp_sem_biometria": 0.067,
+      "flavio_pp_por_pp_sem_biometria": -0.067,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.063,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 4057,
+          "sem_biometria_vs_vizinhas_pp": -3.74,
+          "lula_vs_vizinhas_pp": -0.287
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 4056,
+          "sem_biometria_vs_vizinhas_pp": -1.463,
+          "lula_vs_vizinhas_pp": -0.139
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 4056,
+          "sem_biometria_vs_vizinhas_pp": -0.201,
+          "lula_vs_vizinhas_pp": 0.017
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 4056,
+          "sem_biometria_vs_vizinhas_pp": 1.178,
+          "lula_vs_vizinhas_pp": 0.095
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 4056,
+          "sem_biometria_vs_vizinhas_pp": 4.227,
+          "lula_vs_vizinhas_pp": 0.314
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_PE_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PI",
+    "turno": 2,
+    "boletins": 10225,
+    "totais_boletins": {
+      "urnas": 10225,
+      "lula": 1653989,
+      "n22": 525859,
+      "outros": 0,
+      "brancos": 16137,
+      "nulos": 43845,
+      "aptos": 2704695,
+      "comparecimento": 2239830
+    },
+    "totais_totalizacao": {
+      "urnas": 10225,
+      "lula": 1653989,
+      "n22": 525859,
+      "outros": 0,
+      "brancos": 16137,
+      "nulos": 43845,
+      "aptos": 2704695,
+      "comparecimento": 2239830
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 87,
+    "encerramento_mais_tarde": "2026-10-25 19:03:17",
+    "urnas_encerradas_depois_das_19h": 7,
+    "eleitores_liberados_sem_biometria": 201641,
+    "pct_sem_biometria": 9.0,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7602,
+      "locais": 1490,
+      "lula_pp_por_pp_sem_biometria": 0.141,
+      "flavio_pp_por_pp_sem_biometria": -0.141,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.141,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": -5.387,
+          "lula_vs_vizinhas_pp": -0.77
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -2.131,
+          "lula_vs_vizinhas_pp": -0.464
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": -0.223,
+          "lula_vs_vizinhas_pp": 0.047
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1520,
+          "sem_biometria_vs_vizinhas_pp": 1.769,
+          "lula_vs_vizinhas_pp": 0.402
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1521,
+          "sem_biometria_vs_vizinhas_pp": 5.971,
+          "lula_vs_vizinhas_pp": 0.785
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_PI_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "PR",
+    "turno": 2,
+    "boletins": 27142,
+    "totais_boletins": {
+      "urnas": 27142,
+      "lula": 2566504,
+      "n22": 4291444,
+      "outros": 0,
+      "brancos": 82572,
+      "nulos": 118819,
+      "aptos": 8613628,
+      "comparecimento": 7059339
+    },
+    "totais_totalizacao": {
+      "urnas": 27142,
+      "lula": 2566504,
+      "n22": 4291444,
+      "outros": 0,
+      "brancos": 82572,
+      "nulos": 118819,
+      "aptos": 8613628,
+      "comparecimento": 7059339
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 90,
+    "encerramento_mais_tarde": "2026-10-25 19:02:08",
+    "urnas_encerradas_depois_das_19h": 1,
+    "eleitores_liberados_sem_biometria": 493321,
+    "pct_sem_biometria": 6.99,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 25101,
+      "locais": 3296,
+      "lula_pp_por_pp_sem_biometria": 0.024,
+      "flavio_pp_por_pp_sem_biometria": -0.024,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.019,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 5021,
+          "sem_biometria_vs_vizinhas_pp": -3.705,
+          "lula_vs_vizinhas_pp": -0.144
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": -1.424,
+          "lula_vs_vizinhas_pp": -0.087
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": -0.161,
+          "lula_vs_vizinhas_pp": -0.004
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": 1.179,
+          "lula_vs_vizinhas_pp": 0.049
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 5020,
+          "sem_biometria_vs_vizinhas_pp": 4.111,
+          "lula_vs_vizinhas_pp": 0.186
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_PR_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RJ",
+    "turno": 2,
+    "boletins": 37675,
+    "totais_boletins": {
+      "urnas": 37675,
+      "lula": 4565393,
+      "n22": 5169033,
+      "outros": 0,
+      "brancos": 111682,
+      "nulos": 231341,
+      "aptos": 12857526,
+      "comparecimento": 10077449
+    },
+    "totais_totalizacao": {
+      "urnas": 37675,
+      "lula": 4565393,
+      "n22": 5169033,
+      "outros": 0,
+      "brancos": 111682,
+      "nulos": 231341,
+      "aptos": 12857526,
+      "comparecimento": 10077449
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 4036,
+    "encerramento_mais_tarde": "2026-10-25 20:45:31",
+    "urnas_encerradas_depois_das_19h": 2799,
+    "eleitores_liberados_sem_biometria": 750301,
+    "pct_sem_biometria": 7.45,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 36694,
+      "locais": 4398,
+      "lula_pp_por_pp_sem_biometria": 0.133,
+      "flavio_pp_por_pp_sem_biometria": -0.133,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.101,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": -3.976,
+          "lula_vs_vizinhas_pp": -0.494
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": -1.686,
+          "lula_vs_vizinhas_pp": -0.35
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 7338,
+          "sem_biometria_vs_vizinhas_pp": -0.261,
+          "lula_vs_vizinhas_pp": -0.153
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": 1.312,
+          "lula_vs_vizinhas_pp": 0.204
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 7339,
+          "sem_biometria_vs_vizinhas_pp": 4.61,
+          "lula_vs_vizinhas_pp": 0.793
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_RJ_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RN",
+    "turno": 2,
+    "boletins": 8115,
+    "totais_boletins": {
+      "urnas": 8115,
+      "lula": 1413596,
+      "n22": 737409,
+      "outros": 0,
+      "brancos": 19939,
+      "nulos": 61879,
+      "aptos": 2659867,
+      "comparecimento": 2232823
+    },
+    "totais_totalizacao": {
+      "urnas": 8115,
+      "lula": 1413596,
+      "n22": 737409,
+      "outros": 0,
+      "brancos": 19939,
+      "nulos": 61879,
+      "aptos": 2659867,
+      "comparecimento": 2232823
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 84,
+    "encerramento_mais_tarde": "2026-10-25 19:02:01",
+    "urnas_encerradas_depois_das_19h": 3,
+    "eleitores_liberados_sem_biometria": 180838,
+    "pct_sem_biometria": 8.1,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 7482,
+      "locais": 1167,
+      "lula_pp_por_pp_sem_biometria": 0.106,
+      "flavio_pp_por_pp_sem_biometria": -0.106,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.089,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1497,
+          "sem_biometria_vs_vizinhas_pp": -4.085,
+          "lula_vs_vizinhas_pp": -0.395
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1496,
+          "sem_biometria_vs_vizinhas_pp": -1.64,
+          "lula_vs_vizinhas_pp": -0.257
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1496,
+          "sem_biometria_vs_vizinhas_pp": -0.141,
+          "lula_vs_vizinhas_pp": -0.126
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1496,
+          "sem_biometria_vs_vizinhas_pp": 1.399,
+          "lula_vs_vizinhas_pp": 0.331
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1497,
+          "sem_biometria_vs_vizinhas_pp": 4.467,
+          "lula_vs_vizinhas_pp": 0.447
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_RN_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RO",
+    "turno": 2,
+    "boletins": 4698,
+    "totais_boletins": {
+      "urnas": 4698,
+      "lula": 294446,
+      "n22": 674382,
+      "outros": 0,
+      "brancos": 8361,
+      "nulos": 11300,
+      "aptos": 1265926,
+      "comparecimento": 988489
+    },
+    "totais_totalizacao": {
+      "urnas": 4698,
+      "lula": 294446,
+      "n22": 674382,
+      "outros": 0,
+      "brancos": 8361,
+      "nulos": 11300,
+      "aptos": 1265926,
+      "comparecimento": 988489
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 07:00:00",
+    "urnas_abertas_antes_das_8h": 4696,
+    "urnas_encerradas_antes_das_17h": 4697,
+    "urnas_encerradas_depois_das_17h10": 0,
+    "encerramento_mais_tarde": "2026-10-25 17:08:24",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 61938,
+    "pct_sem_biometria": 6.27,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 4425,
+      "locais": 482,
+      "lula_pp_por_pp_sem_biometria": 0.091,
+      "flavio_pp_por_pp_sem_biometria": -0.091,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.067,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": -3.759,
+          "lula_vs_vizinhas_pp": -0.181
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": -1.535,
+          "lula_vs_vizinhas_pp": -0.271
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": -0.182,
+          "lula_vs_vizinhas_pp": 0.009
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": 1.296,
+          "lula_vs_vizinhas_pp": -0.017
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 885,
+          "sem_biometria_vs_vizinhas_pp": 4.179,
+          "lula_vs_vizinhas_pp": 0.46
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_RO_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RR",
+    "turno": 2,
+    "boletins": 1519,
+    "totais_boletins": {
+      "urnas": 1519,
+      "lula": 83505,
+      "n22": 219675,
+      "outros": 0,
+      "brancos": 2176,
+      "nulos": 3241,
+      "aptos": 401540,
+      "comparecimento": 308597
+    },
+    "totais_totalizacao": {
+      "urnas": 1519,
+      "lula": 83505,
+      "n22": 219675,
+      "outros": 0,
+      "brancos": 2176,
+      "nulos": 3241,
+      "aptos": 401540,
+      "comparecimento": 308597
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 07:00:00",
+    "urnas_abertas_antes_das_8h": 1519,
+    "urnas_encerradas_antes_das_17h": 1519,
+    "urnas_encerradas_depois_das_17h10": 0,
+    "encerramento_mais_tarde": "2026-10-25 16:29:51",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 12646,
+    "pct_sem_biometria": 4.1,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1311,
+      "locais": 216,
+      "lula_pp_por_pp_sem_biometria": 0.049,
+      "flavio_pp_por_pp_sem_biometria": -0.049,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.027,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 263,
+          "sem_biometria_vs_vizinhas_pp": -2.899,
+          "lula_vs_vizinhas_pp": 0.016
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 262,
+          "sem_biometria_vs_vizinhas_pp": -1.202,
+          "lula_vs_vizinhas_pp": 0.091
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 262,
+          "sem_biometria_vs_vizinhas_pp": -0.166,
+          "lula_vs_vizinhas_pp": -0.099
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 262,
+          "sem_biometria_vs_vizinhas_pp": 1.0,
+          "lula_vs_vizinhas_pp": -0.28
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 262,
+          "sem_biometria_vs_vizinhas_pp": 3.279,
+          "lula_vs_vizinhas_pp": 0.272
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_RR_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "RS",
+    "turno": 2,
+    "boletins": 27547,
+    "totais_boletins": {
+      "urnas": 27547,
+      "lula": 2824552,
+      "n22": 3874378,
+      "outros": 0,
+      "brancos": 89463,
+      "nulos": 101245,
+      "aptos": 8522318,
+      "comparecimento": 6889638
+    },
+    "totais_totalizacao": {
+      "urnas": 27547,
+      "lula": 2824552,
+      "n22": 3874378,
+      "outros": 0,
+      "brancos": 89463,
+      "nulos": 101245,
+      "aptos": 8522318,
+      "comparecimento": 6889638
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 68,
+    "encerramento_mais_tarde": "2026-10-25 19:04:00",
+    "urnas_encerradas_depois_das_19h": 2,
+    "eleitores_liberados_sem_biometria": 582380,
+    "pct_sem_biometria": 8.45,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 22178,
+      "locais": 3548,
+      "lula_pp_por_pp_sem_biometria": -0.019,
+      "flavio_pp_por_pp_sem_biometria": 0.019,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": -0.017,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 4436,
+          "sem_biometria_vs_vizinhas_pp": -4.296,
+          "lula_vs_vizinhas_pp": 0.059
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 4435,
+          "sem_biometria_vs_vizinhas_pp": -1.671,
+          "lula_vs_vizinhas_pp": 0.025
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 4436,
+          "sem_biometria_vs_vizinhas_pp": -0.187,
+          "lula_vs_vizinhas_pp": -0.114
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 4435,
+          "sem_biometria_vs_vizinhas_pp": 1.421,
+          "lula_vs_vizinhas_pp": 0.056
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 4436,
+          "sem_biometria_vs_vizinhas_pp": 4.733,
+          "lula_vs_vizinhas_pp": -0.026
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_RS_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "SC",
+    "turno": 2,
+    "boletins": 17326,
+    "totais_boletins": {
+      "urnas": 17326,
+      "lula": 1418314,
+      "n22": 3220071,
+      "outros": 0,
+      "brancos": 48674,
+      "nulos": 75244,
+      "aptos": 5734687,
+      "comparecimento": 4762303
+    },
+    "totais_totalizacao": {
+      "urnas": 17326,
+      "lula": 1418314,
+      "n22": 3220071,
+      "outros": 0,
+      "brancos": 48674,
+      "nulos": 75244,
+      "aptos": 5734687,
+      "comparecimento": 4762303
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 41,
+    "encerramento_mais_tarde": "2026-10-25 18:31:02",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 357632,
+    "pct_sem_biometria": 7.51,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 15257,
+      "locais": 1896,
+      "lula_pp_por_pp_sem_biometria": -0.042,
+      "flavio_pp_por_pp_sem_biometria": 0.042,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": -0.033,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 3052,
+          "sem_biometria_vs_vizinhas_pp": -3.94,
+          "lula_vs_vizinhas_pp": 0.23
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 3051,
+          "sem_biometria_vs_vizinhas_pp": -1.544,
+          "lula_vs_vizinhas_pp": 0.052
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 3051,
+          "sem_biometria_vs_vizinhas_pp": -0.187,
+          "lula_vs_vizinhas_pp": -0.009
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 3051,
+          "sem_biometria_vs_vizinhas_pp": 1.271,
+          "lula_vs_vizinhas_pp": 0.001
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 3052,
+          "sem_biometria_vs_vizinhas_pp": 4.4,
+          "lula_vs_vizinhas_pp": -0.275
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_SC_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "SE",
+    "turno": 2,
+    "boletins": 5923,
+    "totais_boletins": {
+      "urnas": 5923,
+      "lula": 989041,
+      "n22": 433354,
+      "outros": 0,
+      "brancos": 13135,
+      "nulos": 31129,
+      "aptos": 1740093,
+      "comparecimento": 1466659
+    },
+    "totais_totalizacao": {
+      "urnas": 5923,
+      "lula": 989041,
+      "n22": 433354,
+      "outros": 0,
+      "brancos": 13135,
+      "nulos": 31129,
+      "aptos": 1740093,
+      "comparecimento": 1466659
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 100,
+    "encerramento_mais_tarde": "2026-10-25 19:05:28",
+    "urnas_encerradas_depois_das_19h": 51,
+    "eleitores_liberados_sem_biometria": 102204,
+    "pct_sem_biometria": 6.97,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 5414,
+      "locais": 885,
+      "lula_pp_por_pp_sem_biometria": 0.049,
+      "flavio_pp_por_pp_sem_biometria": -0.049,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.044,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": -4.322,
+          "lula_vs_vizinhas_pp": -0.246
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": -1.757,
+          "lula_vs_vizinhas_pp": -0.09
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 1082,
+          "sem_biometria_vs_vizinhas_pp": -0.228,
+          "lula_vs_vizinhas_pp": -0.038
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": 1.454,
+          "lula_vs_vizinhas_pp": 0.119
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 1083,
+          "sem_biometria_vs_vizinhas_pp": 4.852,
+          "lula_vs_vizinhas_pp": 0.255
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_SE_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "SP",
+    "turno": 2,
+    "boletins": 103656,
+    "totais_boletins": {
+      "urnas": 103656,
+      "lula": 12119274,
+      "n22": 14139178,
+      "outros": 0,
+      "brancos": 389606,
+      "nulos": 716331,
+      "aptos": 34123591,
+      "comparecimento": 27364389
+    },
+    "totais_totalizacao": {
+      "urnas": 103656,
+      "lula": 12119274,
+      "n22": 14139178,
+      "outros": 0,
+      "brancos": 389606,
+      "nulos": 716331,
+      "aptos": 34123591,
+      "comparecimento": 27364389
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 3371,
+    "encerramento_mais_tarde": "2026-10-25 19:18:32",
+    "urnas_encerradas_depois_das_19h": 1567,
+    "eleitores_liberados_sem_biometria": 1632098,
+    "pct_sem_biometria": 5.96,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 102359,
+      "locais": 10257,
+      "lula_pp_por_pp_sem_biometria": 0.028,
+      "flavio_pp_por_pp_sem_biometria": -0.028,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.019,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 20472,
+          "sem_biometria_vs_vizinhas_pp": -3.216,
+          "lula_vs_vizinhas_pp": -0.109
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 20472,
+          "sem_biometria_vs_vizinhas_pp": -1.317,
+          "lula_vs_vizinhas_pp": -0.083
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 20471,
+          "sem_biometria_vs_vizinhas_pp": -0.196,
+          "lula_vs_vizinhas_pp": -0.011
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 20472,
+          "sem_biometria_vs_vizinhas_pp": 1.028,
+          "lula_vs_vizinhas_pp": 0.059
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 20472,
+          "sem_biometria_vs_vizinhas_pp": 3.701,
+          "lula_vs_vizinhas_pp": 0.145
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_SP_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "TO",
+    "turno": 2,
+    "boletins": 4384,
+    "totais_boletins": {
+      "urnas": 4384,
+      "lula": 442962,
+      "n22": 467916,
+      "outros": 0,
+      "brancos": 8059,
+      "nulos": 35826,
+      "aptos": 1182041,
+      "comparecimento": 954763
+    },
+    "totais_totalizacao": {
+      "urnas": 4384,
+      "lula": 442962,
+      "n22": 467916,
+      "outros": 0,
+      "brancos": 8059,
+      "nulos": 35826,
+      "aptos": 1182041,
+      "comparecimento": 954763
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 0,
+    "codigos_de_carga_repetidos": 0,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 37,
+    "encerramento_mais_tarde": "2026-10-25 17:28:49",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 47225,
+    "pct_sem_biometria": 4.95,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 4013,
+      "locais": 655,
+      "lula_pp_por_pp_sem_biometria": 0.147,
+      "flavio_pp_por_pp_sem_biometria": -0.147,
+      "se_fosse_fraude_para_lula": "~1 ponto de Lula por ponto de liberação manual",
+      "correlacao_dentro_do_local": 0.086,
+      "por_quintil": [
+        {
+          "quintil": "Q1",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": -3.547,
+          "lula_vs_vizinhas_pp": -0.464
+        },
+        {
+          "quintil": "Q2",
+          "urnas": 802,
+          "sem_biometria_vs_vizinhas_pp": -1.445,
+          "lula_vs_vizinhas_pp": -0.416
+        },
+        {
+          "quintil": "Q3",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": -0.204,
+          "lula_vs_vizinhas_pp": -0.002
+        },
+        {
+          "quintil": "Q4",
+          "urnas": 802,
+          "sem_biometria_vs_vizinhas_pp": 1.119,
+          "lula_vs_vizinhas_pp": 0.328
+        },
+        {
+          "quintil": "Q5",
+          "urnas": 803,
+          "sem_biometria_vs_vizinhas_pp": 4.077,
+          "lula_vs_vizinhas_pp": 0.555
+        }
+      ]
+    },
+    "arquivo": "bweb_2t_TO_261020260742.zip",
+    "assinatura_sha512_confere": true
+  },
+  {
+    "uf": "ZZ",
+    "turno": 2,
+    "boletins": 1308,
+    "totais_boletins": {
+      "urnas": 1308,
+      "lula": 200154,
+      "n22": 171497,
+      "outros": 0,
+      "brancos": 4675,
+      "nulos": 5117,
+      "aptos": 916158,
+      "comparecimento": 381443
+    },
+    "totais_totalizacao": {
+      "urnas": 1308,
+      "lula": 200154,
+      "n22": 171497,
+      "outros": 0,
+      "brancos": 4675,
+      "nulos": 5117,
+      "aptos": 916158,
+      "comparecimento": 381443
+    },
+    "urnas_so_na_totalizacao": 0,
+    "urnas_so_nos_boletins": 0,
+    "urnas_com_votos_diferentes": 0,
+    "urnas_com_aptos_ou_comparecimento_diferentes": 0,
+    "numeros_de_urna_repetidos": 2,
+    "codigos_de_carga_repetidos": 2,
+    "urnas_nao_apuradas": 0,
+    "abertura_mais_cedo": "2026-10-25 08:00:00",
+    "urnas_abertas_antes_das_8h": 0,
+    "urnas_encerradas_antes_das_17h": 0,
+    "urnas_encerradas_depois_das_17h10": 341,
+    "encerramento_mais_tarde": "2026-10-25 18:14:45",
+    "urnas_encerradas_depois_das_19h": 0,
+    "eleitores_liberados_sem_biometria": 0,
+    "pct_sem_biometria": 0.0,
+    "bate_100pct": true,
+    "votos_manuais": {
+      "urnas_testadas": 1198,
+      "obs": "poucas urnas para o teste"
+    },
+    "arquivo": "bweb_2t_ZZ_261020260742.zip",
+    "assinatura_sha512_confere": true
+  }
+]
