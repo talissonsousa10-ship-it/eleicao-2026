@@ -46,6 +46,16 @@ out = {
     # pontos: [ibge, nome, uf, região, população, mudança pp, Lula 2026 %, válidos 2026]
     'pontos': [[p[0], p[1], p[2], regs.get(p[3], '?'), p[4], round(p[10], 1), p[9], p[11]] for p in r['pontos']],
 }
+# simulador: taxas estimadas (9 grupos do 1º turno) e votos de cada grupo no Brasil inteiro
+tab = t['tabela']
+out['simulador'] = {
+    'grupos': {o: {'nome': tab[o]['nome'], 'lula': tab[o]['lula']['taxa'], 'flavio': tab[o]['flavio']['taxa'],
+                   'lula_min': tab[o]['lula']['min'], 'lula_max': tab[o]['lula']['max'], 'flavio_min': tab[o]['flavio']['min'], 'flavio_max': tab[o]['flavio']['max']}
+               for o in tab},
+    'votos_1t': {**{k: v for k, v in c['votos_dos_outros_candidatos'].items()}, 'bn': c['brancos_nulos_1t'],
+                 'abst': 158745007 - c['compareceram_1t'], 'lula': c['lula_1t'], 'flavio': c['flavio_1t']},
+    'lula_2t': c['lula_2t'], 'flavio_2t': c['flavio_2t'],
+}
 mel = [p for p in r['pontos'] if p[10] < 0]
 out['flavio_melhor_que_2022'] = {'municipios': len(mel), 'validos': int(sum(p[11] for p in mel)), 'validos_total': int(sum(p[11] for p in r['pontos']))}
 SAIDA.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')

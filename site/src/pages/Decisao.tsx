@@ -265,12 +265,149 @@ function Terceiros() {
           </ul>
           <Conta t="E SE AS PESQUISAS ESTIVESSEM CERTAS SOBRE ESSE GRUPO?">
             Refazendo a conta com a divisão do Datafolha (46% Flávio, 32% Lula) para os 9,3 milhões de votos dos outros candidatos, e mantendo
-            todo o resto igual, Lula ainda venceria por cerca de <strong>{mi(X.contrafactual_datafolha, 1)}</strong>. A divisão desse grupo ajudou,
+            todo o resto igual, Lula ainda venceria por cerca de <strong>{mi(resultado(TESES[1].taxas()).m, 1)}</strong>. Dá para testar no simulador logo abaixo. A divisão desse grupo ajudou,
             mas não decidiu sozinha.
           </Conta>
           <p className="text-[0.85rem]" style={{ color: 'var(--ink-3)' }}>
             Pesquisa e urna não medem a mesma coisa: a pesquisa mede intenção, com indecisos, dias antes; a urna mede o voto, mas só por estimativa.
             A distância entre as duas é compatível com o erro das pesquisas no 2º turno, que deram Flávio na frente.
+          </p>
+        </div>
+      </div>
+    </Secao>
+  )
+}
+
+/* ---------------- simulador ---------------- */
+type GrupoSim = { k: string; nome: string; votos: number; l: number; f: number; max: number; nota?: string }
+const SIM = X.simulador
+const ST = X.simples.taxas
+const GRUPOS: GrupoSim[] = [
+  { k: 'cury', nome: 'Augusto Cury', votos: SIM.votos_1t.cury, l: SIM.grupos.cury.lula, f: SIM.grupos.cury.flavio, max: 100 },
+  { k: 'renan', nome: 'Renan Santos', votos: SIM.votos_1t.renan, l: SIM.grupos.renan.lula, f: SIM.grupos.renan.flavio, max: 100 },
+  { k: 'caiado', nome: 'Ronaldo Caiado', votos: SIM.votos_1t.caiado, l: SIM.grupos.caiado.lula, f: SIM.grupos.caiado.flavio, max: 100 },
+  { k: 'zema', nome: 'Zema e outros 6', votos: SIM.votos_1t.zema + SIM.votos_1t.pequenos, l: ST.terceiros.lula.taxa, f: ST.terceiros.flavio.taxa, max: 100, nota: 'poucos votos: usa a média de todos os outros candidatos' },
+  { k: 'nenhum', nome: 'Não escolheu ninguém no 1º turno', votos: SIM.votos_1t.bn + SIM.votos_1t.abst, l: ST.nenhum.lula.taxa, f: ST.nenhum.flavio.taxa, max: 40, nota: 'não foi votar, votou em branco ou anulou' },
+]
+type Taxas = Record<string, [number, number]>
+const BASE: Taxas = Object.fromEntries(GRUPOS.map((g) => [g.k, [g.l, g.f]]))
+const TERC = ['cury', 'renan', 'caiado', 'zema']
+const TESES: { id: string; rot: string; desc: string; taxas: () => Taxas }[] = [
+  { id: 'urnas', rot: 'O que as urnas indicam', desc: 'As taxas estimadas a partir das 443 mil urnas. É o resultado real.', taxas: () => ({ ...BASE }) },
+  { id: 'datafolha', rot: 'As pesquisas acertaram sobre os outros candidatos', desc: 'Eleitores de Cury, Renan, Caiado e Zema divididos como no Datafolha de 6 a 8/10: 46% Flávio, 32% Lula.', taxas: () => ({ ...BASE, ...Object.fromEntries(TERC.map((k) => [k, [32, 46]])) }) },
+  { id: 'quaest', rot: 'Pesquisa Quaest, candidato a candidato', desc: 'Divisão de cada eleitorado como na Quaest de 10 a 13/10. Zema e os pequenos ficam como nas urnas.', taxas: () => ({ ...BASE, cury: [34, 30], renan: [14, 40], caiado: [23, 42] }) },
+  { id: 'todos_flavio', rot: 'Os outros candidatos foram todos para Flávio', desc: 'O cenário mais favorável possível a Flávio nesse grupo: 100% dos 9,3 milhões para ele.', taxas: () => ({ ...BASE, ...Object.fromEntries(TERC.map((k) => [k, [0, 100]])) }) },
+  { id: 'sem_novos', rot: 'Quem não votou no 1º turno continuou sem votar', desc: 'Nenhum voto novo de quem tinha se abstido, votado em branco ou anulado.', taxas: () => ({ ...BASE, nenhum: [0, 0] }) },
+  { id: 'novos_meio', rot: 'Os novos votos se dividiram ao meio', desc: 'O mesmo número de pessoas sai da abstenção e dos nulos, mas metade para cada um.', taxas: () => { const m = (BASE.nenhum[0] + BASE.nenhum[1]) / 2; return { ...BASE, nenhum: [m, m] } } },
+]
+
+function resultado(t: Taxas) {
+  // muda só o que o simulador mexe; o resto fica exatamente como foi (por isso "O que as urnas indicam" dá o resultado oficial)
+  let l = SIM.lula_2t, f = SIM.flavio_2t
+  for (const g of GRUPOS) { l += (g.votos * (t[g.k][0] - BASE[g.k][0])) / 100; f += (g.votos * (t[g.k][1] - BASE[g.k][1])) / 100 }
+  return { l, f, m: l - f }
+}
+
+function Simulador() {
+  const [tese, setTese] = useState('urnas')
+  const [t, setT] = useState<Taxas>({ ...BASE })
+  const r = resultado(t), real = resultado(BASE)
+  const total = r.l + r.f
+  const aplicar = (id: string) => { setTese(id); setT(TESES.find((x) => x.id === id)!.taxas()) }
+  const mexer = (k: string, i: 0 | 1, v: number) => {
+    setTese('livre')
+    setT((o) => { const p: [number, number] = [...o[k]] as [number, number]; p[i] = v; if (p[0] + p[1] > 100) p[1 - i] = 100 - v; return { ...o, [k]: p } })
+  }
+  // quanto Flávio precisaria dos outros candidatos para empatar (divisão igual entre os quatro, resto como nas urnas)
+  const T3 = GRUPOS.filter((g) => TERC.includes(g.k))
+  const vt = T3.reduce((a, g) => a + g.votos, 0)
+  const lb = T3.reduce((a, g) => a + (g.votos * g.l) / 100, 0), fb = T3.reduce((a, g) => a + (g.votos * g.f) / 100, 0)
+  const ninguem = vt - lb - fb
+  const xEmpate = (real.m - lb + fb + (vt - ninguem)) / (2 * vt)
+  const desc = tese === 'livre' ? 'Cenário montado por você.' : TESES.find((x) => x.id === tese)!.desc
+  const venc = r.m >= 0 ? 'Lula' : 'Flávio'
+  return (
+    <Secao id="simulador" eyebrow="3 · Simulador" titulo="Teste as teses: e se os votos tivessem ido para outro lado?">
+      <p className="prose-p mt-4">
+        Escolha uma tese ou mexa nas barras. Cada linha é um grupo de eleitores do 1º turno; você decide quantos de cada 100 foram para Lula
+        e para Flávio no 2º turno (o resto não votou em ninguém). Tudo o que você não mexer fica exatamente como foi.
+      </p>
+      <div className="mt-6 flex flex-wrap gap-1.5" role="group" aria-label="Teses">
+        {TESES.map((x) => <button key={x.id} className="btn !py-1.5 !px-2.5 !text-[0.64rem] !normal-case !tracking-normal" aria-pressed={tese === x.id} onClick={() => aplicar(x.id)}>{x.rot}</button>)}
+      </div>
+      <p className="mt-2 text-[0.9rem]" style={{ color: 'var(--ink-3)' }}>{desc}</p>
+
+      <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] items-start">
+        <div className="grid gap-4 min-w-0">
+          {GRUPOS.map((g) => {
+            const [l, f] = t[g.k], n = Math.max(0, 100 - l - f)
+            return (
+              <div key={g.k} className="p-4" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+                  <h3 className="text-[1.02rem] font-extrabold" style={{ fontStretch: '85%' }}>{g.nome}</h3>
+                  <span className="mono text-[0.62rem]" style={{ color: 'var(--ink-3)' }}>{fmtMi(g.votos, 1)} NO 1º TURNO</span>
+                </div>
+                {g.nota && <p className="mono text-[0.58rem] mt-0.5" style={{ color: 'var(--ink-3)' }}>{g.nota.toUpperCase()}</p>}
+                <div className="mt-2 flex h-3 w-full overflow-hidden rounded-[2px] gap-[2px]">
+                  <motion.span animate={{ width: `${l}%` }} transition={{ duration: 0.3 }} style={{ background: 'var(--lula)' }} />
+                  <motion.span animate={{ width: `${n}%` }} transition={{ duration: 0.3 }} style={{ background: 'var(--ink-3)', opacity: 0.3 }} />
+                  <motion.span animate={{ width: `${f}%` }} transition={{ duration: 0.3 }} style={{ background: 'var(--flavio)' }} />
+                </div>
+                <div className="mt-2.5 grid gap-x-5 gap-y-1.5 sm:grid-cols-2">
+                  {([0, 1] as const).map((i) => (
+                    <label key={i} className="grid grid-cols-[4.2rem_minmax(0,1fr)_3rem] items-center gap-2 mono text-[0.64rem]">
+                      <span style={{ color: i === 0 ? 'var(--lula)' : 'var(--flavio)', fontWeight: 700 }}>{i === 0 ? 'LULA' : 'FLÁVIO'}</span>
+                      <input type="range" min={0} max={g.max} step={g.max < 100 ? 0.5 : 1} value={t[g.k][i]} onChange={(e) => mexer(g.k, i, +e.target.value)}
+                        style={{ accentColor: i === 0 ? 'var(--lula)' : 'var(--flavio)' }} aria-label={`${g.nome}: % para ${i === 0 ? 'Lula' : 'Flávio'}`} />
+                      <span className="text-right">{virg(t[g.k][i], g.max < 100 ? 1 : 0)}%</span>
+                    </label>
+                  ))}
+                </div>
+                <div className="mono text-[0.58rem] mt-1" style={{ color: 'var(--ink-3)' }}>
+                  NAS URNAS: LULA {virg(BASE[g.k][0], g.max < 100 ? 1 : 0)}% · FLÁVIO {virg(BASE[g.k][1], g.max < 100 ? 1 : 0)}% · NINGUÉM {virg(Math.max(0, 100 - BASE[g.k][0] - BASE[g.k][1]), 0)}%
+                </div>
+              </div>
+            )
+          })}
+          <div className="lg:hidden sticky bottom-2 z-20 p-3 flex items-center gap-3" style={{ background: 'var(--card)', border: '1.5px solid var(--ink)', boxShadow: '0 12px 30px -14px rgba(0,0,0,.5)' }} aria-live="polite">
+            <span className="display uppercase text-[1.15rem] leading-none whitespace-nowrap" style={{ color: r.m >= 0 ? 'var(--lula)' : 'var(--flavio)' }}>{venc} vence</span>
+            <span className="mono text-[0.66rem] whitespace-nowrap">por {fmtMi(Math.abs(r.m), 2)}</span>
+            <span className="flex-1 flex h-3 overflow-hidden rounded-[2px] gap-[2px] min-w-[3rem]">
+              <motion.span animate={{ width: `${(100 * r.l) / total}%` }} style={{ background: 'var(--lula)' }} />
+              <motion.span animate={{ width: `${(100 * r.f) / total}%` }} style={{ background: 'var(--flavio)' }} />
+            </span>
+          </div>
+        </div>
+
+        <div className="min-w-0 lg:sticky lg:top-16 grid gap-4">
+          <div className="p-5" style={{ background: 'var(--card)', border: '1.5px solid var(--ink)' }}>
+            <p className="eyebrow">Resultado do 2º turno neste cenário</p>
+            <motion.p key={venc} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="display uppercase text-[2.2rem] leading-none mt-2" style={{ color: r.m >= 0 ? 'var(--lula)' : 'var(--flavio)' }}>
+              {venc} vence
+            </motion.p>
+            <p className="mono text-[0.8rem] mt-1">por {fmt(Math.abs(r.m))} votos</p>
+            <div className="mt-4 flex h-8 w-full overflow-hidden rounded-[3px] gap-[2px]">
+              <motion.div animate={{ width: `${(100 * r.l) / total}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} className="h-full flex items-center px-2 mono text-[0.72rem] font-semibold text-white whitespace-nowrap overflow-hidden" style={{ background: 'var(--lula)' }}>{virg((100 * r.l) / total, 1)}%</motion.div>
+              <motion.div animate={{ width: `${(100 * r.f) / total}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} className="h-full flex items-center justify-end px-2 mono text-[0.72rem] font-semibold text-white whitespace-nowrap overflow-hidden" style={{ background: 'var(--flavio)' }}>{virg((100 * r.f) / total, 1)}%</motion.div>
+            </div>
+            <div className="relative h-0">
+              <span className="absolute -top-8 h-8 w-[2px]" style={{ left: '50%', background: 'var(--ink)' }} title="50%" />
+            </div>
+            <div className="mt-3 grid grid-cols-2 gap-px mono text-[0.66rem]" style={{ background: 'var(--rule)', border: '1px solid var(--rule)' }}>
+              <div className="p-2.5" style={{ background: 'var(--paper)' }}><div style={{ color: 'var(--ink-3)' }}>LULA</div><div className="font-semibold text-[0.8rem]">{fmt(r.l)}</div></div>
+              <div className="p-2.5" style={{ background: 'var(--paper)' }}><div style={{ color: 'var(--ink-3)' }}>FLÁVIO</div><div className="font-semibold text-[0.8rem]">{fmt(r.f)}</div></div>
+            </div>
+            <p className="mono text-[0.62rem] mt-3" style={{ color: 'var(--ink-3)' }}>
+              RESULTADO REAL: LULA POR {fmt(real.m)}. {tese !== 'urnas' && `DIFERENÇA PARA O REAL: ${r.m - real.m >= 0 ? '+' : '−'}${fmt(Math.abs(r.m - real.m))} NA VANTAGEM DE LULA.`}
+            </p>
+          </div>
+          <Conta t="QUANTO FLÁVIO PRECISARIA DOS OUTROS CANDIDATOS">
+            Mantendo todo o resto como foi, Flávio precisaria de <b>{virg(100 * xEmpate, 0)} de cada 100</b> eleitores de Cury, Renan, Caiado e Zema
+            só para empatar (Lula ficando com {virg(100 - 100 * xEmpate - (100 * ninguem) / vt, 0)}). Nas urnas, ele teve cerca de {virg((100 * fb) / vt, 0)}; na pesquisa Datafolha, 46.
+          </Conta>
+          <p className="text-[0.82rem]" style={{ color: 'var(--ink-3)' }}>
+            O simulador muda uma coisa de cada vez e mantém o resto. Na vida real, as coisas se influenciam: uma campanha que atraísse mais eleitores de
+            Caiado talvez também mudasse quem foi votar. As taxas de partida são estimativas com margem de erro, explicadas na seção 1.
           </p>
         </div>
       </div>
@@ -368,7 +505,7 @@ function Vs2022() {
   const d = X.d22, n = X.nac22
   const porte = X.grupos.porte
   return (
-    <Secao id="vs2022" eyebrow="3 · Comparado a 2022" titulo="Flávio cresceu no Brasil pequeno e recuou no Brasil grande">
+    <Secao id="vs2022" eyebrow="4 · Comparado a 2022" titulo="Flávio cresceu no Brasil pequeno e recuou no Brasil grande" fundo>
       <div className="mt-6 grid gap-10 lg:grid-cols-2">
         <div className="prose-p space-y-4 min-w-0">
           <p>
@@ -445,7 +582,7 @@ function Dispersao() {
   }, [P, reg])
   const ordem = useMemo(() => [...P].sort((a, b) => b[7] - a[7]), [P])
   return (
-    <Secao id="dispersao" eyebrow="4 · Cada ponto é um município" titulo="Quanto maior a cidade, mais Lula cresceu desde 2022" fundo>
+    <Secao id="dispersao" eyebrow="5 · Cada ponto é um município" titulo="Quanto maior a cidade, mais Lula cresceu desde 2022">
       <p className="prose-p mt-4">
         Na horizontal, a população (cada marca é 10 vezes a anterior). Na vertical, quanto Lula mudou em relação a 2022, em pontos.
         O tamanho do ponto é o número de votos. A linha preta é a média de cada faixa de tamanho, pesada pelos votos: é a tendência.
@@ -519,7 +656,7 @@ function Perfil() {
   const [ref, play] = usePlayOnView<HTMLDivElement>()
   const max = 3
   return (
-    <Secao id="perfil" eyebrow="5 · O perfil dos municípios" titulo="Renda sozinha não explica; tamanho da cidade explica mais">
+    <Secao id="perfil" eyebrow="6 · O perfil dos municípios" titulo="Renda sozinha não explica; tamanho da cidade explica mais" fundo>
       <p className="prose-p mt-4">
         Dividimos o eleitorado em cinco partes iguais segundo cada característica do município (dados do Censo 2022 do IBGE) e medimos quanto Lula mudou
         desde 2022 em cada parte. Barras para cima: Lula melhorou; para baixo: Flávio foi melhor que Bolsonaro.
@@ -607,7 +744,7 @@ function Perfil() {
 /* ---------------- leitura ---------------- */
 function Leitura() {
   return (
-    <Secao id="leitura" eyebrow="6 · Leitura" titulo="O que os números dizem e o que não dizem" fundo>
+    <Secao id="leitura" eyebrow="7 · Leitura" titulo="O que os números dizem e o que não dizem">
       <div className="mt-6 grid gap-8 md:grid-cols-2">
         <motion.div {...ver} className="p-6" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
           <h3 className="text-[1.2rem] font-extrabold" style={{ fontStretch: '85%' }}>Dizem</h3>
@@ -660,6 +797,7 @@ export default function Decisao() {
       <Abertura />
       <Fluxo />
       <Terceiros />
+      <Simulador />
       <Vs2022 />
       <Dispersao />
       <Perfil />
