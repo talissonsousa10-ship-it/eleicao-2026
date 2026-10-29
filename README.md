@@ -23,7 +23,7 @@ Autor: **Talisson Sousa de Santana**, Analista de Dados Estatísticos.
 - **Onde foi decidida** (estimativas por inferência ecológica):
   - a virada veio de quem não tinha votado em Lula nem em Flávio no 1º turno: somados, os dois ganharam 14,1 milhões de votos, e 74% desse ganho foi de Lula (conta exata);
   - pelo modelo das urnas, o grupo que mais pesou foi o de quem não votou em ninguém (entre 6,0 e 6,2 milhões para Lula, contra 0,1 a 0,9 milhão para Flávio), e os eleitores dos outros candidatos se dividiram quase ao meio. Pelo método das zonas, os outros candidatos foram mais para Flávio (32% × 57%). A divisão entre os dois grupos é a parte menos certa;
-  - o simulador da página testa sete teses de transferência. Só duas viram o resultado: todos os eleitores dos outros candidatos indo para Flávio, ou quem não votou no 1º turno continuando sem votar;
+  - o simulador da página testa sete teses de transferência, cada uma com uma faixa provável (90% de 200 reamostragens de municípios). Só duas viram o resultado: todos os eleitores dos outros candidatos indo para Flávio, ou quem não votou no 1º turno continuando sem votar;
   - comparado a 2022, Flávio cresceu nas cidades pequenas e recuou nas grandes.
 
 **Limites:**
@@ -62,6 +62,7 @@ Os arquivos vêm do [Portal de Dados Abertos do TSE](https://dadosabertos.tse.ju
 | `montar_banco.py --parquet` e `testar_banco.py` | banco DuckDB com tudo (ver `BANCO_LEIAME.md`) | `banco/` |
 | `baixar_ibge.py` | indicadores do Censo 2022 e PIB 2023 por município | `dados_ibge/` |
 | `analise_decisao.py` | transferências de voto, 2022 × 2026, perfil e regressão | `analise/decisao/` |
+| `bootstrap_simulador.py` | 200 reamostragens das taxas usadas no simulador, para a faixa provável de cada tese | `analise/decisao/simulador_bootstrap.json` |
 | `preparar_busca.py` | dados da busca do site, um arquivo por estado, conferidos com o total oficial de cada município | `docs/busca/` |
 
 Os resultados de cada etapa já estão em `analise/`, para quem quiser conferir sem rodar tudo.

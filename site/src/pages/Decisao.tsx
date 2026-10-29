@@ -299,43 +299,43 @@ const GRUPOS: GrupoSim[] = [
 type Taxas = Record<string, [number, number]>
 const BASE: Taxas = Object.fromEntries(GRUPOS.map((g) => [g.k, [g.l, g.f]]))
 const TERC = ['cury', 'renan', 'caiado', 'zema']
-type Tese = { id: string; rot: string; tese: string; muda: string; ler: string; taxas: () => Taxas }
+type Tese = { id: string; rot: string; tese: string; muda: string; ler: string; taxas: (b?: Taxas) => Taxas }
 const TESES: Tese[] = [
   { id: 'urnas', rot: 'O que as urnas indicam',
     tese: 'Ponto de partida: o que as 443 mil urnas indicam sobre o destino de cada grupo do 1º turno.',
     muda: 'Nada. As taxas são as estimadas na seção 1 (por exemplo, eleitores de Caiado: 35% para Lula, 57% para Flávio).',
     ler: 'É o resultado oficial. As taxas têm margem de cerca de 2 pontos. Compare as outras teses com esta.',
-    taxas: () => ({ ...BASE }) },
+    taxas: (b = BASE) => ({ ...b }) },
   { id: 'datafolha', rot: 'As pesquisas acertaram sobre os outros candidatos',
     tese: '“Os eleitores dos outros candidatos iam para Flávio.” Era o que mostrava o Datafolha de 6 a 8/10: 46% para Flávio e 32% para Lula entre os eleitores de Cury, Renan, Caiado e Zema.',
     muda: 'Os 9,3 milhões de votos desses quatro passam a se dividir em 32% Lula, 46% Flávio e 22% ninguém. O resto fica igual.',
     ler: 'Mesmo com a pesquisa certa, Lula venceria. A pesquisa mede intenção dias antes, com indecisos; a urna mede o voto, mas por estimativa.',
-    taxas: () => ({ ...BASE, ...Object.fromEntries(TERC.map((k) => [k, [32, 46]])) }) },
+    taxas: (b = BASE) => ({ ...b, ...Object.fromEntries(TERC.map((k) => [k, [32, 46]])) }) },
   { id: 'quaest', rot: 'Pesquisa Quaest, candidato a candidato',
     tese: 'A Quaest de 10 a 13/10 perguntou a cada eleitorado: Cury 34% Lula × 30% Flávio; Renan 14% × 40%; Caiado 23% × 42%.',
     muda: 'Cada um desses eleitorados passa a se dividir como na Quaest; nulos e indecisos da pesquisa viram "ninguém". Zema e os pequenos ficam como nas urnas.',
     ler: 'Os indecisos da pesquisa (46% entre os eleitores de Renan) aqui não votam em ninguém, o que tira votos dos dois. Ainda assim, Lula vence.',
-    taxas: () => ({ ...BASE, cury: [34, 30], renan: [14, 40], caiado: [23, 42] }) },
+    taxas: (b = BASE) => ({ ...b, cury: [34, 30], renan: [14, 40], caiado: [23, 42] }) },
   { id: 'zonas', rot: 'Outro método: a variação entre zonas',
     tese: 'O teste 1 da página principal usa outro método: compara quanto cada candidato cresceu em cada zona com o perfil da zona. Por ele, os eleitores dos outros candidatos foram 32% para Lula e 57% para Flávio.',
     muda: 'Os quatro eleitorados passam a se dividir em 32% Lula e 57% Flávio. O resto fica como nas urnas.',
     ler: 'É a divisão mais favorável a Flávio que algum método desta análise encontrou. Aqui ela se soma ao resto do modelo das urnas, o que dá o pior caso para Lula; mesmo assim, ele vence. Os dois métodos concordam no total da virada e diferem em quanto crédito dão a cada grupo.',
-    taxas: () => ({ ...BASE, ...Object.fromEntries(TERC.map((k) => [k, [32, 57]])) }) },
+    taxas: (b = BASE) => ({ ...b, ...Object.fromEntries(TERC.map((k) => [k, [32, 57]])) }) },
   { id: 'todos_flavio', rot: 'Os outros candidatos foram todos para Flávio',
     tese: '“Os votos de Caiado, Zema, Renan e Cury eram da direita e iriam para Flávio.”',
     muda: '100% dos 9,3 milhões vão para Flávio: nenhum para Lula, ninguém deixa de votar.',
     ler: 'É o limite máximo, não um cenário provável: nenhuma pesquisa ou método mostrou mais de 57% de qualquer desses eleitorados indo para Flávio. Serve para mostrar que o grupo tinha votos suficientes para decidir, se tivesse ido em bloco.',
-    taxas: () => ({ ...BASE, ...Object.fromEntries(TERC.map((k) => [k, [0, 100]])) }) },
+    taxas: (b = BASE) => ({ ...b, ...Object.fromEntries(TERC.map((k) => [k, [0, 100]])) }) },
   { id: 'sem_novos', rot: 'Quem não votou no 1º turno continuou sem votar',
     tese: '“A virada veio de votos que não existiam no 1º turno.”',
     muda: 'Os 39,4 milhões que não votaram em candidato no 1º turno (abstenção, branco e nulo) continuam sem votar em ninguém. O resto fica como foi.',
     ler: 'Mostra o peso desse grupo: sem ele, Flávio venceria. Isso não é sinal de fraude. O comparecimento subiu no país inteiro, os eleitores a mais se dividiram entre os dois candidatos nas zonas (teste 1) e, em 2022, foi Bolsonaro quem ganhou mais votos entre os turnos. É também a parte mais incerta da estimativa (ver a seção 1).',
-    taxas: () => ({ ...BASE, nenhum: [0, 0] }) },
+    taxas: (b = BASE) => ({ ...b, nenhum: [0, 0] }) },
   { id: 'novos_meio', rot: 'Os novos votos se dividiram ao meio',
     tese: '“Se os novos votos tivessem se dividido igualmente, Flávio teria ganhado.”',
     muda: 'O mesmo número de pessoas sai da abstenção e do voto nulo, mas metade vai para cada candidato. Os outros grupos ficam como nas urnas.',
     ler: 'Pelo modelo das urnas, esse grupo foi quase todo para Lula. Pelo método das zonas, os eleitores a mais se dividiram quase ao meio (50 × 47), e a vantagem de Lula aparece em outros grupos. Esta tese mostra o que acontece se só uma parte da conta mudar; não deve ser lida sozinha.',
-    taxas: () => { const m = (BASE.nenhum[0] + BASE.nenhum[1]) / 2; return { ...BASE, nenhum: [m, m] } } },
+    taxas: (b = BASE) => { const m = (b.nenhum[0] + b.nenhum[1]) / 2; return { ...b, nenhum: [m, m] } } },
 ]
 
 function resultado(t: Taxas) {
@@ -343,6 +343,34 @@ function resultado(t: Taxas) {
   let l = SIM.lula_2t, f = SIM.flavio_2t
   for (const g of GRUPOS) { l += (g.votos * (t[g.k][0] - BASE[g.k][0])) / 100; f += (g.votos * (t[g.k][1] - BASE[g.k][1])) / 100 }
   return { l, f, m: l - f }
+}
+
+// reamostragens das taxas de partida: a faixa de cada tese vem só dos grupos que ela muda
+const BOOT: Taxas[] = ((SIM as { boot?: number[][] }).boot ?? []).map((v) =>
+  Object.fromEntries(((SIM as { boot_grupos?: string[] }).boot_grupos ?? []).map((g, i) => [g, [v[2 * i], v[2 * i + 1]] as [number, number]])))
+function margemCom(b: Taxas, t: Taxas) {
+  let m = SIM.lula_2t - SIM.flavio_2t
+  for (const g of GRUPOS) m += (g.votos * (t[g.k][0] - b[g.k][0] - (t[g.k][1] - b[g.k][1]))) / 100
+  return m
+}
+function faixa(tese: string, t: Taxas): [number, number] | null {
+  if (!BOOT.length || tese === 'urnas') return null
+  const T = TESES.find((x) => x.id === tese)
+  const mud = GRUPOS.filter((g) => t[g.k][0] !== BASE[g.k][0] || t[g.k][1] !== BASE[g.k][1]).map((g) => g.k)
+  if (!mud.length) return null
+  const ms = BOOT.map((b) => {
+    const tb: Taxas = T ? T.taxas(b) : { ...b, ...Object.fromEntries(mud.map((k) => [k, t[k]])) }
+    return margemCom(b, tb)
+  }).sort((x, y) => x - y)
+  const q = (p: number) => ms[Math.min(ms.length - 1, Math.max(0, Math.round(p * (ms.length - 1))))]
+  return [q(0.05), q(0.95)]
+}
+const quem = (m: number) => (m >= 0 ? 'Lula' : 'Flávio')
+function textoFaixa(f: [number, number]) {
+  const [a, b] = f
+  if (a >= 0) return `Lula por ${virg(a / 1e6, 1)} a ${virg(b / 1e6, 1)} mi`
+  if (b < 0) return `Flávio por ${virg(-b / 1e6, 1)} a ${virg(-a / 1e6, 1)} mi`
+  return `de Flávio por ${virg(-a / 1e6, 1)} mi a Lula por ${virg(b / 1e6, 1)} mi`
 }
 
 function Simulador() {
@@ -365,6 +393,7 @@ function Simulador() {
   const mudancas = GRUPOS.filter((g) => t[g.k][0] !== BASE[g.k][0] || t[g.k][1] !== BASE[g.k][1])
     .map((g) => `${g.nome}: Lula ${virg(BASE[g.k][0], 0)}→${virg(t[g.k][0], 0)}%, Flávio ${virg(BASE[g.k][1], 0)}→${virg(t[g.k][1], 0)}%`)
   const venc = r.m >= 0 ? 'Lula' : 'Flávio'
+  const fx = useMemo(() => faixa(tese, t), [tese, t])
   return (
     <Secao id="simulador" eyebrow="3 · Simulador" titulo="Teste as teses: e se os votos tivessem ido para outro lado?">
       <p className="prose-p mt-4">
@@ -389,6 +418,7 @@ function Simulador() {
           <div className="md:col-span-3 pt-3 flex flex-wrap items-baseline gap-x-3 mono text-[0.7rem]" style={{ borderTop: '1px dashed var(--rule)' }}>
             <span style={{ color: 'var(--ink-3)' }}>RESULTADO DESTA TESE:</span>
             <b style={{ color: r.m >= 0 ? 'var(--lula)' : 'var(--flavio)' }}>{venc.toUpperCase()} VENCE POR {fmt(Math.abs(r.m))}</b>
+            {fx && <span style={{ color: 'var(--ink-2)' }}>FAIXA PROVÁVEL: {textoFaixa(fx).toUpperCase()}</span>}
             {tese !== 'urnas' && <span style={{ color: 'var(--ink-3)' }}>({r.m - real.m >= 0 ? '+' : '−'}{fmt(Math.abs(r.m - real.m))} NA VANTAGEM DE LULA, COMPARADO AO REAL)</span>}
           </div>
         </motion.div>
@@ -428,7 +458,7 @@ function Simulador() {
           })}
           <div className="lg:hidden sticky bottom-2 z-20 p-3 flex items-center gap-3" style={{ background: 'var(--card)', border: '1.5px solid var(--ink)', boxShadow: '0 12px 30px -14px rgba(0,0,0,.5)' }} aria-live="polite">
             <span className="display uppercase text-[1.15rem] leading-none whitespace-nowrap" style={{ color: r.m >= 0 ? 'var(--lula)' : 'var(--flavio)' }}>{venc} vence</span>
-            <span className="mono text-[0.66rem] whitespace-nowrap">por {fmtMi(Math.abs(r.m), 2)}</span>
+            <span className="mono text-[0.66rem] whitespace-nowrap">por {fmtMi(Math.abs(r.m), 2)}{fx && (fx[0] < 0) === (fx[1] < 0) && <span style={{ color: 'var(--ink-3)' }}> ({virg(Math.min(Math.abs(fx[0]), Math.abs(fx[1])) / 1e6, 1)}–{virg(Math.max(Math.abs(fx[0]), Math.abs(fx[1])) / 1e6, 1)})</span>}</span>
             <span className="flex-1 flex h-3 overflow-hidden rounded-[2px] gap-[2px] min-w-[3rem]">
               <motion.span animate={{ width: `${(100 * r.l) / total}%` }} style={{ background: 'var(--lula)' }} />
               <motion.span animate={{ width: `${(100 * r.f) / total}%` }} style={{ background: 'var(--flavio)' }} />
@@ -443,6 +473,11 @@ function Simulador() {
               {venc} vence
             </motion.p>
             <p className="mono text-[0.8rem] mt-1">por {fmt(Math.abs(r.m))} votos</p>
+            <p className="mono text-[0.66rem] mt-1.5" style={{ color: 'var(--ink-2)' }}>
+              {tese === 'urnas' ? 'RESULTADO OFICIAL: É CONTAGEM, NÃO TEM MARGEM DE ERRO.'
+                : fx ? <>FAIXA PROVÁVEL: <b>{textoFaixa(fx).toUpperCase()}</b>{(fx[0] < 0) !== (fx[1] < 0) && ' · O RESULTADO FICA INDEFINIDO'}</>
+                : 'NADA MUDOU EM RELAÇÃO ÀS URNAS.'}
+            </p>
             <div className="mt-4 flex h-8 w-full overflow-hidden rounded-[3px] gap-[2px]">
               <motion.div animate={{ width: `${(100 * r.l) / total}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} className="h-full flex items-center px-2 mono text-[0.72rem] font-semibold text-white whitespace-nowrap overflow-hidden" style={{ background: 'var(--lula)' }}>{virg((100 * r.l) / total, 1)}%</motion.div>
               <motion.div animate={{ width: `${(100 * r.f) / total}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} className="h-full flex items-center justify-end px-2 mono text-[0.72rem] font-semibold text-white whitespace-nowrap overflow-hidden" style={{ background: 'var(--flavio)' }}>{virg((100 * r.f) / total, 1)}%</motion.div>
@@ -457,6 +492,10 @@ function Simulador() {
             <p className="mono text-[0.62rem] mt-3" style={{ color: 'var(--ink-3)' }}>
               RESULTADO REAL: LULA POR {fmt(real.m)}. {tese !== 'urnas' && `DIFERENÇA PARA O REAL: ${r.m - real.m >= 0 ? '+' : '−'}${fmt(Math.abs(r.m - real.m))} NA VANTAGEM DE LULA.`}
             </p>
+            {fx && <p className="text-[0.78rem] mt-2" style={{ color: 'var(--ink-3)' }}>
+              A faixa vem só dos grupos que o cenário muda: o ponto de partida deles é uma estimativa. Ela cobre 90% de 200 refeitas da conta,
+              cada uma com um sorteio diferente de municípios.
+            </p>}
           </div>
           <Conta t="QUANTO OS OUTROS CANDIDATOS TERIAM QUE MUDAR">
             Mantendo todo o resto como foi, o resultado só viraria se <b>{virg((100 * real.m) / (2 * vt), 0)} de cada 100</b> eleitores de Cury, Renan,

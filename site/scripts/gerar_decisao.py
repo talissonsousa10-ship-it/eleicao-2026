@@ -56,6 +56,12 @@ out['simulador'] = {
                  'abst': 158745007 - c['compareceram_1t'], 'lula': c['lula_1t'], 'flavio': c['flavio_1t']},
     'lula_2t': c['lula_2t'], 'flavio_2t': c['flavio_2t'],
 }
+# reamostragens das taxas de partida (bootstrap_simulador.py), para a faixa de cada tese
+BOOT = ENTRADA.parent / 'simulador_bootstrap.json'
+if BOOT.exists():
+    bt = json.loads(BOOT.read_text(encoding='utf-8'))
+    out['simulador']['boot_grupos'] = list(bt['central'])
+    out['simulador']['boot'] = [[v for g in bt['central'] for v in rep[g]] for rep in bt['reamostragens']]
 mel = [p for p in r['pontos'] if p[10] < 0]
 out['flavio_melhor_que_2022'] = {'municipios': len(mel), 'validos': int(sum(p[11] for p in mel)), 'validos_total': int(sum(p[11] for p in r['pontos']))}
 SAIDA.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
