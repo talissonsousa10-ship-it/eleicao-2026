@@ -62,6 +62,11 @@ if BOOT.exists():
     bt = json.loads(BOOT.read_text(encoding='utf-8'))
     out['simulador']['boot_grupos'] = list(bt['central'])
     out['simulador']['boot'] = [[v for g in bt['central'] for v in rep[g]] for rep in bt['reamostragens']]
+# perfil das urnas (analise_perfil.py)
+PERF = ENTRADA.parent.parent / 'perfil' / 'resultados.json'
+if PERF.exists():
+    pf = json.loads(PERF.read_text(encoding='utf-8'))
+    out['perfil_urnas'] = {k: pf[k] for k in ('urnas', 'municipios', 'eleitores', 'nomes', 'regressao', 'quintis')}
 mel = [p for p in r['pontos'] if p[10] < 0]
 out['flavio_melhor_que_2022'] = {'municipios': len(mel), 'validos': int(sum(p[11] for p in mel)), 'validos_total': int(sum(p[11] for p in r['pontos']))}
 SAIDA.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')

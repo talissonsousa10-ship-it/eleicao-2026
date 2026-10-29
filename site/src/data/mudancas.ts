@@ -6,6 +6,7 @@ export const MUDANCAS: { data: string; itens: Mudanca[] }[] = [
   {
     data: '29/10/2026',
     itens: [
+      { hora: '19h34', tipo: 'novo', pagina: 'Onde foi decidida', texto: 'Seção 7, "O perfil das urnas": idade, escolaridade e sexo dos eleitores de cada seção (TSE) comparados ao resultado de 426 mil urnas, dentro da mesma cidade, e confrontados com a pesquisa Datafolha. A seção "Leitura" passou a ser a 8 e ganhou um item sobre escolaridade.' },
       { hora: '17h00', tipo: 'novo', pagina: 'Todas', texto: 'O código e o conteúdo passaram a ter licença MIT: podem ser usados e modificados, mantendo o aviso de autoria.' },
       { hora: '16h57', tipo: 'novo', pagina: 'Todas', texto: 'Data de atualização no topo de cada página e este registro de mudanças.' },
       { hora: '16h52', tipo: 'novo', pagina: 'Onde foi decidida', texto: 'Faixa provável no resultado de cada tese do simulador (90% de 200 refeitas da conta com sorteios de municípios). Nenhuma faixa troca o vencedor de alguma tese.' },

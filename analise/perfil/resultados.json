@@ -1,0 +1,478 @@
+{
+ "urnas": 426420,
+ "urnas_com_perfil": 498816,
+ "municipios": 5629,
+ "eleitores": 134449224,
+ "perfil_total_eleitores": 158745463,
+ "referencias": "35 a 59 anos; até fundamental incompleto; homens",
+ "nomes": {
+  "jovem_16_24": "Eleitores de 16 a 24 anos",
+  "id_25_34": "Eleitores de 25 a 34 anos",
+  "id_60_69": "Eleitores de 60 a 69 anos",
+  "id_70": "Eleitores de 70 anos ou mais",
+  "fund_med": "Fundamental completo ou médio incompleto",
+  "medio": "Médio completo ou superior incompleto",
+  "superior": "Superior completo",
+  "feminino": "Mulheres",
+  "esc_baixa": "Até fundamental incompleto"
+ },
+ "regressao": {
+  "margem_t1": {
+   "r2_dentro_da_cidade": 0.247,
+   "por_10_pontos": {
+    "jovem_16_24": {
+     "efeito": 4.0,
+     "faixa": [
+      3.54,
+      4.45
+     ]
+    },
+    "id_25_34": {
+     "efeito": 2.04,
+     "faixa": [
+      1.54,
+      2.53
+     ]
+    },
+    "id_60_69": {
+     "efeito": -0.02,
+     "faixa": [
+      -0.76,
+      0.73
+     ]
+    },
+    "id_70": {
+     "efeito": -1.95,
+     "faixa": [
+      -3.46,
+      -0.45
+     ]
+    },
+    "fund_med": {
+     "efeito": -8.9,
+     "faixa": [
+      -9.89,
+      -7.92
+     ]
+    },
+    "medio": {
+     "efeito": -7.81,
+     "faixa": [
+      -8.54,
+      -7.09
+     ]
+    },
+    "superior": {
+     "efeito": -7.16,
+     "faixa": [
+      -8.39,
+      -5.93
+     ]
+    },
+    "feminino": {
+     "efeito": 2.75,
+     "faixa": [
+      2.39,
+      3.1
+     ]
+    }
+   }
+  },
+  "margem_t2": {
+   "r2_dentro_da_cidade": 0.285,
+   "por_10_pontos": {
+    "jovem_16_24": {
+     "efeito": 4.18,
+     "faixa": [
+      3.77,
+      4.59
+     ]
+    },
+    "id_25_34": {
+     "efeito": 2.22,
+     "faixa": [
+      1.77,
+      2.67
+     ]
+    },
+    "id_60_69": {
+     "efeito": -0.31,
+     "faixa": [
+      -1.0,
+      0.39
+     ]
+    },
+    "id_70": {
+     "efeito": -1.97,
+     "faixa": [
+      -3.42,
+      -0.53
+     ]
+    },
+    "fund_med": {
+     "efeito": -8.46,
+     "faixa": [
+      -9.33,
+      -7.59
+     ]
+    },
+    "medio": {
+     "efeito": -7.55,
+     "faixa": [
+      -8.2,
+      -6.9
+     ]
+    },
+    "superior": {
+     "efeito": -7.72,
+     "faixa": [
+      -8.88,
+      -6.57
+     ]
+    },
+    "feminino": {
+     "efeito": 3.19,
+     "faixa": [
+      2.87,
+      3.51
+     ]
+    }
+   }
+  },
+  "comparecimento_t2": {
+   "r2_dentro_da_cidade": 0.287,
+   "por_10_pontos": {
+    "jovem_16_24": {
+     "efeito": -1.46,
+     "faixa": [
+      -1.53,
+      -1.39
+     ]
+    },
+    "id_25_34": {
+     "efeito": -1.18,
+     "faixa": [
+      -1.24,
+      -1.11
+     ]
+    },
+    "id_60_69": {
+     "efeito": 0.99,
+     "faixa": [
+      0.91,
+      1.08
+     ]
+    },
+    "id_70": {
+     "efeito": -3.41,
+     "faixa": [
+      -3.75,
+      -3.07
+     ]
+    },
+    "fund_med": {
+     "efeito": -0.18,
+     "faixa": [
+      -0.28,
+      -0.08
+     ]
+    },
+    "medio": {
+     "efeito": 0.66,
+     "faixa": [
+      0.58,
+      0.74
+     ]
+    },
+    "superior": {
+     "efeito": 0.43,
+     "faixa": [
+      0.32,
+      0.54
+     ]
+    },
+    "feminino": {
+     "efeito": 0.29,
+     "faixa": [
+      0.19,
+      0.39
+     ]
+    }
+   }
+  },
+  "virada": {
+   "r2_dentro_da_cidade": 0.049,
+   "por_10_pontos": {
+    "jovem_16_24": {
+     "efeito": 0.18,
+     "faixa": [
+      0.12,
+      0.24
+     ]
+    },
+    "id_25_34": {
+     "efeito": 0.18,
+     "faixa": [
+      0.13,
+      0.24
+     ]
+    },
+    "id_60_69": {
+     "efeito": -0.29,
+     "faixa": [
+      -0.36,
+      -0.22
+     ]
+    },
+    "id_70": {
+     "efeito": -0.02,
+     "faixa": [
+      -0.09,
+      0.04
+     ]
+    },
+    "fund_med": {
+     "efeito": 0.45,
+     "faixa": [
+      0.32,
+      0.57
+     ]
+    },
+    "medio": {
+     "efeito": 0.26,
+     "faixa": [
+      0.15,
+      0.37
+     ]
+    },
+    "superior": {
+     "efeito": -0.56,
+     "faixa": [
+      -0.67,
+      -0.45
+     ]
+    },
+    "feminino": {
+     "efeito": 0.44,
+     "faixa": [
+      0.38,
+      0.51
+     ]
+    }
+   }
+  }
+ },
+ "quintis": {
+  "jovem_16_24": [
+   {
+    "quinto": 1,
+    "desvio_do_grupo": -8.4,
+    "margem_t2": -1.9,
+    "margem_t1": -1.5,
+    "virada": -0.4,
+    "urnas": 85284
+   },
+   {
+    "quinto": 2,
+    "desvio_do_grupo": -4.2,
+    "margem_t2": -1.5,
+    "margem_t1": -1.3,
+    "virada": -0.3,
+    "urnas": 85284
+   },
+   {
+    "quinto": 3,
+    "desvio_do_grupo": -1.8,
+    "margem_t2": -0.4,
+    "margem_t1": -0.3,
+    "virada": -0.1,
+    "urnas": 85284
+   },
+   {
+    "quinto": 4,
+    "desvio_do_grupo": 0.9,
+    "margem_t2": 0.8,
+    "margem_t1": 0.7,
+    "virada": 0.1,
+    "urnas": 85284
+   },
+   {
+    "quinto": 5,
+    "desvio_do_grupo": 13.4,
+    "margem_t2": 3.0,
+    "margem_t1": 2.3,
+    "virada": 0.6,
+    "urnas": 85284
+   }
+  ],
+  "id_70": [
+   {
+    "quinto": 1,
+    "desvio_do_grupo": -8.0,
+    "margem_t2": 1.6,
+    "margem_t1": 0.9,
+    "virada": 0.8,
+    "urnas": 85284
+   },
+   {
+    "quinto": 2,
+    "desvio_do_grupo": -3.9,
+    "margem_t2": 0.1,
+    "margem_t1": -0.2,
+    "virada": 0.3,
+    "urnas": 85284
+   },
+   {
+    "quinto": 3,
+    "desvio_do_grupo": -0.9,
+    "margem_t2": 0.1,
+    "margem_t1": 0.2,
+    "virada": -0.1,
+    "urnas": 85284
+   },
+   {
+    "quinto": 4,
+    "desvio_do_grupo": 2.8,
+    "margem_t2": -0.1,
+    "margem_t1": 0.2,
+    "virada": -0.3,
+    "urnas": 85284
+   },
+   {
+    "quinto": 5,
+    "desvio_do_grupo": 10.6,
+    "margem_t2": -1.8,
+    "margem_t1": -1.1,
+    "virada": -0.7,
+    "urnas": 85284
+   }
+  ],
+  "superior": [
+   {
+    "quinto": 1,
+    "desvio_do_grupo": -9.0,
+    "margem_t2": 7.9,
+    "margem_t1": 7.2,
+    "virada": 0.7,
+    "urnas": 85284
+   },
+   {
+    "quinto": 2,
+    "desvio_do_grupo": -3.7,
+    "margem_t2": 4.5,
+    "margem_t1": 4.3,
+    "virada": 0.1,
+    "urnas": 85284
+   },
+   {
+    "quinto": 3,
+    "desvio_do_grupo": -1.1,
+    "margem_t2": 0.3,
+    "margem_t1": 0.2,
+    "virada": 0.1,
+    "urnas": 85284
+   },
+   {
+    "quinto": 4,
+    "desvio_do_grupo": 1.7,
+    "margem_t2": -3.9,
+    "margem_t1": -3.9,
+    "virada": -0.0,
+    "urnas": 85285
+   },
+   {
+    "quinto": 5,
+    "desvio_do_grupo": 12.7,
+    "margem_t2": -9.2,
+    "margem_t1": -8.2,
+    "virada": -1.0,
+    "urnas": 85283
+   }
+  ],
+  "esc_baixa": [
+   {
+    "quinto": 1,
+    "desvio_do_grupo": -14.4,
+    "margem_t2": -8.3,
+    "margem_t1": -8.0,
+    "virada": -0.3,
+    "urnas": 85284
+   },
+   {
+    "quinto": 2,
+    "desvio_do_grupo": -5.7,
+    "margem_t2": -3.5,
+    "margem_t1": -3.7,
+    "virada": 0.2,
+    "urnas": 85284
+   },
+   {
+    "quinto": 3,
+    "desvio_do_grupo": -0.1,
+    "margem_t2": -0.3,
+    "margem_t1": -0.5,
+    "virada": 0.2,
+    "urnas": 85284
+   },
+   {
+    "quinto": 4,
+    "desvio_do_grupo": 5.6,
+    "margem_t2": 3.3,
+    "margem_t1": 3.2,
+    "virada": 0.1,
+    "urnas": 85284
+   },
+   {
+    "quinto": 5,
+    "desvio_do_grupo": 15.3,
+    "margem_t2": 9.2,
+    "margem_t1": 9.4,
+    "virada": -0.2,
+    "urnas": 85284
+   }
+  ],
+  "feminino": [
+   {
+    "quinto": 1,
+    "desvio_do_grupo": -5.6,
+    "margem_t2": -0.2,
+    "margem_t1": 0.1,
+    "virada": -0.3,
+    "urnas": 85284
+   },
+   {
+    "quinto": 2,
+    "desvio_do_grupo": -2.1,
+    "margem_t2": -0.5,
+    "margem_t1": -0.4,
+    "virada": -0.0,
+    "urnas": 85287
+   },
+   {
+    "quinto": 3,
+    "desvio_do_grupo": -0.1,
+    "margem_t2": -0.3,
+    "margem_t1": -0.3,
+    "virada": 0.0,
+    "urnas": 85287
+   },
+   {
+    "quinto": 4,
+    "desvio_do_grupo": 1.9,
+    "margem_t2": 0.0,
+    "margem_t1": -0.1,
+    "virada": 0.1,
+    "urnas": 85278
+   },
+   {
+    "quinto": 5,
+    "desvio_do_grupo": 5.5,
+    "margem_t2": 0.9,
+    "margem_t1": 0.7,
+    "virada": 0.1,
+    "urnas": 85284
+   }
+  ]
+ },
+ "tentativa_taxas": "Inferência ecológica com limites por idade, escolaridade e sexo: taxas impossíveis (ex.: 0% de Lula entre 60 e 69 anos no 1º turno; 1,6% de Flávio entre 70+) e diferenças de até 57 pontos entre o modelo nacional e a soma estado a estado. Descartada."
+}

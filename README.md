@@ -59,6 +59,7 @@ Toda mudança feita depois da primeira publicação aparece no **registro de mud
 - **Estimativa** (inferência ecológica): pelo modelo das urnas, o grupo que mais pesou foi o de quem não votou em ninguém (entre 6,0 e 6,2 milhões para Lula, contra 0,1 a 0,9 milhão para Flávio). Os eleitores dos outros candidatos se dividiram quase ao meio. Pelo método das zonas, os outros candidatos foram mais para Flávio (32% × 57%). A divisão entre os dois grupos é a parte menos certa.
 - **Simulador:** testa sete teses de transferência, cada uma com uma faixa provável (90% de 200 reamostragens de municípios). Só duas viram o resultado: todos os eleitores dos outros candidatos indo para Flávio, ou quem não votou no 1º turno continuando sem votar.
 - **Comparado a 2022:** Flávio cresceu nas cidades pequenas e recuou nas grandes.
+- **Perfil das urnas:** dentro da mesma cidade, urnas com mais eleitores de pouca escolaridade deram mais vantagem a Lula (17 pontos de diferença entre a quinta parte com menos e a com mais diplomados). Jovens e mulheres pesaram para Lula, mas menos. A virada entre os turnos foi parecida em todo tipo de urna. A pesquisa Datafolha mostra o mesmo padrão.
 
 ### ⚠️ Limites
 - Os dados mostram como cada lugar votou, não como cada pessoa votou.
@@ -90,6 +91,7 @@ Os arquivos vêm do [Portal de Dados Abertos do TSE](https://dadosabertos.tse.ju
 | `votacao_candidato_munzona_2026_BR` | votos por zona |
 | `detalhe_votacao_munzona_2026` | aptos, comparecimento, brancos e nulos por zona |
 | `votacao_secao_2026_BR.zip` e `votacao_secao_2022_BR.zip` | votos por urna, com o nome e o endereço do local de votação |
+| `perfil_eleitor_secao_2026_<UF>.zip` (conjunto [Eleitorado 2026](https://dadosabertos.tse.jus.br/dataset/eleitorado-2026)) | idade, escolaridade e sexo dos eleitores de cada seção |
 | `detalhe_votacao_secao_2026.zip` | aptos, comparecimento, modelo da urna e hora de chegada do boletim |
 | `dados_2022/detalhe_votacao_munzona_2022_BR.csv` | 2022 por zona |
 | Boletins de urna (`bweb_*`) | baixados por `python baixar_boletins.py`, que confere o SHA-512 de cada arquivo |
@@ -108,6 +110,8 @@ Os arquivos vêm do [Portal de Dados Abertos do TSE](https://dadosabertos.tse.ju
 | `montar_banco.py --parquet` e `testar_banco.py` | banco DuckDB com tudo (ver `BANCO_LEIAME.md`) | `banco/` |
 | `baixar_ibge.py` | indicadores do Censo 2022 e PIB 2023 por município | `dados_ibge/` |
 | `analise_decisao.py` | transferências de voto, 2022 × 2026, perfil e regressão | `analise/decisao/` |
+| `agregar_perfil_secao.py` | resume o perfil do eleitorado por seção do TSE (`perfil_eleitor_secao_2026_<UF>.zip`, 2,7 GB) em uma linha por seção | `analise/perfil/perfil_secao_2026.csv.gz` |
+| `analise_perfil.py` | compara o perfil de cada urna com o resultado, dentro da mesma cidade | `analise/perfil/resultados.json` |
 | `bootstrap_simulador.py` | 200 reamostragens das taxas usadas no simulador, para a faixa provável de cada tese | `analise/decisao/simulador_bootstrap.json` |
 | `preparar_busca.py` | dados da busca do site, um arquivo por estado, conferidos com o total oficial de cada município | `docs/busca/` |
 

@@ -837,10 +837,175 @@ function Perfil() {
   )
 }
 
+/* ---------------- perfil das urnas ---------------- */
+const PU = (X as any).perfil_urnas
+const DF_LINK = 'https://www.cnnbrasil.com.br/eleicoes/datafolha-veja-como-flavio-e-lula-pontuam-por-renda-genero-e-religiao/'
+const DF_LINK_JOVENS = 'https://static.poder360.com.br/uploads/2026/10/datafolha-2oturno-outubro.pdf'
+const QUADROS: [string, string, string][] = [
+  ['esc_baixa', 'Eleitores com até o fundamental incompleto', 'até o fundamental incompleto'],
+  ['superior', 'Eleitores com superior completo', 'com superior completo'],
+  ['jovem_16_24', 'Eleitores de 16 a 24 anos', 'de 16 a 24 anos'],
+  ['feminino', 'Mulheres', 'mulheres'],
+]
+const LINHAS_REG: [string, string][] = [
+  ['jovem_16_24', '16 a 24 anos'], ['id_25_34', '25 a 34 anos'], ['id_60_69', '60 a 69 anos'], ['id_70', '70 anos ou mais'],
+  ['fund_med', 'Fundamental completo ou médio incompleto'], ['medio', 'Médio completo ou superior incompleto'], ['superior', 'Superior completo'],
+  ['feminino', 'Mulheres'],
+]
+
+function QuintosUrnas({ k, nome, grupo }: { k: string; nome: string; grupo: string }) {
+  const qs = PU.quintis[k]
+  const max = 12
+  return (
+    <motion.div {...ver} className="p-4" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
+      <h3 className="text-[1.02rem] font-extrabold leading-tight" style={{ fontStretch: '85%' }}>{nome}</h3>
+      <div className="mt-3 grid grid-cols-5 gap-1.5 items-center h-[120px] relative">
+        <span className="absolute left-0 right-0 top-1/2 h-px" style={{ background: 'var(--ink-3)' }} />
+        {qs.map((q: any, i: number) => {
+          const v = q.margem_t2, h = (Math.min(max, Math.abs(v)) / max) * 50
+          return (
+            <div key={i} className="relative h-full" title={`${sinal(v)} pontos na vantagem de Lula, comparado à média da cidade`}>
+              <motion.span initial={{ height: 0 }} whileInView={{ height: `${h}%` }} viewport={{ once: true }} transition={{ duration: 0.7, delay: i * 0.06 }}
+                className="absolute left-0 right-0" style={{ [v >= 0 ? 'bottom' : 'top']: '50%', background: v >= 0 ? 'var(--lula)' : 'var(--flavio)', borderRadius: 2 } as React.CSSProperties} />
+              <span className="absolute left-0 right-0 text-center mono text-[0.58rem] font-semibold" style={v >= 0 ? { bottom: `calc(50% + ${h}% + 2px)` } : { top: `calc(50% + ${h}% + 2px)` }}>{sinal(v)}</span>
+            </div>
+          )
+        })}
+      </div>
+      <div className="grid grid-cols-5 gap-1.5 mono text-[0.52rem] text-center mt-1" style={{ color: 'var(--ink-3)' }}>
+        {['MENOS', '', '', '', 'MAIS'].map((t, i) => <span key={i}>{t}</span>)}
+      </div>
+      <p className="mono text-[0.56rem] mt-2" style={{ color: 'var(--ink-3)' }}>
+        NO QUINTO COM MAIS, {virg(qs[4].desvio_do_grupo, 0)} PONTOS A MAIS DE ELEITORES {grupo.toUpperCase()} QUE A MÉDIA DA CIDADE
+      </p>
+    </motion.div>
+  )
+}
+
+function PerfilUrnas() {
+  const R2 = PU.regressao.margem_t2.por_10_pontos
+  const RV = PU.regressao.virada
+  const [ref, play] = usePlayOnView<HTMLDivElement>()
+  const max = 10
+  const sup = PU.quintis.superior, baixa = PU.quintis.esc_baixa
+  const lin = (k: string) => `${sinal(R2[k].efeito, 1)} ponto${Math.round(Math.abs(R2[k].efeito) * 10) >= 20 ? 's' : ''}`
+  const comparar: [string, React.ReactNode, React.ReactNode, string][] = [
+    ['Escolaridade',
+      <>Na quinta parte das urnas com mais eleitores de pouca escolaridade, a vantagem de Lula ficou {sinal(baixa[4].margem_t2)} pontos acima da média da cidade; na com mais diplomados, {sinal(sup[4].margem_t2)}. Médio e superior ficam parecidos ({lin('medio')} e {lin('superior')} a cada 10 pontos).</>,
+      <>Fundamental: Lula 57%. Médio: 47%. Superior: 46%.</>, 'Concordam'],
+    ['Sexo', <>Cada 10 pontos a mais de mulheres na urna: {lin('feminino')} na vantagem de Lula.</>, <>Mulheres: Lula 53%. Homens: Lula 46%.</>, 'Concordam'],
+    ['Jovens', <>Cada 10 pontos a mais de eleitores de 16 a 24 anos: {lin('jovem_16_24')} para Lula; de 25 a 34 anos: {lin('id_25_34')}.</>,
+      <>16 a 24 anos: Lula 50% × Flávio 43% (votos totais, <a className="underline" href={DF_LINK_JOVENS} target="_blank" rel="noreferrer">13 e 14/10</a>). A faixa de 35 a 44 anos foi a mais favorável a Flávio (56%).</>, 'Concordam'],
+    ['Idosos', <>70 anos ou mais: {lin('id_70')} a cada 10 pontos, com faixa larga ({sinal(R2.id_70.faixa[0], 1)} a {sinal(R2.id_70.faixa[1], 1)}). 60 a 69 anos: sem diferença.</>,
+      <>As pesquisas finais que encontramos não publicaram esse recorte.</>, 'Sem como comparar'],
+    ['Religião, cor e renda', <>Não há esse dado por urna. A cor não está informada para 79% dos eleitores no cadastro.</>,
+      <>Evangélicos: Lula 27%. Católicos: 59%. Pretos: 61%; brancos: 45%. Renda até 2 salários mínimos: 58%; acima de 5: 42%.</>, 'Só a pesquisa'],
+  ]
+  return (
+    <Secao id="perfil-urnas" eyebrow="7 · O perfil das urnas" titulo="Escolaridade separa mais o voto que idade ou sexo">
+      <p className="prose-p mt-4">
+        O TSE publica a idade, a escolaridade e o sexo dos eleitores de cada seção. Juntamos esses dados ao resultado de {fmt(PU.urnas)} urnas e comparamos
+        cada urna com <strong>as outras da mesma cidade</strong>. Assim, a diferença entre o Nordeste e o Sul, ou entre capital e interior, sai da conta: sobra só
+        a diferença entre bairros e escolas da mesma cidade.
+      </p>
+      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {QUADROS.map(([k, nome, g]) => <QuintosUrnas key={k} k={k} nome={nome} grupo={g} />)}
+      </div>
+      <p className="mono text-[0.58rem] mt-2" style={{ color: 'var(--ink-3)' }}>
+        URNAS DIVIDIDAS EM 5 PARTES IGUAIS, DA QUE TEM MENOS À QUE TEM MAIS DESSE GRUPO EM RELAÇÃO À MÉDIA DA PRÓPRIA CIDADE · BARRA: VANTAGEM DE LULA NO 2º TURNO, EM PONTOS, ACIMA OU ABAIXO DA MÉDIA DA CIDADE
+      </p>
+
+      <div ref={ref} className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] items-start">
+        <div className="min-w-0 p-5" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
+          <h3 className="text-[1.15rem] font-extrabold" style={{ fontStretch: '85%' }}>Olhando tudo junto</h3>
+          <p className="text-[0.85rem] mb-4" style={{ color: 'var(--ink-3)' }}>
+            Quanto muda a vantagem de Lula no 2º turno numa urna com 10 pontos a mais do grupo, com os outros grupos iguais e na mesma cidade.
+            Comparação: 35 a 59 anos, até o fundamental incompleto e homens.
+          </p>
+          <div className="grid gap-2.5">
+            {LINHAS_REG.map(([k, nome], i) => {
+              const c = R2[k], v = c.efeito
+              const pos = (x: number) => 50 + (50 * Math.max(-max, Math.min(max, x))) / max
+              const fraco = c.faixa[0] < 0 && c.faixa[1] > 0
+              return (
+                <div key={k} className="grid grid-cols-[minmax(0,9.5rem)_minmax(0,1fr)_3rem] sm:grid-cols-[13rem_minmax(0,1fr)_3rem] gap-3 items-center">
+                  <span className="text-[0.84rem] leading-tight">{nome}</span>
+                  <div className="relative h-6">
+                    <span className="absolute left-1/2 top-0 bottom-0 w-px" style={{ background: 'var(--ink-3)' }} />
+                    <motion.span initial={{ width: 0 }} animate={{ width: play ? `${Math.abs(pos(v) - 50)}%` : 0 }} transition={{ duration: 0.7, delay: i * 0.07 }}
+                      className="absolute top-1.5 bottom-1.5" style={{ [v >= 0 ? 'left' : 'right']: '50%', background: v >= 0 ? 'var(--lula)' : 'var(--flavio)', borderRadius: 2, opacity: fraco ? 0.35 : 1 } as React.CSSProperties} />
+                    <span className="absolute top-1/2 h-px" style={{ left: `${pos(c.faixa[0])}%`, width: `${pos(c.faixa[1]) - pos(c.faixa[0])}%`, background: 'var(--ink)' }} />
+                  </div>
+                  <span className="mono text-[0.68rem] font-semibold text-right">{sinal(v, 1)}</span>
+                </div>
+              )
+            })}
+          </div>
+          <p className="mono text-[0.58rem] mt-3" style={{ color: 'var(--ink-3)' }}>
+            REGRESSÃO PESADA PELO ELEITORADO, COMPARANDO URNAS DA MESMA CIDADE · {fmt(PU.urnas)} URNAS EM {fmt(PU.municipios)} MUNICÍPIOS · INCERTEZA DE 95%, CONSIDERANDO QUE URNAS DA MESMA CIDADE SE PARECEM
+          </p>
+        </div>
+        <div className="prose-p space-y-4 min-w-0">
+          <ul className="space-y-2 list-disc pl-5">
+            <li><strong>Escolaridade é o que mais separa.</strong> Na mesma cidade, a quinta parte das urnas com mais diplomados deu a Lula uma vantagem{' '}
+              {virg(sup[0].margem_t2 - sup[4].margem_t2, 0)} pontos menor que a quinta parte com menos. A linha divide quem tem até o fundamental incompleto do resto:
+              médio e superior votam parecido.</li>
+            <li><strong>Jovens e mulheres pesaram para Lula,</strong> mas menos que a escolaridade.</li>
+            <li><strong>Idade avançada pesa pouco.</strong> Urnas com mais eleitores de 60 a 69 anos não votaram diferente; com mais eleitores de 70 anos ou mais, a vantagem de Lula foi um pouco menor ({lin('id_70')} a cada 10 pontos, com incerteza grande).</li>
+          </ul>
+          <Conta t="A VIRADA FOI PARECIDA EM TODO TIPO DE URNA">
+            O perfil explica só {virg(100 * RV.r2_dentro_da_cidade, 0)}% da diferença de virada entre urnas da mesma cidade. As urnas com mais mulheres viraram um
+            pouco mais para Lula ({sinal(RV.por_10_pontos.feminino.efeito, 1)} ponto a cada 10 pontos); as com mais diplomados, um pouco menos ({sinal(RV.por_10_pontos.superior.efeito, 1)}).
+            O movimento do 1º para o 2º turno foi amplo. Uma alteração dirigida a certo tipo de urna apareceria aqui como uma virada concentrada; não aparece.
+          </Conta>
+        </div>
+      </div>
+
+      <motion.div {...ver} className="mt-10">
+        <h3 className="text-[1.2rem] font-extrabold" style={{ fontStretch: '85%' }}>As urnas contra as pesquisas</h3>
+        <p className="text-[0.9rem] mt-1 max-w-[70ch]" style={{ color: 'var(--ink-2)' }}>
+          As urnas mostram lugares; as pesquisas, pessoas. Os métodos e os erros são diferentes, então quando os dois apontam para o mesmo lado, a conclusão fica
+          mais forte. A pesquisa é o <a className="underline" href={DF_LINK} target="_blank" rel="noreferrer">Datafolha divulgado em 22/10</a>, em votos válidos.
+          Ela errou o resultado geral por cerca de 3 pontos (dava Flávio na frente), por isso o que se compara é a diferença entre os grupos, não o nível.
+        </p>
+        <div className="mt-4 grid gap-px" style={{ background: 'var(--rule)', border: '1px solid var(--rule)' }}>
+          <div className="hidden md:grid grid-cols-[9rem_minmax(0,1fr)_minmax(0,1fr)_8rem] gap-px mono text-[0.6rem]" style={{ color: 'var(--ink-3)' }}>
+            {['', 'URNAS (MESMA CIDADE)', 'PESQUISA (PESSOAS)', ''].map((t, i) => <div key={i} className="p-2.5" style={{ background: 'var(--paper)' }}>{t}</div>)}
+          </div>
+          {comparar.map(([t, u, p, c]) => (
+            <div key={t} className="grid md:grid-cols-[9rem_minmax(0,1fr)_minmax(0,1fr)_8rem] gap-px text-[0.86rem]">
+              <div className="p-3 font-extrabold" style={{ background: 'var(--card)', fontStretch: '85%' }}>{t}</div>
+              <div className="p-3" style={{ background: 'var(--card)', color: 'var(--ink-2)' }}><span className="md:hidden mono text-[0.56rem] block" style={{ color: 'var(--ink-3)' }}>URNAS</span>{u}</div>
+              <div className="p-3" style={{ background: 'var(--card)', color: 'var(--ink-2)' }}><span className="md:hidden mono text-[0.56rem] block" style={{ color: 'var(--ink-3)' }}>PESQUISA</span>{p}</div>
+              <div className="p-3 mono text-[0.66rem] font-semibold" style={{ background: 'var(--card)', color: c === 'Concordam' ? 'var(--ok)' : 'var(--ink-3)' }}>{c.toUpperCase()}</div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      <div className="mt-6 grid gap-4 md:grid-cols-2 items-start">
+        <Conta t="O LIMITE">
+          Isso descreve urnas, não pessoas. "Urnas com mais mulheres deram mais vantagem a Lula" é compatível com mulheres votarem mais em Lula, mas não prova.
+          A escolaridade do cadastro é a declarada no alistamento e muitas vezes não é atualizada, o que subestima a escolaridade dos mais velhos. O Estudo Eleitoral
+          Brasileiro (ESEB), que entrevista eleitores depois da eleição, deve sair em 2027 e entra aqui quando for publicado.
+        </Conta>
+        <details className="p-4" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
+          <summary className="cursor-pointer mono text-[0.66rem]" style={{ color: 'var(--ink-3)' }}>O QUE TENTAMOS E NÃO DEU CERTO</summary>
+          <p className="mt-2 text-[0.9rem]" style={{ color: 'var(--ink-2)' }}>
+            Tentamos estimar "quantos de cada 100 eleitores de cada idade votaram em Lula", com o mesmo método da seção 1. A conta deu números impossíveis (0% de Lula
+            entre 60 e 69 anos; 2% de Flávio entre quem tem 70 ou mais) e resultados muito diferentes quando refeita estado por estado. As faixas de idade e de
+            escolaridade andam juntas nas mesmas urnas, e o método não consegue separá-las. Por isso, esses números não estão nesta página.
+          </p>
+        </details>
+      </div>
+    </Secao>
+  )
+}
+
 /* ---------------- leitura ---------------- */
 function Leitura() {
   return (
-    <Secao id="leitura" eyebrow="7 · Leitura" titulo="O que os números dizem e o que não dizem">
+    <Secao id="leitura" eyebrow="8 · Leitura" titulo="O que os números dizem e o que não dizem" fundo>
       <div className="mt-6 grid gap-8 md:grid-cols-2">
         <motion.div {...ver} className="p-6" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
           <h3 className="text-[1.2rem] font-extrabold" style={{ fontStretch: '85%' }}>Dizem</h3>
@@ -848,6 +1013,7 @@ function Leitura() {
             <li><b style={{ color: 'var(--ink)' }}>A eleição se decidiu na participação.</b> O 2º turno teve 2,96 milhões de votantes a mais e 1,8 milhão de votos nulos e brancos a menos, e esse grupo foi em grande maioria para Lula.</li>
             <li><b style={{ color: 'var(--ink)' }}>A vantagem de Flávio no 1º turno não se sustentou.</b> Ela veio de um 1º turno com menos gente votando e com 9,3 milhões de votos em outros candidatos, que não seguiram para ele na proporção que as pesquisas indicavam.</li>
             <li><b style={{ color: 'var(--ink)' }}>Flávio manteve e ampliou a base do pai no interior e no Sul,</b> mas perdeu terreno nas cidades grandes do Sudeste, onde está a maior parte dos votos.</li>
+            <li><b style={{ color: 'var(--ink)' }}>Escolaridade separou mais o voto que idade ou sexo.</b> Urnas com mais eleitores de pouca escolaridade deram mais vantagem a Lula, mesmo dentro da mesma cidade, e a pesquisa Datafolha mostra o mesmo.</li>
             <li><b style={{ color: 'var(--ink)' }}>O padrão é espalhado e gradual,</b> sem saltos isolados: o mesmo que a página do teste mostrou com outros métodos.</li>
           </ul>
         </motion.div>
@@ -878,9 +1044,10 @@ function Metodo() {
         <ul className="space-y-2 list-disc pl-5">
           <li><b>Perfil:</b> Censo 2022 do IBGE (população, densidade, rendimento domiciliar por pessoa, parte do rendimento que não vem do trabalho, religião).</li>
           <li><b>Regressão:</b> mudança de Lula de 2022 para 2026 explicada por tamanho (em escala logarítmica), renda, renda de fora do trabalho, evangélicos, voto de 2022 e região, pesada pelos votos, com erro padrão agrupado por estado.</li>
+          <li><b>Perfil das urnas:</b> perfil do eleitorado por seção do TSE (cadastro de julho de 2026), comparado ao resultado de cada urna. Regressão com efeito fixo de município, pesada pelo eleitorado, com erro padrão agrupado por município.</li>
           <li><b>Pesquisas citadas:</b> <a className="underline" href={X.pesquisas.datafolha_terceiros.link} target="_blank" rel="noreferrer">Datafolha, 6 a 8/10</a> e{' '}
             <a className="underline" href={X.pesquisas.quaest.link} target="_blank" rel="noreferrer">Quaest, 10 a 13/10</a>.</li>
-          <li>Programas: <code>analise_decisao.py</code> e <code>baixar_ibge.py</code>, no <a className="underline" href="https://github.com/talissonsousa10-ship-it/eleicao-2026" target="_blank" rel="noreferrer">repositório do projeto no GitHub</a>. Análise de Talisson Sousa de Santana, Analista de Dados Estatísticos.</li>
+          <li>Programas: <code>analise_decisao.py</code>, <code>analise_perfil.py</code>, <code>agregar_perfil_secao.py</code> e <code>baixar_ibge.py</code>, no <a className="underline" href="https://github.com/talissonsousa10-ship-it/eleicao-2026" target="_blank" rel="noreferrer">repositório do projeto no GitHub</a>. Análise de Talisson Sousa de Santana, Analista de Dados Estatísticos.</li>
         </ul>
       </div>
     </section>
@@ -897,6 +1064,7 @@ export default function Decisao() {
       <Vs2022 />
       <Dispersao />
       <Perfil />
+      <PerfilUrnas />
       <Leitura />
       <Metodo />
     </>
