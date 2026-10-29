@@ -21,8 +21,9 @@ Autor: **Talisson Sousa de Santana**, Analista de Dados Estatísticos.
   - as urnas que destoam das vizinhas são 0,13% do total e já votavam assim no 1º turno (397 de 398).
 - **2022:** o mesmo padrão aparece com o sinal trocado. Bolsonaro virou 251 municípios entre os turnos; Lula virou 211 em 2026.
 - **Onde foi decidida** (estimativas por inferência ecológica):
-  - quem não votou em ninguém no 1º turno foi o fator principal: entre 6,0 e 6,2 milhões dessas pessoas votaram em Lula, contra 0,1 a 0,9 milhão em Flávio;
-  - os eleitores dos outros candidatos se dividiram quase ao meio;
+  - a virada veio de quem não tinha votado em Lula nem em Flávio no 1º turno: somados, os dois ganharam 14,1 milhões de votos, e 74% desse ganho foi de Lula (conta exata);
+  - pelo modelo das urnas, o grupo que mais pesou foi o de quem não votou em ninguém (entre 6,0 e 6,2 milhões para Lula, contra 0,1 a 0,9 milhão para Flávio), e os eleitores dos outros candidatos se dividiram quase ao meio. Pelo método das zonas, os outros candidatos foram mais para Flávio (32% × 57%). A divisão entre os dois grupos é a parte menos certa;
+  - o simulador da página testa sete teses de transferência. Só duas viram o resultado: todos os eleitores dos outros candidatos indo para Flávio, ou quem não votou no 1º turno continuando sem votar;
   - comparado a 2022, Flávio cresceu nas cidades pequenas e recuou nas grandes.
 
 **Limites:**
