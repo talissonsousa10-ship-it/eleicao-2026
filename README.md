@@ -10,6 +10,8 @@ Análise do 2º turno da eleição presidencial de 2026 (Lula 64.256.232 × Flá
 
 Autor: **Talisson Sousa de Santana**, Analista de Dados Estatísticos.
 
+Toda mudança feita depois da primeira publicação aparece no **registro de mudanças**, no fim de cada página do site (fonte: `site/src/data/mudancas.ts`). Mudanças em números, títulos ou conclusões entram como correção, com o texto anterior.
+
 ## O que encontramos
 
 - **Boletins de urna:** os 998.411 boletins dos dois turnos (o papel afixado na porta de cada seção) são idênticos à totalização oficial em todos os campos. Os 56 arquivos `bweb` têm o hash SHA-512 igual ao publicado pelo TSE.
