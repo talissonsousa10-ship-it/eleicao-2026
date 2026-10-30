@@ -39,8 +39,6 @@ O site tem três páginas: **[talissonsousa10-ship-it.github.io/eleicao-2026](ht
 | **Onde foi decidida** | De onde vieram os votos do 2º turno, um simulador para testar teses de transferência, a comparação com 2022 e o perfil dos municípios |
 | **Explore sua cidade** | Mapa com zoom e busca por cidade, local de votação e urna |
 
-Toda mudança feita depois da primeira publicação aparece no **registro de mudanças**, no fim de cada página (fonte: `site/src/data/mudancas.ts`). Mudanças em números, títulos ou conclusões entram como correção, com o texto anterior.
-
 ## 🔍 O que encontramos
 
 ### A contagem bate
@@ -132,7 +130,7 @@ O código-fonte está em `site/`. Para gerar `docs/index.html` de novo, rode `ba
 
 **Talisson Sousa de Santana**, Analista de Dados Estatísticos.
 
-Encontrou um erro? Abra uma [issue](https://github.com/talissonsousa10-ship-it/eleicao-2026/issues). Se a correção mudar um número, ela entra no registro de mudanças do site.
+Encontrou um erro? Abra uma [issue](https://github.com/talissonsousa10-ship-it/eleicao-2026/issues).
 
 ## 📄 Licença
 

@@ -5,7 +5,6 @@ import Teste from '@/pages/Teste'
 import Explorar from '@/pages/Explorar'
 import Decisao from '@/pages/Decisao'
 import { useRota } from '@/lib/rota'
-import Registro, { LinhaAtualizado } from '@/components/Registro'
 
 export default function App() {
   const rota = useRota()
@@ -17,9 +16,7 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
       <Nav rota={rota} />
-      <LinhaAtualizado />
       <main>{rota.pagina === 'mapa' ? <Explorar arg={rota.arg} /> : rota.pagina === 'decisao' ? <Decisao /> : <Teste />}</main>
-      <Registro />
     </MotionConfig>
   )
 }
