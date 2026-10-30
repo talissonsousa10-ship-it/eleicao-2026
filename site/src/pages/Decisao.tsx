@@ -51,7 +51,7 @@ function Abertura() {
       <motion.ol className="mt-9 grid gap-3 md:grid-cols-3" initial="a" whileInView="b" viewport={{ once: true }}
         variants={{ b: { transition: { staggerChildren: 0.12 } } }}>
         {[
-          ['1', 'A virada veio de quem não tinha escolhido nenhum dos dois', 'Do 1º para o 2º turno, Lula ganhou 10,4 milhões de votos e Flávio, 3,7 milhões. Esses votos vieram de quem votou em outro candidato ou em ninguém. Pelo modelo das urnas, o grupo que mais pesou foi o de quem não votou em ninguém: cerca de 6 milhões foram para Lula.'],
+          ['1', 'A virada veio de quem não tinha escolhido nenhum dos dois', 'Do 1º para o 2º turno, Lula ganhou 10,4 milhões de votos e Flávio, 3,7 milhões. Esses votos vieram de quem votou em outro candidato ou em ninguém. Pelos dois métodos desta análise, o grupo que mais pesou foi o de quem não votou em ninguém.'],
           ['2', 'Os outros candidatos se dividiram', 'Os 9,3 milhões de eleitores de Cury, Renan, Caiado e Zema se dividiram quase ao meio. As pesquisas indicavam vantagem clara para Flávio nesse grupo.'],
           ['3', 'O Brasil grande pesou mais que o pequeno', `Comparado a 2022, Flávio foi melhor que o pai em ${fmt(fm.municipios)} municípios. Mas eles somam só ${virg(100 * fm.validos / fm.validos_total, 0)}% dos votos; nas cidades grandes, ele recuou.`],
         ].map(([n, t, d]) => (
@@ -188,11 +188,33 @@ function Fluxo() {
           <p>
             <strong>O que é certo e o que é estimativa.</strong> É conta, não estimativa: Lula ganhou 10,4 milhões de votos entre os turnos e Flávio,
             3,7 milhões. Somados, os dois ganharam 14,1 milhões de votos, e 74% desse ganho foi de Lula. Esses votos vieram quase todos de dois grupos:
-            quem votou em outro candidato e quem não votou em ninguém. Já a divisão entre esses dois grupos é estimativa. Outro método, o do teste 1 da
-            página principal, que compara zonas em vez de urnas, dá mais crédito aos eleitores dos outros candidatos e menos aos que não tinham votado.
-            Os dois métodos concordam que Lula ficou com a maior parte do total.
+            quem votou em outro candidato (9,3 milhões) e quem não votou em ninguém (o comparecimento subiu 2,96 milhões e os brancos e nulos caíram
+            1,8 milhão). Já a divisão entre esses grupos é estimativa. O teste 1 da página principal usa outro método, que compara zonas em vez de urnas,
+            e chega à mesma conclusão por outro caminho (quadro abaixo).
           </p>
         </div>
+      </motion.div>
+      <motion.div {...ver} className="mt-6 p-5 max-w-[860px]" style={{ background: 'var(--card)', border: '1px solid var(--rule)' }}>
+        <p className="mono text-[0.62rem] mb-2" style={{ color: 'var(--ink-3)' }}>OS DOIS MÉTODOS LADO A LADO · SALDO PARA LULA (VOTOS DELE MENOS OS DE FLÁVIO), EM MILHÕES</p>
+        <div className="grid gap-px text-[0.88rem]" style={{ background: 'var(--rule)', border: '1px solid var(--rule)' }}>
+          {([
+            ['', 'Urnas (esta seção)', 'Zonas (teste 1)'],
+            ['Quem não votou em ninguém no 1º turno', '+5,9', '+7,2 (o comparecimento extra se dividiu quase ao meio, +0,1; os ex-brancos e nulos foram muito mais para Lula, +7,1)'],
+            ['Eleitores dos outros candidatos', '−0,1 (quase ao meio)', '−2,3 (mais para Flávio)'],
+            ['Resto', '+0,8 (eleitores de Flávio que deixaram de votar nele)', '+1,8 (parte que o método não atribui a nenhum grupo)'],
+            ['Virada total', '+6,6 (a real foi 6,65; a diferença é o erro do modelo)', '+6,65'],
+          ] as string[][]).map((l, i) => (
+            <div key={i} className="grid grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1.4fr)] gap-px">
+              {l.map((c, j) => <div key={j} className={`p-2.5 ${i === 0 ? 'mono text-[0.6rem]' : j === 0 ? 'font-semibold' : ''}`} style={{ background: i === 0 ? 'var(--paper)' : 'var(--card)', color: i === 0 ? 'var(--ink-3)' : 'var(--ink-2)' }}>{c}</div>)}
+            </div>
+          ))}
+        </div>
+        <p className="text-[0.86rem] mt-3" style={{ color: 'var(--ink-2)' }}>
+          Os dois métodos concordam no principal: quem não votou em ninguém no 1º turno deu a Lula a maior parte da virada (5,9 de 6,6 milhões pelas urnas; 7,2 pelas zonas, mais que a virada inteira). Eles divergem sobre os
+          eleitores dos outros candidatos, e é o método das zonas que os põe mais perto de Flávio. O "50 a 47" do teste 1 vale só para os 2,96 milhões
+          de votantes a mais, não para os 14,1 milhões. Aplicá-lo ao total leva à conclusão errada de que Lula precisaria de 85% dos eleitores dos outros
+          candidatos.
+        </p>
       </motion.div>
     </Secao>
   )
@@ -329,12 +351,12 @@ const TESES: Tese[] = [
   { id: 'sem_novos', rot: 'Quem não votou no 1º turno continuou sem votar',
     tese: '“A virada veio de votos que não existiam no 1º turno.”',
     muda: 'Os 39,4 milhões que não votaram em candidato no 1º turno (abstenção, branco e nulo) continuam sem votar em ninguém. O resto fica como foi.',
-    ler: 'Mostra o peso desse grupo: sem ele, Flávio venceria. Isso não é sinal de fraude. O comparecimento subiu no país inteiro, os eleitores a mais se dividiram entre os dois candidatos nas zonas (teste 1) e, em 2022, foi Bolsonaro quem ganhou mais votos entre os turnos. É também a parte mais incerta da estimativa (ver a seção 1).',
+    ler: 'Mostra o peso desse grupo: sem ele, Flávio venceria. Isso não é sinal de fraude. O comparecimento subiu no país inteiro, os 2,96 milhões de votantes a mais se dividiram quase ao meio nas zonas (teste 1), e, em 2022, foi Bolsonaro quem ganhou mais votos entre os turnos. Os dois métodos desta análise concordam que esse grupo pesou a favor de Lula (ver o quadro da seção 1).',
     taxas: (b = BASE) => ({ ...b, nenhum: [0, 0] }) },
   { id: 'novos_meio', rot: 'Os novos votos se dividiram ao meio',
     tese: '“Se os novos votos tivessem se dividido igualmente, Flávio teria ganhado.”',
     muda: 'O mesmo número de pessoas sai da abstenção e do voto nulo, mas metade vai para cada candidato. Os outros grupos ficam como nas urnas.',
-    ler: 'Pelo modelo das urnas, esse grupo foi quase todo para Lula. Pelo método das zonas, os eleitores a mais se dividiram quase ao meio (50 × 47), e a vantagem de Lula aparece em outros grupos. Esta tese mostra o que acontece se só uma parte da conta mudar; não deve ser lida sozinha.',
+    ler: 'Nenhum dos dois métodos mostra isso. Pelo modelo das urnas, esse grupo foi quase todo para Lula. Pelo método das zonas, só os 2,96 milhões de votantes a mais se dividiram quase ao meio; os ex-brancos e nulos foram muito mais para Lula. A tese serve para ver o tamanho do grupo, não como cenário provável.',
     taxas: (b = BASE) => { const m = (b.nenhum[0] + b.nenhum[1]) / 2; return { ...b, nenhum: [m, m] } } },
 ]
 
