@@ -312,7 +312,12 @@ export default function Testes() {
         <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           <Card n="1" pergunta="Os eleitores a mais do 2º turno foram todos para Lula?" leitura="DE CADA 100 PESSOAS A MAIS QUE FORAM VOTAR NO 2º TURNO, QUANTAS ESCOLHERAM CADA UM"
             fraude="Votos inventados para um candidato apareceriam como 'eleitores novos' que votam quase 100% nele."
-            vimos={<>De cada 100 pessoas a mais que foram votar, cerca de <b>{Math.round(fx.lula * 100)} escolheram Lula e {Math.round(fx.flavio * 100)} Flávio</b>. Em 2022, a divisão foi {Math.round(fx.l22 * 100)} para Lula e {Math.round(fx.b22 * 100)} para Bolsonaro.</>}>
+            vimos={<>De cada 100 pessoas a mais que foram votar, cerca de <b>{Math.round(fx.lula * 100)} escolheram Lula e {Math.round(fx.flavio * 100)} Flávio</b>. Em 2022, a divisão foi {Math.round(fx.l22 * 100)} para Lula e {Math.round(fx.b22 * 100)} para Bolsonaro.
+              <span className="block mt-2 text-[0.86rem]" style={{ color: 'var(--ink-3)' }}>
+                Essa divisão vale só para os 2,96 milhões de votantes a mais, não para os 14,1 milhões de votos que Lula e Flávio ganharam entre os turnos.
+                Pelo mesmo teste, os ex-brancos e nulos foram muito mais para Lula, e os eleitores dos outros candidatos, mais para Flávio. O teste serve para
+                procurar votos inventados, não para medir transferências; para isso, veja a página <a className="underline" href="#/decisao">Onde foi decidida</a>.
+              </span></>}>
             <G1 />
           </Card>
 

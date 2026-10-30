@@ -215,6 +215,11 @@ function Fluxo() {
           de votantes a mais, não para os 14,1 milhões. Aplicá-lo ao total leva à conclusão errada de que Lula precisaria de 85% dos eleitores dos outros
           candidatos.
         </p>
+        <p className="text-[0.82rem] mt-2" style={{ color: 'var(--ink-3)' }}>
+          Por que confiar mais nas urnas para isso: o teste 1 foi feito para procurar votos inventados, não para medir transferências. É uma regressão por zona
+          sem as regras de bom senso do modelo das urnas, tanto que dá a Flávio uma fatia negativa (−30%) dos ex-brancos e nulos, o que é impossível como
+          transferência. Serve para mostrar a direção; os números exatos desta seção vêm das urnas.
+        </p>
       </motion.div>
     </Secao>
   )
